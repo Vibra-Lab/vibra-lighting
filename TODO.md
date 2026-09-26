@@ -51,6 +51,30 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
+- [ ] **QLC+ 5.2.2 se cayo solo en el mini con AUTO sonando.** El 2026-09-26
+  el QLC+ del operador (pid 24473, `-w --wp 9998`, `Vibra.qxw`, abierto a las
+  19:30) murio a las 21:26:58 con SIGSEGV (`KERN_INVALID_ADDRESS at 0x1fc`)
+  en el recolector de QML: `QV4::QObjectWrapper::markWrapper` <-
+  `QV4::GCStateMachine::transition`. Informe:
+  `~/Library/Logs/DiagnosticReports/qlcplus-qml-2026-09-26-212658.ips` (mini).
+  Nadie lo toco; la tablet lo estaba usando por su web. Relanzado por el
+  lanzador (pid 56012) y AUTO arrancado desde la tablet. Siguiente: buscar en
+  `~/p/qlcplus` y en los issues de QLC+ un fallo del GC de QML con la consola
+  web abierta, y dejar QLC+ con AUTO varias horas en el mini para ver si se
+  repite.
+- [~] **Barrido de la tablet v90 contra un QLC+ de prueba (2026-09-26).**
+  Toques inyectados en `/dev/input/event0` sobre cada control de 7 paginas
+  (SPEED fuera), leyendo el estado de la funcion y el DMX por la web de un
+  QLC+ sin E/S en :9997. Tercera pasada: 154 controles, 153 OK; el fallo
+  (AMARILLO, rafaga) es del barrido: el log de la tablet si muestra
+  `932|1` y `932|0` a 472 ms, pero el barrido lo leyo antes de que se
+  escribiera. La segunda pasada fallo 25 de 30 en CABEZAS (de Ocho en
+  adelante: el estado no cambiaba aunque el DMX si) y no se repitio ni en
+  CABEZAS sola (30/30), ni en PIXELES+CABEZAS (45/45), ni en la tercera
+  pasada. Sin causa: el desk no registra en el log los toggles que manda.
+  Siguiente: que dmxdesk registre cada `<widget>|255` enviado, y repetir el
+  barrido si vuelve a pasar.
+
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
   respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
