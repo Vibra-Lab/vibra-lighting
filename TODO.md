@@ -51,6 +51,30 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
+- [ ] **Fallos que el DMX destapo el 2026-09-26, sin regla en qlctool check
+  todavia.** Medido con el motor en un QLC+ sin E/S, no vistos en sala
+  todavia:
+  - Soltar un pick deja su familia sin dueño en cualquier marco JUGAR: en
+    Color el rig se apaga pero las beam se quedan en rojo; en Gobo Shake el
+    jitter (gobo 10, jitter 64) sigue indefinidamente aunque AUTO o FIESTA
+    esten corriendo; en Escenario, Centro, Abanico y Cruce todas las cabezas
+    caen a 127/127 y el movimiento no vuelve solo.
+  - Las dos MAC WASH quedan aparcadas en 127/127 en los looks de solo beams
+    (Abanico, Cruce, Escenario, Centro) y al arranque de Ola Vertical, fuera
+    de su ventana medida (212-230).
+  - Las PAR CLB2.4 y los LED de humo no estan en ningun grupo de banco de
+    color, asi que un banco (teclas 1-0) los deja fuera mientras se
+    mantiene.
+  - Una carrera entre AUTO y un pick pulsados en el mismo instante deja el
+    RGB a 0 con AUTO corriendo; no se repitio con 0.2 s o mas de separacion.
+  - El canal combinado Dimmer/Strobe de la MiN Wash gana siempre por HTP a
+    255 en los niveles de energia, asi que nunca estroba (STROBO, STROBO
+    SUAVE, y los tres flashes).
+  - Al muestrear `getChannelsValues` alrededor de un 1.2% de las lecturas
+    salen con canales sueltos a cero; se repiten para descartarlas.
+
+  Siguiente (regla del CLAUDE.md): una regla de qlctool check por causa, con
+  su test fechado, antes de tocar el generador.
 - [ ] **QLC+ 5.2.2 se cayo solo en el mini con AUTO sonando.** El 2026-09-26
   el QLC+ del operador (pid 24473, `-w --wp 9998`, `Vibra.qxw`, abierto a las
   19:30) murio a las 21:26:58 con SIGSEGV (`KERN_INVALID_ADDRESS at 0x1fc`)
@@ -432,6 +456,14 @@ queda espera al rig o a otro repositorio:
   el pastel se distingue del blanco en la sala encendida - si no, subir
   `SHARE` en `qlctool/pastel.py` - y si los cinco contrastes se leen como dos
   colores y no como "feria".
+
+  **2026-09-26, medido en el DMX: falla.** `Pastel tenue` no llega mezclado en
+  los fixtures sin emisor White (CromoWash, CLB2.4, Vortex, MiN Wash, WX y los
+  LED de humo): salen en un color saturado al 45% en vez de mezclado hacia
+  blanco, por ejemplo Rig Pastel Rojo da (115,0,0) en lugar de acercarse al
+  blanco. Solo el Mini Led (que suma W=140) y las matrices de pixeles llegan
+  mezclados, porque `rgbw_split` resta el blanco del RGB y no hay emisor
+  White donde devolverlo. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §1.
 - [ ] **Ver en sala los movimientos nuevos.** Cada figura tiene ahora tres
   botones: fase repartida (el de siempre), `Simultaneo` (todas las cabezas a
   la vez) y `Alternado` (cada cabeza al lado contrario, `every_other`). Los
@@ -441,33 +473,38 @@ queda espera al rig o a otro repositorio:
   una 7R. Son 26 picks en el marco CABEZAS, a 15 columnas y dos filas: el marco
   no puede crecer porque GOBOS empieza 148 px por debajo, así que los botones
   son estrechos - mirar en la tablet si el texto se lee.
+
+  **2026-09-26, medido en el DMX: falla.** `Alternado` es identico a la
+  figura normal en los cuatro beams (7R 20-23): mismo listado de fixtures y
+  la misma firma de correlacion en las 7 figuras (Circulo y Circulo Alternado
+  dan, por ejemplo, la misma pan corr 0.04/-0.04/0.04 en los beams). Solo
+  cambia algo en las CromoWash, MiN Wash y Mini Led, que son spares sin
+  montar; las dos MAC WASH, los unicos washes en sala, quedan igual en ambas
+  versiones. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §2.
 - [ ] **Confirmar que los golpes de color salen del mismo color en toda la
   sala.** El dueño vio "los rgb salen como mezclados con blanco". La mitad era
   el emisor White sumándose al RGB (cerrado, `blanco pagado dos veces`) y la
   otra mitad puede ser la tabla de nombres de la rueda de las 7R, que sigue sin
   confirmar - ver el item del 2026-09-02 sobre `color_wheel_match`. Con la
   rueda mal nombrada, un golpe rojo manda a los beams un color vecino.
+
+  **2026-09-26:** lado DMX comprobado (los diez golpes salen del mismo RGB en
+  las nueve familias, el blanco usa el emisor White, y cada golpe estroba
+  tambien: 7R a 234, MiN Wash a 236); queda mirarlo en sala si la rueda de
+  las 7R (item de nombres de la rueda) manda el color correcto. Detalle:
+  docs/en-sala-dmx-audit-2026-09-26.md §3.
 - [ ] **Decidir en sala la matriz de dos colores sobre Cabezas.** `Alternate
   Verde Menta/Azul Profundo` pinta pares e impares de dos colores sobre los
   ocho cabezas RGB y deja los cuatro beams en una posición fija de rueda. La
   regla nueva no la mira (una matriz habla de píxeles, no de fixtures, como en
   `rueda de color`), así que es una decisión: o se reparten los dos colores
   entre los beams por su rueda, o se acepta.
-- [ ] **"Quitar y poner un color no apaga las beam" - probar la hipótesis en
-  sala antes de tocar nada.** Un pick de color en JUGAR es un Toggle en un marco
-  solo: al repetirlo se para y deja la familia quieta. Al pararse, el RGB se
-  suelta y esos aparatos se apagan, pero la rueda de color de las 7R es LTP -
-  nadie la reescribe - así que los beams se quedan con el color puesto y
-  encendidos por el nivel de energía. Es asimetría, no capricho. El arreglo
-  candidato es una escena base que corra siempre y sea dueña de la rueda: su
-  fader queda por debajo del pick (`Universe::requestFader` encola por
-  prioridad y orden), así que al soltar el pick la rueda volvería a la base.
-  Antes de implementarlo hay que verlo: con AUTO parado, pulsar un pick de
-  color, volver a pulsarlo, y apuntar qué hacen los cuatro beams. Si se quedan
-  encendidos, hace falta la base; si se apagan, el fallo era el botón COLOR BEAM
-  que ya no existe. Hay una segunda lectura, y es decisión del dueño: puede que
-  lo que sobre no sea el color de los beams sino que soltar un pick deje la sala
-  a oscuras en vez de devolverla a AUTO. Eso se decide, no se adivina.
+
+  **2026-09-26:** lado DMX comprobado (los beams no cambian con la matriz de
+  Cabezas: shutter, blade y rueda quedan fijos; solo las ocho cabezas RGB,
+  que son spares sin montar, reciben la matriz), asi que en el rig montado
+  ninguna matriz de Cabezas se ve; queda mirarlo en sala para tomar la
+  decision. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §4.
 - [ ] **El desk de la tablet tiene que dibujar el campo `icon`.** `Vibra.desk.json`
   lleva desde hoy un `icon` por control (111 de 138), separado del `caption`
   (`leading_glyph`); el esquema sigue siendo 2 porque añadir un campo es
@@ -497,28 +534,39 @@ dia con ocho reglas nuevas, ocho tests de regresion y el generador corregido
   nadie lo ha visto con el rig delante. Siguiente paso: con `AUTO` en cyan,
   mantener `1` y comprobar que los cabezas salen rojos, no blancos, y que al
   soltar vuelven a cyan sin salto.
+
+  **2026-09-26:** lado DMX comprobado (bancos, mezclas y gobos mantienen: los
+  cabezas salen rojos, no blancos, al mantener la tecla `1`, y vuelven a cyan
+  sin salto al soltar); texto desfasado: los gobos, el prisma y `Escenario`
+  ya no son Flash, son Toggle en marcos solo en este workspace, y las PAR
+  CLB2.4 y los LED de humo quedan fuera de los bancos de color (no cambian
+  mientras se mantiene una tecla). Detalle: docs/en-sala-dmx-audit-2026-09-26.md §6.
 - [ ] **Confirmar `STROBO` / `STROBO SUAVE` mantenidos** (ahora escenas de
   shutter, como `Flash Color`): las barras LED no estroban porque no tienen
   shutter, y eso es fisica, no un fallo - si el dueño quiere las barras en el
   estrobo, la unica forma sobre una sala encendida es una matriz `Strobe` en
   su grupo, que suma HTP con el color de la rueda.
-- [ ] **`<ExcludeFade>` en las ruedas: mirar la rueda de color de los 7R
-  durante `AUTO`.** Debe saltar de color a color; si sigue barriendo los
-  intermedios, QLC+ 5.2.2 no honra el tag y hay que poner fade 0 en las
-  escenas que escriben ruedas (`rueda fundida` lo veria).
+
+  **2026-09-26, medido en el DMX: falla.** Las dos MiN Wash nunca estroban:
+  su canal combinado Dimmer/Strobe queda en 255 (Open) tanto en STROBO como
+  en STROBO SUAVE, porque los niveles (`Intensidad Ambiente/Total/Peak`)
+  tambien escriben ese canal a 255 y ganan por HTP. Los LED de humo tienen
+  canal de estrobo (ch6) pero ninguna escena de estrobo lo escribe, asi que
+  tampoco estroban. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §7.
 - [ ] **Los blancos usan ahora el emisor White** (Mini Led ch7, MAC WASH
   ch12/16/20). Desde el 2026-09-22 el reparto lo hace `rgbw_split`, no
   `white_level`: la parte acromatica sale del emisor blanco y se **resta** de
   R, G y B, salvo cuando la peticion ya es acromatica (r = g = b: luz de
   trabajo, flashes), que va a los cuatro emisores. Queda decidir en sala si el
   blanco resulta mas frio o mas brillante que el RGB de antes.
-- [ ] **`HUMO VERT` saca la columna del color de la sala, no blanca** - es
-  decision del dueño del 2026-08-30 ("la luz solo salia la blanca, no hacia
-  las transiciones de colores"), no un fallo; el item del montaje del
-  2026-08-29 que pedia "columna blanca" esta desfasado.
-- [ ] **Confirm JUGAR on site.** Under AUTO, pick red and verify the entire
-  rig, including the 7R heads and bars, turns red; press F1 and verify the
-  pick releases; press AUTO colores and verify the wheel returns.
+
+  **2026-09-26, medido en el DMX: falla.** El mismo reparto se aplica a
+  fixtures sin emisor White: CHARLA sale (85,44,0) en CromoWash, barras,
+  CLB2.4, Vortex, MiN Wash, WX y humo (un marron apagado) en vez del blanco
+  calido que sale en Mini Led y MAC, (255,255,255)+W170; lo mismo en los 17
+  pasos de Pastel (ver item de "cuatro modos de color"). Las matrices de las
+  Lyres (MAC) tampoco pasan por el reparto: en Pastel dan (255,140,140) con
+  W=0. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §9.
 
 Descartado en la auditoria (para no repetirlo): el `<Mode>` numerico de los
 EFX es correcto (`efxfixture.cpp:291` usa `toInt()`); no hay sombra HTP dentro
@@ -609,6 +657,14 @@ que queda.
      2026-09-22 son 605 botones en cuatro paginas, y el marco CABEZAS baja a
      15 columnas para meter sus 26 picks en dos filas: mirar eso tambien.)
 
+  **2026-09-26, medido en el DMX: falla en Cabezas.** El grupo `Cabezas` no
+  cruza la sala: ninguna matriz mueve los 4 beams (7R) - shutter, blade y
+  rueda quedan fijos - y las 8 celdas RGB del grupo son CromoWash/MiN
+  Wash/Mini Led, spares sin montar, que ademas encienden fuera de orden de
+  escenario (x=9000, 10200, 1800, 3000...). Confirmado en cambio: la rejilla
+  de las Lyres (3x2, los tres anillos pintan) y el orden de escenario del
+  grupo `PAR`. Detalle: docs/en-sala-dmx-audit-2026-09-26.md §12.
+
 - [ ] **Humo, las dos cosas nuevas, verlas en sala (2026-08-30).** (1) La
   columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la
   bomba y el master del LED, y el color lo pone la sala — "salia humo bien pero
@@ -619,6 +675,13 @@ que queda.
   solo (uno a la vez), y `J` sigue siendo el de 1 min que arranca AUTO. Elegir
   el que pida la sala. La columna **nunca** se dispara sola y la regla
   `columna automatica` lo impide.
+
+  **2026-09-26:** lado DMX comprobado (la columna sale del color de la rueda
+  con AUTO y se apaga con Todo Negro; cada opcion de ritmo - 2/4/8 min -
+  dispara la bomba al momento al pulsarla, con 2 s de humo y luego el reposo
+  elegido; la columna nunca se disparo sola en 60 s de AUTO ni en 15 s de
+  Locura); queda elegir en sala que ritmo pide la sala. Detalle:
+  docs/en-sala-dmx-audit-2026-09-26.md §13.
 
 - [ ] **Las dos MAC WASH: mirar el menu RunMode en la lyre (2026-08-30).** La
   noche del 29 "se quedaban mirando para abajo y hacian cosas raras como una
@@ -781,18 +844,6 @@ que queda.
   "QLC+ Setups/Vibra-split.qxw"` from the repository root. New rule when something misbehaves: find
   the cause, add a rule, add a dated regression test, run it over all three
   workspaces — written down in the repo's `CLAUDE.md`.
-- [~] **Momento Locura ya no abre como pared blanca plana (2026-08-29 —
-  pendiente solo de verlo en el rig).** "cuando ponemos el modo locura empieza
-  todo blanco y normal" (dueño). Causa: `Intensidad Total` (255 fijo) junto a
-  `Dimmer Chase` en la misma Collection — HTP, 255 gana siempre y el chase era
-  cosmético; la misma trampa que Nivel Peak ya evitaba con `Intensidad Peak`.
-  Fix en el generador: Locura lleva la base sin dimmers; `Intensidad Peak`
-  abre ahora el shutter de *todos* los fixtures (el shutter no es el dimmer,
-  no pisa al chase) y los paneles/grupos con dueño propio de intensidad salen
-  del chase. Regla nueva `efx de dimmer tapado` + test fechado
-  (`test_a_dimmer_effect_flattened_by_a_full_scene_beside_it`); destapó
-  también a los paneles WX clavados a 255 bajo AUTO. Tres workspaces
-  regenerados, `--validate` y check limpios, 298 pass.
 - [~] **Recuperado lo que el show viejo hacía y el generado perdió (auditoría
   2026-08-28, implementado 2026-08-29 — pendiente solo de verlo en el rig).**
   Informe completo en `docs/old-vs-new-audit-2026-08-28.md`; regresiones en
@@ -816,6 +867,15 @@ que queda.
   `Simultaneo` (7 wash + 3 beam) y crossfade 5 s en los chasers de
   movimiento. En sala: pacing del prisma, holds de los arcoiris, y que el
   banco de 12 botones se lea bien en 13".
+
+  **2026-09-26:** lado DMX comprobado (los 7 colores de paleta se emiten;
+  las teclas 9/0 dan Az/Ro y Ro/Az en todos los bancos; `'` y `¡` corren el
+  Arcoiris junto y en fases sobre el Vortex; `Vel. Paneles Auto` pasa por
+  160/232/200/255 con fundido de 45 s; `Cabezas Centro` aparca en pan 0 /
+  tilt 130; `Prisma Animacion` sigue el orden 4; 2y4; 1; 2; todos; 3; 1y3;
+  fuera, mas dos pasos nuevos desde entonces); queda mirarlo en sala: el
+  pacing del prisma, los holds de los arcoiris y el banco de 12 botones a
+  13". Detalle: docs/en-sala-dmx-audit-2026-09-26.md §18.
 - [ ] **Montaje 2026-08-29: las 4 máquinas de humo vertical LED.** Patcheadas
   como `Generic / LED Spray Fog` (7ch) en **317, 324, 331 y 338**; el placeholder
   `Generic Smoke` 2ch de 299 fuera. El Mac del show quedó preparado por SSH
@@ -847,6 +907,14 @@ que queda.
      `dirección - 1` en binario (dip 1 = 1 ... dip 9 = 256). Para la 186:
      **ON = 1, 4, 5, 6, 8 y 10; OFF = 2, 3, 7, 9** (185 = 1+8+16+32+128).
      Contrastar con los diagramas de la página 4 del manual al ponerlos.
+
+  **2026-09-26, medido en el DMX: falla, en "subir/bajar con los niveles".**
+  El dimmer de los LED de humo (ch2) queda fijo en 255 en `Intensidad
+  Ambiente`, `Total` y `Peak` (las tres escenas escriben `fx29: 1,255`),
+  mientras las PAR Vortex si suben y bajan (110 en Ambiente, 0-253 en
+  Locura); las 4 maquinas nunca siguen los niveles. Confirmado en cambio:
+  salen del color de la sala y se apagan con `Todo Negro`. Detalle:
+  docs/en-sala-dmx-audit-2026-09-26.md §14.
 - [ ] **Apple git sigue sin CommandLineTools en el Mac del show** (2026-08-29):
   `/usr/bin/git` muere con `xcrun: error: invalid active developer path`. NO
   bloquea nada — el git de Homebrew funciona (`export
@@ -864,6 +932,19 @@ que queda.
   la rueda), `Nivel Fiesta Dinamico` (chase 30 s / ping-pong 8 s),
   `Gobo Shake` (jitter a 64) y el prisma girando a 25. Los holds y
   velocidades son opiniones hasta que alguien los vea.
+
+  **2026-09-26:** lado DMX comprobado en las cinco piezas (`Ola Vertical`:
+  cada 7R gira su tilt 207-232 empezando cabeza a cabeza, pero las MAC
+  quedan en 127/127 hasta que les toca su turno; `Barrido Unison`: los pares
+  de beams se mueven en espejo; `Beams Cruce`: mismo tilt que Abanico con
+  los pans en espejo; `Ciclo Paneles Mixto`: 480 s de Ciclo Paneles y 240 s
+  de Paneles Manual; `Nivel Fiesta Dinamico`: chase suave 0-30 s, ping-pong
+  30-38 s y chase de nuevo; `Gobo Shake`: gobo 10 con jitter 64; prisma:
+  rotacion 25, prisma 191); texto desfasado: `Rig Multicolor 1/2` ya no hace
+  rainbow scroll ~186, los beams van a slots fijos (MC1 43/83, MC2 43/51/99)
+  y el rango 128-255 solo aparece en los picks de Arcoiris. Queda mirarlo en
+  sala: los holds y las velocidades. Detalle:
+  docs/en-sala-dmx-audit-2026-09-26.md §15.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
@@ -913,6 +994,13 @@ que queda.
   (VCPage::handleKeyEvent), como en la consola vieja. Re-tempa la rotacion, sus
   EFX y el crossfade a la vez, porque QLC+ le resta el fundido del chaser a la
   duracion del EFX. `Movimientos Suaves` queda fuera aposta (60 s por figura).
+
+  **2026-09-26, medido en el DMX: falla en parte.** Los tres flashes
+  (Espacio, `-`, `.`) estroban con los valores correctos, pero las dos MiN
+  Wash quedan en 255 (Open) en los tres: el nivel de energia gana su canal
+  combinado Dimmer/Strobe por HTP, igual que en STROBO. Confirmado en
+  cambio: Golpe Graves sale blanco sin estrobo. Detalle:
+  docs/en-sala-dmx-audit-2026-09-26.md §16.
 - [ ] **Cuando salga la version nueva de QLC+, pasar el show a `--bpm-tap`.**
   Ya esta implementado y probado (`qlctool newshow --bpm-tap`, test fechado):
   todas las capas que siguen la musica en tempo **Beats** sobre generador

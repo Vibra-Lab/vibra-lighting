@@ -17,6 +17,36 @@
 
 ### 2026-09
 
+#### 2026-09-26 - en-sala backlog judged from the engine's DMX output
+
+- [x] 2026-09-26 - **"Quitar y poner un color no apaga las beam": confirmado
+  en el DMX.** Con AUTO corriendo, soltar un pick de color deja el RGB del
+  rig a 0, pero la rueda de las 7R (LTP) se queda en el ultimo color y las
+  beam siguen encendidas por el nivel de energia; solo `W` (AUTO colores)
+  devuelve la rueda. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md §5.
+- [x] 2026-09-26 - **`<ExcludeFade>` en la rueda de las 7R: confirmado en el
+  DMX.** 1297 lecturas cada 35 ms durante 45 s de AUTO: la rueda salta de un
+  valor de slot a otro sin ningun intermedio en los 14 cambios de color,
+  mientras el resto del rig estaba a mitad de fundido en los mismos
+  instantes. QLC+ 5.2.2 respeta el tag. Evidencia:
+  docs/en-sala-dmx-audit-2026-09-26.md §8.
+- [x] 2026-09-26 - **`HUMO VERT` saca la columna del color de la sala:
+  confirmado en el DMX.** Con `U` mantenido, las cuatro columnas de humo LED
+  siguen la rueda de AUTO o el color fijo que corra (`Todo Negro` la deja
+  apagada, Rig Cyan la deja cyan); nunca sale blanca. Evidencia:
+  docs/en-sala-dmx-audit-2026-09-26.md §10.
+- [x] 2026-09-26 - **Confirm JUGAR on site: confirmado en el DMX.** Con AUTO
+  corriendo, el pick Rig Rojo pone todo el rig, incluidas las 7R y las
+  barras, en rojo; F1 (CHARLA) suelta el pick; `W` devuelve la rueda.
+  Variante medida: pulsar Q otra vez con AUTO encendido apaga AUTO y deja el
+  pick corriendo. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md §11.
+- [x] 2026-09-26 - **Momento Locura ya no abre como pared blanca plana:
+  confirmado en el DMX.** 60 muestras a 250 ms: los dimmers de CromoWash,
+  CLB, Vortex y Mini Led viajan en chase (34-49 valores distintos entre 0 y
+  253) y el color viene de la rueda (rojo, UV y rosa en 15 s), CromoWash
+  blanco en 0 de 60 muestras. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md
+  §17.
+
 - [x] 2026-09-26 - **La tablet con el show de `main` (firmware v90),
   probada de punta a punta en el mini.** v90 lleva dmxdesk v0.1.1 (mapa
   4da61399..., show 12a75704...). Con QLC+ Vibra abierto en el mini (web
