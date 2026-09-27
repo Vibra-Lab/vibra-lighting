@@ -19,6 +19,21 @@
 
 #### 2026-09-27 - en-sala fixes shipped in qlctool v0.1.9, measured on the DMX
 
+- [-] 2026-09-27 - **The `vibra` GitHub name cannot be requested any more.**
+  Owner: "Haz tu lo de github". Signed in to the GitHub help portal as
+  CristianDeluxe (Orca browser, 1Password TOTP): the old
+  `support.github.com/request/username` form is gone (redirects to
+  `help.github.com`, `/request/username` is a 404), the contact flow offers
+  only Copilot, Codespaces, Repositories, Education, Sign-in issues and
+  Billing for this account, and the virtual assistant fails with a connection
+  error inside Orca. The docs settle it: "GitHub Support cannot release the
+  unavailable username for you" (Changing your GitHub username) and "Valid
+  trademark-related complaints are the only requests we review for possible
+  release of a username that is already claimed" (GitHub Username Policy),
+  both read 2026-09-27. Only a registered VIBRA trademark held by the owner
+  would reopen it, through the Trademark Policy complaint, not Support. The
+  earlier ticket #4644643 (detach the BusiRocket fork) is archived and moot:
+  the fork was deleted the same day.
 - [x] 2026-09-27 - **`tieneslavibra` is a plain repository under `Vibra-Lab`;
   the BusiRocket fork is deleted.** Owner: "borrarlo y subirlo como repo
   nuestro, olvidemosnos de forks". `Vibra-Lab/tieneslavibra` created private,

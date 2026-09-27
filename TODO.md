@@ -147,9 +147,6 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   `DeluxeProducciones/DMX-Fixtures`. La org `DeluxeProducciones` sigue
   existiendo vacia (0 repos, comprobado 2026-09-27); borrarla es decision del
   dueño y mata esa redireccion, asi que primero re-apuntar el clon.
-- [ ] **Pedir el nombre `vibra` a GitHub** (decidido 2026-09-24): hoy es una
-  cuenta personal de 2015 sin repos. Siguiente: redactar la solicitud para que
-  la envie el dueño por support.github.com.
 ### D. Partir este repo (cada parte con su propio diseño)
 
 Reparto propuesto, cada parte a la org `spectalive` (salvo el show, que se
