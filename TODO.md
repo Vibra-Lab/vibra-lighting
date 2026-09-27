@@ -233,9 +233,10 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   `DMX-Fixtures-qlctool` worktree and its branch removed). The MacBook's
   checkout was renamed and synced the same day (`4ed6b9d`, venv rebuilt,
   `install --check` reported 2 of 30 files behind, cleared over ssh the same
-  evening: 2 copied, 30 of 30). The toolkit pin moved to `v0.1.11` on
-  2026-09-27 (a new `duplicate_fixture_id` rule, no byte of the show
-  changes): mini reinstalled, 33 passed, `vibra_compare --descriptions
+  evening: 2 copied, 30 of 30). The toolkit pin moved to `v0.1.11` and then
+  `v0.1.12` on 2026-09-27 (new rules `duplicate_fixture_id`,
+  `unreachable_function` and `help_names_frame`, a lone fixture accepted; no
+  byte of the show changes): mini reinstalled, 33 passed, `vibra_compare --descriptions
   --validate` identical x3 and loaded, `check` clean on Vibra-split; the
   MacBook's venv was reinstalled from the new pin the same evening. The show
   Mac was still off the network at 17:39 (Bonjour lists only the MacBook, the
