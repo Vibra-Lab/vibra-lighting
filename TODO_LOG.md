@@ -17,6 +17,21 @@
 
 ### 2026-09
 
+#### 2026-09-27 - toolkit v0.1.12 pinned: two console rules, a lone fixture accepted
+
+- [x] 2026-09-27 - **qlctool `v0.1.12` fijado en `requirements.txt`.** Cierra los
+  ultimos items de teclado de la revision de la ronda G: regla
+  `unreachable_function` (aviso: funcion construida que ningun widget de la
+  consola ni paso de chaser/coleccion/secuencia/show alcanza; sobre el sweep
+  destapo dos bugs del generador en rigs solo-beams y solo-pixeles, arreglados
+  en la causa), regla `help_names_frame` (error: linea de ayuda de la pagina 4
+  que nombra mezclas o matrices sin marco en su pagina), y el fixture solo:
+  minimo de un grupo con un fixture, ping-pong solo con dos que atenuan,
+  gemelos «Simultaneo» solo con dos cabezas, y `tap_dial` lee las duraciones
+  reales. Aqui: 33 pasan, `vibra_compare --descriptions --validate` identico
+  x3 y cargado, `check` limpio en Vibra y Vibra-split; ningun byte cambia.
+  MacBook reinstalado en v0.1.12 (33 pasan).
+
 #### 2026-09-27 - toolkit v0.1.11 pinned, BlenderDMX patch sent upstream
 
 - [x] 2026-09-27 - **Parche de `SO_REUSEPORT` subido a BlenderDMX.** Rama
