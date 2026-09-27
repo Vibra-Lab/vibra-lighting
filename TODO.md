@@ -243,12 +243,6 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   which does not use the toolkit; its remote branch was deleted on 2026-09-25
   (merged, `80261d0`), the local branch stays until the launcher is pointed
   at another checkout (`install.py --workspace`).
-- [ ] **`QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi` still names the toolkit's old
-  in-repo path in its generated header comment (2026-09-25).** It is
-  byte-tested against `qlctool input-profile` of the pinned release, so it is
-  left as generated. Smallest next step: when a toolkit release changes the
-  header, bump the tag here and regenerate the profile.
-
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
 Decision del dueño, 2026-09-23: el 3D de QLC+ 5 no vale como visor del show
@@ -786,12 +780,6 @@ que queda.
   Enttec DMX USB Pro API (Pico-DMX + dmxusb, glue ~100 lines, QLC+ detects it
   as a Pro); fallback firmware rp2040-dmxsun (Art-Net over USB, no code).
   Shopping list and wiring table in the doc.
-- [ ] **Run `qlctool check` before every show file leaves this repo.** It reads
-  what the room will do rather than whether QLC+ can load the file, and it found
-  four bugs on its first run. `.venv/bin/qlctool check
-  "QLC+ Setups/Vibra-split.qxw"` from the repository root. New rule when something misbehaves: find
-  the cause, add a rule, add a dated regression test, run it over all three
-  workspaces — written down in the repo's `CLAUDE.md`.
 - [~] **Recuperado lo que el show viejo hacía y el generado perdió (auditoría
   2026-08-28, implementado 2026-08-29 — pendiente solo de verlo en el rig).**
   Informe completo en `docs/old-vs-new-audit-2026-08-28.md`; regresiones en
@@ -1039,6 +1027,10 @@ que queda.
   cell (`--group-size` first). **Only `Vibra.qxw` still has this** (checked
   2026-08-31): the split patches each CLB2.4 four times, one fixture per head,
   and all eight are in `PAR`. So it dies with `Vibra.qxw` if the split wins.
+  **2026-09-27, v0.1.9 (regla D9):** los fixtures sin grupo entran en las
+  escenas del primer banco, asi que las CLB2.4 ya siguen el banco 1 en
+  `Vibra.qxw` (medido en el DMX, docs/en-sala-dmx-reaudit-2026-09-27.md §6).
+  Queda solo la matriz, que exige el grupo.
 - [ ] Check on site how the 50-degree truss PARs sit over the DJ. The measured
   angle lands them at z=6417 - 1,9 m past the deck - with the beam passing about
   35 cm over his head, against 2,8 m at the 60 degrees the plot carried before.
