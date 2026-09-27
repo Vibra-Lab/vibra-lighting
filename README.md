@@ -1,4 +1,4 @@
-# DMX-Fixtures - the Vibra lighting show
+# vibra-lighting - the Vibra lighting show
 
 Everything the Vibra venue's lighting runs on: the fixture definitions
 verified against their manuals, the QLC+ workspaces the show plays from, the

@@ -144,19 +144,12 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 - [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
   `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy
   funciona por la redireccion de GitHub, que se rompe si alguien crea otro
-  `DeluxeProducciones/DMX-Fixtures`.
+  `DeluxeProducciones/DMX-Fixtures`. La org `DeluxeProducciones` sigue
+  existiendo vacia (0 repos, comprobado 2026-09-27); borrarla es decision del
+  dueño y mata esa redireccion, asi que primero re-apuntar el clon.
 - [ ] **Pedir el nombre `vibra` a GitHub** (decidido 2026-09-24): hoy es una
   cuenta personal de 2015 sin repos. Siguiente: redactar la solicitud para que
   la envie el dueño por support.github.com.
-- [!] **`BusiRocket/tieneslavibra` no se puede transferir a `Vibra-Lab`.**
-  Es un fork privado de `dovaldev/tieneslavibra` (usuario), y GitHub responde
-  `422 Repository can't be transferred`, tambien con los forks privados
-  permitidos en `Vibra-Lab` (se probo y se volvio a dejar en `false`). Los
-  otros cinco ya se movieron (ver `TODO_LOG.md`). Siguiente: pedir a GitHub
-  Support que lo desvincule de la red de forks ("detach fork") y transferirlo
-  despues; sus 4 secretos de despliegue y su deploy key viajan con el repo, y
-  el clon local `~/p/tieneslavibra` pasa a `Vibra-Lab` con un `remote set-url`.
-
 ### D. Partir este repo (cada parte con su propio diseño)
 
 Reparto propuesto, cada parte a la org `spectalive` (salvo el show, que se
@@ -238,11 +231,13 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   passed, `install --check` 0). Next: the steps in AGENTS.md "Reinstalling
   after the extraction" on the show Mac (`vibra-oficina`, off the network on
   2026-09-25: no Bonjour, `192.168.1.56` silent). The Mac mini's launcher
-  (spectalive/qlc-launcher in `~/p/qlc-launcher` since 2026-09-26) opens the
-  workspace in the worktree `~/p/DMX-Fixtures-qlctool` (branch `qlctool`),
-  which does not use the toolkit; its remote branch was deleted on 2026-09-25
-  (merged, `80261d0`), the local branch stays until the launcher is pointed
-  at another checkout (`install.py --workspace`).
+  (spectalive/qlc-launcher in `~/p/qlc-launcher` since 2026-09-26) opens
+  `~/p/vibra-lighting/QLC+ Setups/Vibra.qxw` since 2026-09-27 (checkout
+  renamed from `DMX-Fixtures`, launcher reinstalled, self-test passed, the
+  `DMX-Fixtures-qlctool` worktree and its branch removed). The MacBook's
+  checkout was renamed and synced the same day (`4ed6b9d`, venv rebuilt,
+  `install --check` reports 2 of 30 files behind: run `qlctool install`
+  there when it next runs a show).
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
 Decision del dueño, 2026-09-23: el 3D de QLC+ 5 no vale como visor del show
@@ -726,7 +721,7 @@ que queda.
   (`QLC+ Setups/Vibra.pads.json`, de `qlctool pad-palette`): atenuado en reposo, full al activarse el
   botón en QLC+. Los botones de la consola llevan el mismo color. Verificado:
   QLC+ feedback -> pad enciende. **Se instala una vez con
-  `~/p/smc-pad/install-bridge.sh ~/p/DMX-Fixtures-qlctool/"QLC+ Setups/Vibra.pads.json"`**
+  `~/p/smc-pad/install-bridge.sh ~/p/vibra-lighting/"QLC+ Setups/Vibra.pads.json"`**
   (hoy no esta instalado en el mini: pide el pad delante y aceptar el
   permiso de Bluetooth; en el `TODO.md` de smc-pad) y arranca solo en cada inicio de sesión
   (agente de launchd, `.app` firmada, se resucita si se cae — verificado

@@ -1,4 +1,4 @@
-# DMX-Fixtures
+# vibra-lighting
 
 The Vibra lighting show: the fixture definitions, the QLC+ workspaces, and
 the tests that prove the pinned `qlctool` release (https://github.com/spectalive/qlctool),
