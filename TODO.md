@@ -1189,3 +1189,15 @@ La deuda de calidad del toolkit vive en el `TODO.md` de spectalive/qlctool
 desde el 2026-09-26 (ronda G): ratchets de ruff y mypy, baseline estructural
 de codeality y el siguiente fichero a partir (`live_console.py`). Este repo ya
 no tiene codigo de toolkit propio.
+
+- [ ] **Al fijar un qlctool posterior a `v0.1.12`, actualizar los imports que
+  la limpieza estructural renombro (2026-09-27).** El toolkit renombro sus
+  modulos para que cada fichero lleve el nombre de su unidad: `qlctool.library`
+  es ahora `qlctool.fixture_library` (importado en `tests/vibra_compare.py` y
+  `tests/test_shipped_deskmap.py`) y `qlctool.definition_schema` es
+  `qlctool.definition_errors` (en `tests/test_definition_schema.py`). Los
+  siguientes lotes (un modulo por declaracion) pueden mover tambien
+  `SCHEMA_PATH`, `SYSTEM_FIXTURES`, `PROFILE_NAME`, `DEFAULT_LINE_NAME`,
+  `SMC_PAD_BINDINGS`, `pad_channel`, `find_local` y `localname`. Paso: al
+  cambiar el pin, `pytest` aqui y corregir los imports que fallen; el pin
+  `v0.1.12` actual no se ve afectado.
