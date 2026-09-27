@@ -82,10 +82,21 @@ vive en `~/p/brand-finder/TODO.md`.
   `QV4::GCStateMachine::transition`. Informe:
   `~/Library/Logs/DiagnosticReports/qlcplus-qml-2026-09-26-212658.ips` (mini).
   Nadie lo toco; la tablet lo estaba usando por su web. Relanzado por el
-  lanzador (pid 56012) y AUTO arrancado desde la tablet. Siguiente: buscar en
-  `~/p/qlcplus` y en los issues de QLC+ un fallo del GC de QML con la consola
-  web abierta, y dejar QLC+ con AUTO varias horas en el mini para ver si se
-  repite.
+  lanzador (pid 56012) y AUTO arrancado desde la tablet.
+  Investigado el 2026-09-27 (`.superpowers/sdd/qlcplus-crash-research.md`,
+  local): Qt 6.10.3; en el momento del fallo el hilo MasterTimer estaba dentro
+  de `Function::requestAttributeOverride`. `m_attributes` y `m_overrideMap`
+  (`engine/src/function.h` en `~/p/qlcplus`) no tienen mutex, y los escriben a
+  la vez el hilo de la GUI (widgets movidos por la web) y el MasterTimer
+  (Collection/Chaser/Show en cada tick): una carrera que corrompe el heap y
+  que el GC incremental de QML encuentra despues. Hipotesis plausible, no
+  reproducida; no hay issue igual en QLC+ (el #1308 es otro fallo por la web).
+  `QV4_GC_TIMELIMIT=0` en el lanzador solo cambiaria donde se ve el fallo, no
+  lo quita, asi que no se aplica. A las 02:17 del 2026-09-27 el pid 56012
+  llevaba 4 h 30 min sin repetirlo. Siguiente: dejar AUTO varias horas en el
+  mini (pid 56012) y mirar `~/Library/Logs/DiagnosticReports/` por otro
+  `qlcplus-qml-*.ips`; si se repite con la misma pila, el arreglo es un lock en
+  `Function` y va como PR a QLC+ solo con la palabra del dueno.
 - [~] **Barrido de la tablet v90 contra un QLC+ de prueba (2026-09-26).**
   Toques inyectados en `/dev/input/event0` sobre cada control de 7 paginas
   (SPEED fuera), leyendo el estado de la funcion y el DMX por la web de un
