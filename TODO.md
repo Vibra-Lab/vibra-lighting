@@ -3,7 +3,7 @@
 > The backlog for this repo: the rig, the fixture definitions, the QLC+
 > workspaces and the show's tests. The toolkit, `qlctool`, is
 > https://github.com/spectalive/qlctool since 2026-09-25; its debt is in
-> that repository's `TODO.md`. Last reviewed: 2026-09-26. History coverage:
+> that repository's `TODO.md`. Last reviewed: 2026-09-27. History coverage:
 > Complete.
 >
 > States: `[ ]` pending · `[~]` partial or unverified · `[!]` blocked · `[x]`
@@ -83,7 +83,7 @@ vive en `~/p/brand-finder/TODO.md`.
   show viejo y en el nuevo, y 599 a 0.6 s con tres clientes conectando y
   consultando, 6 min cada uno, sin caida. No depende del show.
 - [ ] **El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29.** No
-  respondia por Bonjour el 2026-09-24. Siguiente: cuando este en red,
+  respondia por Bonjour el 2026-09-24 ni el 2026-09-27. Siguiente: cuando este en red,
   sincronizar como en `docs/show-operation.md` y comprobar el hash.
 - [ ] **Historial reescrito el 2026-09-25: los demas clones no pueden hacer
   `git pull`.** Se quito la linea de sesion de 179 mensajes y las menciones a
@@ -165,12 +165,11 @@ queda en `Vibra-Lab/vibra-lighting`).
   https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
   tag (`requirements.txt`).
 - [~] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/` se quedan aqui; las
-  verificadas estan en PRs abiertos el 2026-09-26 (qlcplus #2166-#2167, OFL
-  #6164-#6165, ver `TODO_LOG.md`); el perfil del SMC-PAD (#2168) lo fusiono
-  el mantenedor el mismo dia. Siguiente: atender las revisiones; si el
-  mantenedor de QLC+ pide ficheros guardados con QLC+, abrir y guardar la MiN
-  Wash en su editor. Las retenidas se mandan cuando
-  se confirmen en sala.
+  verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y
+  #2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),
+  igual que el perfil del SMC-PAD (#2168); OFL #6164 y #6165 siguen abiertos
+  sin ningun comentario el 2026-09-27. Siguiente: atender la revision de OFL
+  cuando llegue. Las retenidas se mandan cuando se confirmen en sala.
 - **Pad**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
   Vibra: lee `QLC+ Setups/Vibra.pads.json`, que escribe `qlctool pad-palette`
@@ -233,8 +232,14 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   renamed from `DMX-Fixtures`, launcher reinstalled, self-test passed, the
   `DMX-Fixtures-qlctool` worktree and its branch removed). The MacBook's
   checkout was renamed and synced the same day (`4ed6b9d`, venv rebuilt,
-  `install --check` reports 2 of 30 files behind: run `qlctool install`
-  there when it next runs a show).
+  `install --check` reported 2 of 30 files behind, cleared over ssh the same
+  evening: 2 copied, 30 of 30). The toolkit pin moved to `v0.1.11` on
+  2026-09-27 (a new `duplicate_fixture_id` rule, no byte of the show
+  changes): mini reinstalled, 33 passed, `vibra_compare --descriptions
+  --validate` identical x3 and loaded, `check` clean on Vibra-split; the
+  MacBook's venv was reinstalled from the new pin the same evening. The show
+  Mac was still off the network at 17:39 (Bonjour lists only the MacBook, the
+  mini and taq102).
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
 
 Decision del dueño, 2026-09-23: el 3D de QLC+ 5 no vale como visor del show
@@ -277,10 +282,6 @@ cerrado en `TODO_LOG.md`).
   (la linea exacta esta en `docs/blenderdmx.md` de spectalive/qlc-blenderdmx). Falta decidir si la escribe
   `qlctool` (con la IP del mini como parametro) o se pone a mano en el Mac
   del show. Mientras, la copia probada no esta en el repo.
-- [ ] **Subir el parche de `SO_REUSEPORT` a BlenderDMX.** Commit `de60af6` en
-  `~/p/blender-dmx` (main local sobre `569040f` de upstream): sin el, Blender
-  no puede escuchar en 6454 si QLC+ ya esta en la misma maquina. Hace falta un
-  fork en GitHub y un PR a `open-stage/blender-dmx`.
 - [ ] **Decidir: arreglar el 3D de QLC+ o seguir con BlenderDMX.** Medido en
   el codigo de QLC+ (`~/p/qlcplus`, master `82e541d`) el 2026-09-23, esfuerzo
   para alguien nuevo en ese codigo, sin medir en pantalla:

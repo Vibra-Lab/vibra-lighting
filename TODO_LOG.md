@@ -17,6 +17,24 @@
 
 ### 2026-09
 
+#### 2026-09-27 - toolkit v0.1.11 pinned, BlenderDMX patch sent upstream
+
+- [x] 2026-09-27 - **Parche de `SO_REUSEPORT` subido a BlenderDMX.** Rama
+  `artnet-reuseport` en el fork `spectalive/blender-dmx` (`abfb673`: el
+  commit `de60af6` del mini sin su trailer de sesion, mismo arbol), PR
+  https://github.com/open-stage/blender-dmx/pull/366 contra `main` de
+  `open-stage/blender-dmx`, abierto el 2026-09-27 con la prueba en macOS
+  (Blender 5.2.2 y QLC+ 5.2.2 a la vez en 6454). Falta la revision del
+  mantenedor; el checkout `~/p/blender-dmx` del mini queda en esa rama.
+- [x] 2026-09-27 - **qlctool `v0.1.11` fijado en `requirements.txt`.** Tres
+  items de teclado de la revision de la ronda G (2026-09-26) cerrados en el
+  toolkit: regla `duplicate_fixture_id` (dos fixtures parcheados con el mismo
+  ID, error), tests propios de `wheel_only_fixture_ids`, y E402 y ARG001
+  fuera del ratchet de ruff. Gate del toolkit verde (997 pasan, mypy 0,
+  baseline 0 nuevos). Aqui: 33 pasan, `vibra_compare --descriptions
+  --validate` identico x3 y cargado por QLC+, `check` limpio en Vibra-split;
+  ningun byte de los tres workspaces cambia.
+
 #### 2026-09-27 - en-sala fixes shipped in qlctool v0.1.9, measured on the DMX
 
 - [-] 2026-09-27 - **The `vibra` GitHub name cannot be requested any more.**
