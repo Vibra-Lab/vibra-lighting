@@ -17,6 +17,31 @@
 
 ### 2026-09
 
+#### 2026-09-27 - en-sala fixes shipped in qlctool v0.1.9, measured on the DMX
+
+- [x] 2026-09-27 - **Barrido de la tablet, ahora v91 con el show v0.1.9.**
+  Toques inyectados en `/dev/input/event0` sobre cada control de 7 paginas
+  (SPEED fuera) contra un QLC+ 5.2.2 sin E/S en :9997: 154 de 154 OK. La
+  tablet registra ya cada toggle enviado o descartado (dmxdesk v0.1.2), que
+  era lo que faltaba para rastrear el fallo de 25 en CABEZAS de la segunda
+  pasada del 2026-09-26; no se repitio. La primera pasada de hoy se corto a
+  los 4 controles porque ese QLC+ de prueba se cayo (ver el item del crash en
+  TODO.md). Aceptacion aparte de `releaseTo`: 22 de 22 (taq102 TODO_LOG).
+- [x] 2026-09-27 - **Fallos que el DMX destapo el 2026-09-26.** Cada causa
+  tiene su regla en `qlctool check` y su arreglo en el generador (qlctool
+  v0.1.9, fijado en a8f2430): picks soltados vuelven al suelo del estado
+  (`releaseTo` y suelos por familia, regla D8), MACs en la ventana en looks de
+  solo beams (D7), CLB2.4 y LED de humo en el primer banco (D9), MiN Wash
+  estroban por ForceLTP (D1, D2). La carrera AUTO+pick no se repite con 0.2 s
+  de separacion y dmxdesk v0.1.2 espacia sus toggles 200 ms. Re-medido sobre
+  el motor: ningun item falla por la causa que lo tumbo. Evidencia: docs/en-sala-dmx-reaudit-2026-09-27.md.
+- [x] 2026-09-27 - **`STROBO` / `STROBO SUAVE` mantenidos: estroban.** MiN
+  Wash 236/217 y columnas LED de humo 247/200 (reglas D2, D3). Evidencia:
+  docs/en-sala-dmx-reaudit-2026-09-27.md §7.
+- [-] 2026-09-27 - **Decidir en sala la matriz de dos colores sobre Cabezas.**
+  Obsoleto por la regla D6: Cabezas ya no lleva matrices porque ninguna celda
+  montada podia mostrarlas, y `newshow` las rechaza. Evidencia: docs/en-sala-dmx-reaudit-2026-09-27.md §12.
+
 #### 2026-09-26 - en-sala backlog judged from the engine's DMX output
 
 - [x] 2026-09-26 - **"Quitar y poner un color no apaga las beam": confirmado
