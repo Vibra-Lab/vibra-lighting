@@ -451,8 +451,15 @@ queda espera al rig o a otro repositorio:
   orden de escenario y difiere de la figura normal en las siete figuras, en
   beams y MAC. Diamante aun lleva el tilt de las 7R a 200-240, fuera de la
   ventana (207-234), en un 30% de las muestras (Hoja un 7%): item propio en
-  qlctool. Queda solo lo de sala: si 8 s por figura va rapido para una 7R y si
-  el texto de los 26 picks se lee en la tablet. Detalle: docs/en-sala-dmx-reaudit-2026-09-27.md §2.
+  qlctool. Detalle: docs/en-sala-dmx-reaudit-2026-09-27.md §2.
+
+  **2026-09-27, v0.1.10: Diamante arreglado en el DMX.** La regla
+  `movement_window` ignoraba `<Rotation>`; ahora muestrea la figura girada
+  con las formulas de QLC+ y el generador dimensiona las figuras giradas por
+  su alcance (Diamante 13x20, Hoja 16x18, Cascada Beams 13x13). Medido en el
+  motor: las cuatro 7R quedan en pan 62-102 / tilt 207-233 en las siete
+  figuras. Queda solo lo de sala: si 8 s por figura va rapido para una 7R y si
+  el texto de los 26 picks se lee en la tablet.
 - [ ] **Confirmar que los golpes de color salen del mismo color en toda la
   sala.** El dueño vio "los rgb salen como mezclados con blanco". La mitad era
   el emisor White sumándose al RGB (cerrado, `blanco pagado dos veces`) y la
