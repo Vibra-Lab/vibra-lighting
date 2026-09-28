@@ -18,8 +18,8 @@ import tempfile
 from pathlib import Path
 
 from qlctool.checks.check_workspace import check_workspace
-from qlctool.library import FixtureLibrary
-from qlctool.validate import validate_workspace
+from qlctool.fixture_library import FixtureLibrary
+from qlctool.validate_workspace import validate_workspace
 from qlctool.workspace import Workspace
 from rig_root import RIG_ROOT
 from vibra_regen import regenerate_vibra

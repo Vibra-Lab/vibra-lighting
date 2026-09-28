@@ -17,6 +17,19 @@
 
 ### 2026-09
 
+#### 2026-09-28 - toolkit v0.2.0 pinned: the structural refactor
+
+- [x] 2026-09-28 - **qlctool `v0.2.0` fijado en `requirements.txt`.** El
+  toolkit se reorganizo entero (un fichero por unidad, nombrado como ella;
+  baseline de codeality de 202 hallazgos a 6) sin cambiar comportamiento.
+  Aqui solo cambiaron imports de tests: `qlctool.library` ->
+  `qlctool.fixture_library`, `qlctool.definition_schema` ->
+  `qlctool.definition_errors`, `qlctool.input_binding` ->
+  `qlctool.pin_midi_input`, `qlctool.xmlutil` -> `qlctool.find_local` y
+  `qlctool.localname`, `qlctool.validate` -> `qlctool.validate_workspace`.
+  33 pasan, `vibra_compare --descriptions --validate` identico x3 y cargado
+  en QLC+, `check` exit 0 en Vibra, Vibra-beats y Vibra-split.
+
 #### 2026-09-27 - toolkit v0.1.12 pinned: two console rules, a lone fixture accepted
 
 - [x] 2026-09-27 - **qlctool `v0.1.12` fijado en `requirements.txt`.** Cierra los
