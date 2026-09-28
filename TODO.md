@@ -1198,6 +1198,9 @@ no tiene codigo de toolkit propio.
   `qlctool.definition_errors` (en `tests/test_definition_schema.py`). Los
   siguientes lotes (un modulo por declaracion) pueden mover tambien
   `SCHEMA_PATH`, `SYSTEM_FIXTURES`, `PROFILE_NAME`, `DEFAULT_LINE_NAME`,
-  `SMC_PAD_BINDINGS`, `pad_channel`, `find_local` y `localname`. Paso: al
-  cambiar el pin, `pytest` aqui y corregir los imports que fallen; el pin
-  `v0.1.12` actual no se ve afectado.
+  `SMC_PAD_BINDINGS`, `pad_channel`, `find_local` y `localname`. Ya movidos
+  (lote 7, 2026-09-28): `qlctool.xmlutil.find_local` es
+  `qlctool.find_local.find_local` y `qlctool.validate.validate_workspace` es
+  `qlctool.validate_workspace.validate_workspace`. Paso: al cambiar el pin,
+  `pytest` aqui y corregir los imports que fallen; el pin `v0.1.12` actual no
+  se ve afectado.
