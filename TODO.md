@@ -1201,6 +1201,11 @@ no tiene codigo de toolkit propio.
   `SMC_PAD_BINDINGS`, `pad_channel`, `find_local` y `localname`. Ya movidos
   (lote 7, 2026-09-28): `qlctool.xmlutil.find_local` es
   `qlctool.find_local.find_local` y `qlctool.validate.validate_workspace` es
-  `qlctool.validate_workspace.validate_workspace`. Paso: al cambiar el pin,
-  `pytest` aqui y corregir los imports que fallen; el pin `v0.1.12` actual no
-  se ve afectado.
+  `qlctool.validate_workspace.validate_workspace`. Ya movidos (lote 8,
+  2026-09-28): `qlctool.xmlutil.localname` es `qlctool.localname.localname`;
+  `qlctool.input_binding.DEFAULT_LINE_NAME` y `pin_midi_input` son
+  `qlctool.pin_midi_input.DEFAULT_LINE_NAME` y `pin_midi_input`; el modulo
+  `qlctool.validate` ya no existe en absoluto - su otra mitad, la clase
+  `ValidationResult`, es ahora `qlctool.validation_result.ValidationResult`.
+  Paso: al cambiar el pin, `pytest` aqui y corregir los imports que fallen; el
+  pin `v0.1.12` actual no se ve afectado.
