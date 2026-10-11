@@ -13,6 +13,8 @@
 > rewritten in the move; the older prose entries and the newer bullet entries
 > are both left as they were written.
 
+<!-- tadu:log v1 since 2026-10-12 -->
+
 ## 2026
 
 ### 2026-09
@@ -1182,7 +1184,6 @@ DMX-Fixtures gate on red; its two helpers are `install_state.py` and
 `gobo_folder.py` now, `baseline-py baseline check` reads `0 new, 170 known` and
 the gate is green again (DMX-Fixtures, branch `qlctool`, 2026-09-02).
 
-
 ### 2026-08
 
 - [x] 2026-08-28 - **Vibra Eventos (DMX):** five show-design upgrades, Codex
@@ -1797,4 +1798,3 @@ stale and the second one was hiding three real defects.
   All six verified against the code and fixed, with tests, before the commits.
 - Evidence: `pytest tests/ -q` -> 352 passed; three workspaces regenerated and
   loaded clean in headless QLC+; `qlctool check` silent on each (503 buttons).
-
