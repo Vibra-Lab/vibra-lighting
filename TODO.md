@@ -168,7 +168,7 @@ queda en `Vibra-Lab/vibra-lighting`).
   verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y
   #2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),
   igual que el perfil del SMC-PAD (#2168); OFL #6164 y #6165 siguen abiertos
-  sin ningun comentario el 2026-09-27. Siguiente: atender la revision de OFL
+  sin ningun comentario ni revision el 2026-10-19. Siguiente: atender la revision de OFL
   cuando llegue. Las retenidas se mandan cuando se confirmen en sala.
 - **Pad**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
@@ -238,7 +238,12 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   `unreachable_function` and `help_names_frame`, a lone fixture accepted; no
   byte of the show changes): mini reinstalled, 33 passed, `vibra_compare --descriptions
   --validate` identical x3 and loaded, `check` clean on Vibra-split; the
-  MacBook's venv was reinstalled from the new pin the same evening. The show
+  MacBook's venv was reinstalled from the new pin the same evening. It
+  moved to `v0.2.0` on 2026-09-28 (`afa4527`) and to `v0.2.1` on 2026-10-19
+  (a colour wheel's desk tile shows its steps' colours instead of their
+  merged maximum; only the four wheel tiles of `Vibra.desk.json` change):
+  mini reinstalled, 33 passed, `vibra_compare --validate` identical x3 and
+  loaded, `check` clean on Vibra-split. The show
   Mac was still off the network at 17:39 (Bonjour lists only the MacBook, the
   mini and taq102).
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
@@ -382,7 +387,19 @@ cerrado en `TODO_LOG.md`).
         Tests de QLC+: `ninja check` necesita `lxml` en el PATH o da verde
         sin correr nada; con el, engine pasa salvo
         `InputOutputMap_Test::profileDirectories` (ruta de bundle macOS,
-        engine sin tocar) y el script para ahi. Falta: lo que diga el autor.
+        engine sin tocar) y el script para ahi. Estado el 2026-10-19 (`git
+        fetch origin` en `~/p/qlcplus`, `master` en `4c13ab36` del
+        2026-10-18): #2159 lo cerro mcallegari el 2026-10-03 con "Superseded
+        by 8a7fc78df4c498809ab7d1c49a704131833f1a7d" ("qmlui: improve 3d
+        rendering of multi-head color changers (e.g. T-Bars)", tambien la
+        inclinacion de una barra de beams motorizada; ya en `master`, 43
+        commits por detras), y su rama ya no entra limpia (`git merge-tree`:
+        conflicto en `qmlui/mainview3d.cpp`). #2160, #2161 y #2162 siguen
+        abiertos, 68 commits por detras de `master`, y los tres entran sin
+        conflicto (`git merge-tree --write-tree` sale 0; GitHub dice
+        MERGEABLE); #2162 sigue encima de #2160. En #2161 mjcmatrix comento
+        el 2026-10-09 que lo probara en Linux (Ubuntu, Debian; Intel ADL-N y
+        GeForce MX250). Falta: lo que diga el autor y la prueba de mjcmatrix.
       - Ojo con `xctrace record`: una grabacion de 8 s se quedo colgada 8
         minutos; lanzarlo siempre con `timeout`.
   - **Las LED Spray Fog echan el humo en horizontal en el 3D.** `smoke.dae` echa el humo
