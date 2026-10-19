@@ -487,11 +487,6 @@ queda espera al rig o a otro repositorio:
   tambien: 7R a 234, MiN Wash a 236); queda mirarlo en sala si la rueda de
   las 7R (item de nombres de la rueda) manda el color correcto. Detalle:
   docs/en-sala-dmx-audit-2026-09-26.md §3.
-- [ ] **El desk de la tablet tiene que dibujar el campo `icon`.** `Vibra.desk.json`
-  lleva desde hoy un `icon` por control (111 de 138), separado del `caption`
-  (`leading_glyph`); el esquema sigue siendo 2 porque añadir un campo es
-  compatible. La app vive en otro repositorio: hasta que lo pinte, la tablet
-  sigue sin iconos aunque el mapa ya los traiga.
 - [ ] **Iconos en el resto de la consola.** 134 de 600 botones llevan glifo:
   los estados, los golpes, el humo, las capas y los picks de las cinco
   familias. Los bancos de color (teclas 1-0), la librería de matrices y la

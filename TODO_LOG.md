@@ -17,6 +17,16 @@
 
 ## 2026
 
+### 2026-10
+
+- [x] 2026-10-19 — **Repaso del dueño sobre la programación (2026-09-22):** **El desk de la tablet tiene que dibujar el campo `icon`.** `Vibra.desk.json`
+  lleva desde hoy un `icon` por control (111 de 138), separado del `caption`
+  (`leading_glyph`); el esquema sigue siendo 2 porque añadir un campo es
+  compatible. La app vive en otro repositorio: hasta que lo pinte, la tablet
+  sigue sin iconos aunque el mapa ya los traiga.
+  - Result: spectalive/dmxdesk v0.1.4 dibuja el icon de cada control; en la tablet desde la imagen v92 (dmxdesk v0.1.5, mapa de qlctool v0.2.2).
+  - Evidence: dmxdesk fbf61c3 (desk_icon_test: 111 tiles con marca, auditoria de geometria failures=0); taq102 cfb9a27 flasheado 2026-10-19, VERSION map 3e2f3955 = QLC+ Setups/Vibra.desk.json; captura SIGUSR1 /tmp/desk.ppm de SHOW con los iconos en estados, golpes y humo; 148 de 144 controles habilitados contra :9998 del mini
+
 ### 2026-09
 
 #### 2026-09-28 - toolkit v0.2.0 pinned: the structural refactor
