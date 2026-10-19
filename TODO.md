@@ -140,8 +140,12 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   redes"; `spectralive.com` con r es de otro desde 2015, NameBright, asi que se
   lee como el dominio propio): en redes el nombre es `spectalive.com` donde se
   admite el punto (Instagram, TikTok, YouTube) y `spectalive_com` en X, que no
-  lo admite. Siguiente: que el dueño cree esas cuentas (piden su login y su
-  telefono). Marca UE en clases 9 y 42: no por ahora (dueño 2026-10-19: "no
+  lo admite. 2026-10-19: buzon `info@spectalive.com` en nova (alias del sitio
+  busirocket.com en Enhance, MX/SPF en Cloudflare); con el, Instagram
+  `@spectalive_com` (Instagram rechaza `spectalive.com`) y X `@spectalive_com`
+  creados. Siguiente: TikTok (bloqueado por "maximo de intentos", reintentar)
+  y Google/YouTube (falta que el dueño escanee el QR de verificacion en la
+  pestaña de Orca). Credenciales en el access-map del brain. Marca UE en clases 9 y 42: no por ahora (dueño 2026-10-19: "no
   tengo dinero para registrar la marca"); revisar cuando haya ingresos.
 - [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
   `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy
