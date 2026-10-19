@@ -243,7 +243,11 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   (a colour wheel's desk tile shows its steps' colours instead of their
   merged maximum; only the four wheel tiles of `Vibra.desk.json` change):
   mini reinstalled, 33 passed, `vibra_compare --validate` identical x3 and
-  loaded, `check` clean on Vibra-split. The show
+  loaded, `check` clean on Vibra-split. Same day to `v0.2.2` (a Collection
+  over wheels - `mezcla`, `auto`, `tranquilo`, `fiesta`, `locura` - reads its
+  wheels step by step too and loses its #ffffff; only those five tiles of
+  `Vibra.desk.json` change): mini reinstalled, 33 passed, `vibra_compare
+  --validate` identical x3 and loaded, `check` clean on Vibra-split. The show
   Mac was still off the network at 17:39 (Bonjour lists only the MacBook, the
   mini and taq102).
 ## Visor 3D: BlenderDMX en el Mac mini (2026-09-23)
