@@ -37,7 +37,8 @@ al final, que si es trabajo de teclado:
   desde aqui es exactamente el fallo que este repo persigue.
 - **Tres esperan a algo externo**: renombrar la org de GitHub, `xcode-select`
   en el Mac del show (fuera de red), y comprar el reemplazo del dongle DMX.
-- **Una espera una decision del dueño**: quedarse con `Vibra-split.qxw`.
+- **`Vibra-split.qxw`**: el dueño se queda con el (2026-10-19, "supongo");
+  falta abrir los cabezales en abanico y verlo en el 3D y en sala.
 - **La auditoria de capacidades de QLC+** (sliders, MIDI, paletas, XY pad,
   ControlMode, VC Clock) no son defectos: son cosas que el show podria adoptar,
   y cada una cambia como se opera. Se deciden, no se implementan de oficio.
@@ -140,7 +141,8 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
   lee como el dominio propio): en redes el nombre es `spectalive.com` donde se
   admite el punto (Instagram, TikTok, YouTube) y `spectalive_com` en X, que no
   lo admite. Siguiente: que el dueño cree esas cuentas (piden su login y su
-  telefono). Pendiente de decidir: la marca UE en clases 9 y 42.
+  telefono). Marca UE en clases 9 y 42: no por ahora (dueño 2026-10-19: "no
+  tengo dinero para registrar la marca"); revisar cuando haya ingresos.
 - [ ] **Re-apuntar el clon del Mac del show** (`~oficina/DMX-Fixtures`) a
   `git@github.com:Vibra-Lab/vibra-lighting.git` cuando este en red; hoy
   funciona por la redireccion de GitHub, que se rompe si alguien crea otro
@@ -1129,9 +1131,11 @@ que queda.
   each CLB2.4 patched four times, one fixture per PAR head, so all eight can be
   aimed and coloured separately in the 3D view - which QLC+ cannot do for the
   four heads of one fixture (`Fixture3DItem.qml` keeps a single `lightColor`).
-  Open it beside `Vibra.qxw` and say whether it replaces it. If it does, the
+  Owner, 2026-10-19, asked whether to keep it: "supongo" - a tentative yes,
+  not yet seen beside `Vibra.qxw` in the 3D view or on the rig. Before it
+  replaces `Vibra.qxw` (launcher, tablet), the
   plot to keep is `vibra-stage-plot-split.json` and the heads want fanning
-  apart rather than all at `-35`.
+  apart rather than all at `-35`; then the owner confirms it on site.
 - [ ] Set the audio-trigger thresholds on site. **Updated 2026-08-27**: the
   bass band ("Graves") is now bound to `Flash 100%`, one of the GOLPES hits
   (a Scene, Flash mode, Override, outside any solo frame) — not the
