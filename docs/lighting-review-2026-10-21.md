@@ -18,8 +18,20 @@ The captures confirm the patch, colour output and symmetric fixture positions in
 
 `Flash 100%` writes the white wheel slot (`4`) to all four 7R heads and `255` to the RGBW channels of both MAC heads. Its QLC+ button requests Override and ForceLTP. The static scene and semantic checks therefore describe white on those fixtures.
 
-With AUTO running in the isolated QLC+ instance, a held flash was sampled 80 times at roughly 200 ms intervals. In one run, two single API reads briefly differed from white: the 7R wheels showed their AUTO value once, and the MAC RGBW channels showed an AUTO colour once. In a second run using three reads per sample and the median, one sample showed MAC RGBW at zero. The next samples returned to white. This reproduces an intermittent value in QLC+'s web channel snapshot, but does not prove the same frame reached physical DMX output; the instance had no output patch. The flash scene's priority is correct in the generated workspace. A capture from the actual output while AUTO and flash overlap is the remaining test before changing flash programming.
+With AUTO running in the isolated QLC+ instance, a held flash was sampled 80 times at roughly 200 ms intervals. In one run, two single API reads briefly differed from white: the 7R wheels showed their AUTO value once, and the MAC RGBW channels showed an AUTO colour once. In a second run using three reads per sample and the median, one sample showed MAC RGBW at zero. The next samples returned to white. Those web-channel reads alone could not establish what reached an output.
+
+An independent Art-Net capture on 2026-10-21 settled the QLC+ output distinction. A temporary copy of `Vibra.qxw` had all saved inputs, outputs and feedback removed, then one output added with `Plugin="ArtNet" UID="127.0.0.1" Line="0"`. A UDP receiver on loopback port 6454 decoded ArtDmx packets. The operator's QLC+ process on port 9998 and every physical output were untouched. AUTO ran throughout each trial:
+
+| Trigger | Steady Art-Net frames | 7R colour wheels | MAC RGBW |
+| --- | ---: | ---: | ---: |
+| Console Flash button 12, `12|255` | 794 | 0 non-white | 0 non-white |
+| Tablet Flash burst button 574, `574|255` | 302 | 299 non-white | 0 non-white |
+| Tablet burst with `Override="1" ForceLTP="1"` added to its Toggle action | 300 | 298 non-white | 0 non-white |
+
+The four 7R wheel channels were expected to hold white slot `4`; the two MAC heads' 24 RGBW channels were expected to hold `255`. Startup, the first 750 ms after triggering and release were excluded from these steady counts. The tablet burst is a SingleShot Chaser whose private Scene has the same values as `Flash 100%`, but a Toggle starts it with ordinary priority. Later AUTO colour steps reclaim the LTP wheel channels. The actual console Flash button uses Override and ForceLTP, so it holds white. QLC+'s Toggle path ignores those attributes; marking a Chaser button Flash did not run the burst in a separate trial.
+
+A disconnected-client test also matters: after pressing the console Flash button, closing its WebSocket left white output active for 490 further Art-Net frames. Giving the tablet that button and relying only on its eight-second timer would therefore risk a stuck full-output flash when the link fails. Setting the Scene's Duration to 8000 ms and calling `setFunctionStatus|2|0` did not release it. A safe replacement needs both priority and an expiry owned by the controller host; the current tablet burst retains its bounded expiry but cannot guarantee white on the 7R. The USB-DMX wire and fixtures are still unmeasured.
 
 ## Follow-up at the rig
 
-Check the new AUTO figure sequence from the floor at Ambiente, Fiesta and Peak; confirm the mirrored sides and cascade feel coherent. Hold `Flash 100%` over running AUTO while recording physical DMX for the 7R colour wheels and MAC RGBW channels. These are the two points the offline checks and 3D model cannot resolve.
+Check the new AUTO figure sequence from the floor at Ambiente, Fiesta and Peak; confirm the mirrored sides and cascade feel coherent. On the show Mac, capture physical DMX during both the console Flash and tablet Flash burst over AUTO, especially the 7R wheel channels. The isolated Art-Net output proves a controller-side difference; the FT232R interface and fixture response remain to be measured.

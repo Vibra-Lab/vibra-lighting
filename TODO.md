@@ -901,14 +901,17 @@ que queda.
   y el rango 128-255 solo aparece en los picks de Arcoiris. Queda mirarlo en
   sala: los holds y las velocidades. Detalle:
   docs/en-sala-dmx-audit-2026-09-26.md §15.
-- [ ] **Measure intermittent white-flash colour on physical DMX (2026-10-21).**
-  `Flash 100%` statically writes white with Override and ForceLTP. In an
-  isolated QLC+ web-channel probe over AUTO, 2/80 samples briefly showed AUTO
-  wheel or RGBW values; a separate median probe saw MAC RGBW zero in 1/80.
-  The isolated workspace had no output patch, so this does not establish what
-  the fixtures saw. See `docs/lighting-review-2026-10-21.md`. Next: capture
-  physical DMX while holding flash over AUTO, then determine whether the
-  generated scene or QLC+ runtime needs a change.
+- [!] **Give the tablet's white Flash a bounded priority override (2026-10-21).**
+  A loopback Art-Net capture over AUTO found all 794 steady frames white from
+  the console Flash button, but the tablet's bounded burst had an AUTO 7R
+  wheel colour in 299/302 steady frames. Its Chaser is started at ordinary
+  priority; adding Override and ForceLTP to a Toggle did not change that.
+  A direct Flash button stayed on after the WebSocket disconnected, and neither
+  Scene Duration nor `setFunctionStatus` released it. Next: implement a
+  controller-host-owned expiry for a priority Flash without losing the
+  tablet's bounded safety, then repeat the Art-Net capture and measure the
+  physical FT232R output. The show Mac and tablet were unreachable by SSH on
+  2026-10-21. Details: `docs/lighting-review-2026-10-21.md`.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
