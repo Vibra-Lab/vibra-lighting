@@ -901,18 +901,19 @@ que queda.
   y el rango 128-255 solo aparece en los picks de Arcoiris. Queda mirarlo en
   sala: los holds y las velocidades. Detalle:
   docs/en-sala-dmx-audit-2026-09-26.md §15.
-- [!] **Give the tablet's white Flash a bounded priority override (2026-10-21).**
+- [~] **Verify the tablet's bounded priority Flash at the physical rig (2026-10-21).**
   A loopback Art-Net capture over AUTO found all 794 steady frames white from
   the console Flash button, but the tablet's bounded burst had an AUTO 7R
   wheel colour in 299/302 steady frames. Its Chaser is started at ordinary
   priority; adding Override and ForceLTP to a Toggle did not change that.
   A direct Flash button stayed on after the WebSocket disconnected, and neither
-  Scene Duration nor `setFunctionStatus` released it. Next: implement a
-  controller-host-owned expiry for a priority Flash without losing the
-  tablet's bounded safety, then repeat the Art-Net capture and measure the
-  physical FT232R output. The tablet now runs dmxdesk v0.1.7 against the
-  updated show on the Mac mini; the show Mac and physical DMX rig remain
-  unavailable for this measurement. Details:
+  Scene Duration nor `setFunctionStatus` released it. QLC+ now caps Flash on
+  the controller, and every one of the 25 tablet hits in all three shows uses
+  Override and ForceLTP. Loopback Art-Net confirms that Fiesta's 7R wheels
+  remain white for the hit and resume colour after expiry; the automated test
+  also closes the client without a release. The tablet runs dmxdesk v0.1.9 in
+  image v96 and links to the custom QLC+ runtime on the Mac mini. Next:
+  measure the physical FT232R output and fixture response at the rig. Details:
   `docs/lighting-review-2026-10-21.md`.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
