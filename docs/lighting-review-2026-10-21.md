@@ -34,4 +34,6 @@ A disconnected-client test also matters: after pressing the console Flash button
 
 ## Follow-up at the rig
 
+The Mac mini's running QLC+ process was subsequently loaded with the regenerated `Vibra.qxw`; its live widget 574 resolved to the new bounded Flash burst. The USB-connected tablet was updated to dmxdesk v0.1.7 and its SHOW screen linked to that process. A live capture confirms the white swatch, compact master and stop controls, Directo BPM steps and restored icons. This confirms the controller and tablet presentation, not light output at the venue.
+
 Check the new AUTO figure sequence from the floor at Ambiente, Fiesta and Peak; confirm the mirrored sides and cascade feel coherent. On the show Mac, capture physical DMX during both the console Flash and tablet Flash burst over AUTO, especially the 7R wheel channels. The isolated Art-Net output proves a controller-side difference; the FT232R interface and fixture response remain to be measured.

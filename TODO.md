@@ -910,8 +910,10 @@ que queda.
   Scene Duration nor `setFunctionStatus` released it. Next: implement a
   controller-host-owned expiry for a priority Flash without losing the
   tablet's bounded safety, then repeat the Art-Net capture and measure the
-  physical FT232R output. The show Mac and tablet were unreachable by SSH on
-  2026-10-21. Details: `docs/lighting-review-2026-10-21.md`.
+  physical FT232R output. The tablet now runs dmxdesk v0.1.7 against the
+  updated show on the Mac mini; the show Mac and physical DMX rig remain
+  unavailable for this measurement. Details:
+  `docs/lighting-review-2026-10-21.md`.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
