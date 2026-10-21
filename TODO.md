@@ -901,6 +901,14 @@ que queda.
   y el rango 128-255 solo aparece en los picks de Arcoiris. Queda mirarlo en
   sala: los holds y las velocidades. Detalle:
   docs/en-sala-dmx-audit-2026-09-26.md §15.
+- [ ] **Measure intermittent white-flash colour on physical DMX (2026-10-21).**
+  `Flash 100%` statically writes white with Override and ForceLTP. In an
+  isolated QLC+ web-channel probe over AUTO, 2/80 samples briefly showed AUTO
+  wheel or RGBW values; a separate median probe saw MAC RGBW zero in 1/80.
+  The isolated workspace had no output patch, so this does not establish what
+  the fixtures saw. See `docs/lighting-review-2026-10-21.md`. Next: capture
+  physical DMX while holding flash over AUTO, then determine whether the
+  generated scene or QLC+ runtime needs a change.
 - [ ] **Probar en casa los flashes recuperados (2026-08-27).** El dueño, con la
   FT232R en casa: "esto no hace estrobo y antes lo hacia cuando le daba al
   espacio". Era real: el show viejo estrobaba en `Flash 100%`/`Flash 50%`
@@ -1125,6 +1133,10 @@ que queda.
   lockstep; judge on site whether the traveling wave reads well. Also eyeball
   the `Cascada Beams` caption (13 characters on a 63px button) — unverifiable
   from the XML alone.
+  2026-10-21: the AUTO wash and beam figure clocks now share one ordered
+  rotation; isolated QLC+ DMX snapshots were rendered in 3D (see
+  `docs/lighting-review-2026-10-21.md`). Next: watch the paired figures and
+  the cascade on the real floor at Ambiente, Fiesta and Peak.
 - [ ] **New generated content needs an eyeball pass (2026-08-27).** The 10
   curated matrix scripts (Task 5/6) and the 4 new movement figures (`Beam
   Diamante`, `Beam Hoja`, `Ola Suave`, `Cascada Beams`, Task 6) have never

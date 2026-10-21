@@ -19,6 +19,10 @@
 
 ### 2026-10
 
+- [x] 2026-10-21 — **Expanded colours and synchronized AUTO movement in the shipped show.**
+  - Result: Pinned qlctool v0.2.3, regenerated and QLC+ validated all three workspaces, the tablet map and pad palette; recorded before and after 3D captures in `docs/lighting-review-2026-10-21.md`.
+  - Evidence: `tests/vibra_compare.py --descriptions --validate` reports three identical workspaces with zero findings; `qlctool check` reports zero problems for each workspace.
+
 - [x] 2026-10-19 — **Repaso del dueño sobre la programación (2026-09-22):** **El desk de la tablet tiene que dibujar el campo `icon`.** `Vibra.desk.json`
   lleva desde hoy un `icon` por control (111 de 138), separado del `caption`
   (`leading_glyph`); el esquema sigue siendo 2 porque añadir un campo es
