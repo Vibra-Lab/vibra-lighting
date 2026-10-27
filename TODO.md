@@ -166,18 +166,6 @@ El dueño quiere todo abierto, show incluido: "prefiero que alguien las use".
 Reparto propuesto, cada parte a la org `spectalive` (salvo el show, que se
 queda en `Vibra-Lab/vibra-lighting`).
 
-- [ ] **Objetivo del dueño (2026-09-24): "la idea es que cualquiera pueda usar
-  la herramienta para generar sus shows".** El generador (`generate/`) pasa
-  al toolkit y se alimenta de una descripcion del rig (fixtures, grupos,
-  paginas, controlador, estilo), guiado por capacidades; Vibra queda como un
-  ejemplo (su descripcion + lo unico suyo) en `vibra-lighting`. Paso 1,
-  aprobado: desenredar dentro de este repo (checks de escritorio/pad como
-  plugins por entry points, rutas de la libreria sin suponer este repo - hecho
-  2026-09-25, Plan B Task 3, ver `TODO_LOG.md`), con
-  los tres workspaces identicos. Hecho 2026-09-25 (spec steps 7 y 8, Plan C,
-  ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
-  https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
-  tag (`requirements.txt`).
 - [~] **Fixtures**: `QLC+ Fixtures/` e `InputProfiles/` se quedan aqui; las
   verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y
   #2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),
@@ -193,9 +181,6 @@ queda en `Vibra-Lab/vibra-lighting`).
   https://github.com/spectalive/qlc-launcher (`v0.1.0`), con el show y QLC+ en
   una config; lo que queda (mDNS/QR, elegir show al lanzar) esta en su
   `TODO.md`.
-- [ ] **El show** se queda aqui: workspaces, la receta que genera este show
-  (los generadores propios de Vibra) sobre el toolkit como dependencia, rig y
-  operacion.
 
 ### E. Cliente tactil multiplataforma y multi-backend
 

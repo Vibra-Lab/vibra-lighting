@@ -19,6 +19,27 @@
 
 ### 2026-10
 
+- [x] 2026-10-27 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **El show** se queda aqui: workspaces, la receta que genera este show
+  (los generadores propios de Vibra) sobre el toolkit como dependencia, rig y
+  operacion.
+  - Result: This repository keeps the workspaces, the show's recipe as the three show descriptions over the pinned toolkit (requirements.txt, qlctool v0.2.5), the rig (fixtures, input profiles, stage plots) and the operation docs.
+  - Evidence: 2026-10-27: pytest -q 36 passed; tests/vibra_compare.py --validate and --descriptions --validate both identical with 0 findings and QLC+ loading all three; qlctool check QLC+ Setups/Vibra-split.qxw: 501 buttons, no problems.
+
+- [x] 2026-10-27 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **Objetivo del dueño (2026-09-24): "la idea es que cualquiera pueda usar
+  la herramienta para generar sus shows".** El generador (`generate/`) pasa
+  al toolkit y se alimenta de una descripcion del rig (fixtures, grupos,
+  paginas, controlador, estilo), guiado por capacidades; Vibra queda como un
+  ejemplo (su descripcion + lo unico suyo) en `vibra-lighting`. Paso 1,
+  aprobado: desenredar dentro de este repo (checks de escritorio/pad como
+  plugins por entry points, rutas de la libreria sin suponer este repo - hecho
+  2026-09-25, Plan B Task 3, ver `TODO_LOG.md`), con
+  los tres workspaces identicos. Hecho 2026-09-25 (spec steps 7 y 8, Plan C,
+  ver `TODO_LOG.md`): un segundo rig de ejemplo, `git filter-repo` a
+  https://github.com/spectalive/qlctool, tag `v0.1.0`, y este repo depende del
+  tag (`requirements.txt`).
+  - Result: The generator lives in spectalive/qlctool (pinned v0.2.5) and is driven by a show description; Vibra is the full example here (QLC+ Setups/vibra*.toml) and small-club the second rig in the toolkit. All eight steps of docs/superpowers/specs/2026-09-24-show-description-design.md are done; per its step 2, Vibra's values stay as the toolkit's documented defaults.
+  - Evidence: 2026-10-27: tests/vibra_compare.py --descriptions --validate regenerates Vibra, Vibra-beats and Vibra-split from the .toml files byte-identical with 0 findings, and QLC+ loads each; qlctool newshow --description examples/small-club/show.toml --validate reproduces the shipped club.qxw byte for byte, validates, and qlctool check finds no problems in 207 buttons.
+
 - [x] 2026-10-27 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **Separar `dmxdesk` en `core/` y `platform/linux-fb/`.** Ya vive en
   spectalive/dmxdesk con su historia (v0.1.0, 2026-09-26; `taq102` lo
   empaqueta fijado a esa version, ver `TODO_LOG.md`), pero sigue plano en
