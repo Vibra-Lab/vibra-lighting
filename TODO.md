@@ -170,7 +170,7 @@ queda en `Vibra-Lab/vibra-lighting`).
   verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y
   #2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),
   igual que el perfil del SMC-PAD (#2168); OFL #6164 y #6165 siguen abiertos
-  sin ningun comentario ni revision el 2026-10-19, y siguen igual el 2026-10-27 (`gh pr view`: 0 revisiones, 0 comentarios, sin cambios desde el 2026-10-19). Siguiente: atender la revision de OFL
+  sin ningun comentario ni revision el 2026-10-19, y siguen igual el 2026-10-27 (`gh pr view`: 0 revisiones, 0 comentarios, sin cambios desde el 2026-10-19; checks verdes, #6164 solo va por detras de master, y las dos definiciones locales no han cambiado desde el envio). Siguiente: atender la revision de OFL
   cuando llegue. Las retenidas se mandan cuando se confirmen en sala.
 - **Pad**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
