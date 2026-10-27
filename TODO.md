@@ -182,7 +182,7 @@ queda en `Vibra-Lab/vibra-lighting`).
   verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y
   #2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),
   igual que el perfil del SMC-PAD (#2168); OFL #6164 y #6165 siguen abiertos
-  sin ningun comentario ni revision el 2026-10-19. Siguiente: atender la revision de OFL
+  sin ningun comentario ni revision el 2026-10-19, y siguen igual el 2026-10-27 (`gh pr view`: 0 revisiones, 0 comentarios, sin cambios desde el 2026-10-19). Siguiente: atender la revision de OFL
   cuando llegue. Las retenidas se mandan cuando se confirmen en sala.
 - **Pad**: movido el 2026-09-26, con historia, a
   https://github.com/spectalive/smc-pad (`v0.1.0`). El puente ya no lleva los colores de
@@ -204,13 +204,6 @@ virtual de QLC+, y la tablet muestra lo que QLC+ muestre, con todos los
 widgets, para portarla despues a otros dispositivos. Decidido: QLC+ parcheado
 desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
-- [~] **Separar `dmxdesk` en `core/` y `platform/linux-fb/`.** Ya vive en
-  spectalive/dmxdesk con su historia (v0.1.0, 2026-09-26; `taq102` lo
-  empaqueta fijado a esa version, ver `TODO_LOG.md`), pero sigue plano en
-  `src/`. Falta partirlo: `core/` (sesion, `/vc.json`, layout, pintado,
-  fuentes, busqueda del master) y `platform/linux-fb/` (DRM, tactil, power,
-  Wi-Fi, brillo). Siguiente: hacerlo en dmxdesk cuando empiece el
-  multi-backend.
 - [ ] **Multi-backend**: modelo de superficie propio y un adaptador por
   programa; QLC+ primero, luego libres y de pago (Onyx, MagicQ, Lightkey,
   Daslight...) por API, OSC o MIDI.

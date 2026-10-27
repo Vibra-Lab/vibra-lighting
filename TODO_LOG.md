@@ -19,6 +19,16 @@
 
 ### 2026-10
 
+- [x] 2026-10-27 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **Separar `dmxdesk` en `core/` y `platform/linux-fb/`.** Ya vive en
+  spectalive/dmxdesk con su historia (v0.1.0, 2026-09-26; `taq102` lo
+  empaqueta fijado a esa version, ver `TODO_LOG.md`), pero sigue plano en
+  `src/`. Falta partirlo: `core/` (sesion, `/vc.json`, layout, pintado,
+  fuentes, busqueda del master) y `platform/linux-fb/` (DRM, tactil, power,
+  Wi-Fi, brillo). Siguiente: hacerlo en dmxdesk cuando empiece el
+  multi-backend.
+  - Result: spectalive/dmxdesk now has core/ (session, /vc.json, map, layout, painting, fonts, settings, master search) and platform/linux-fb/ (DRM, touch, power key, backlight, battery, Wi-Fi, main); the core reaches the platform only through type-only headers.
+  - Evidence: dmxdesk f3c7089: tools/test-dmx-desk-host.sh 88 PASS including core_without_platform (negative control fails); Qt ctest 7/7; Buildroot cross-build links and its stripped binary is byte-identical to the pre-split one.
+
 - [x] 2026-10-21 — **Expanded colours and synchronized AUTO movement in the shipped show.**
   - Result: Pinned qlctool v0.2.3, regenerated and QLC+ validated all three workspaces, the tablet map and pad palette; recorded before and after 3D captures in `docs/lighting-review-2026-10-21.md`.
   - Evidence: `tests/vibra_compare.py --descriptions --validate` reports three identical workspaces with zero findings; `qlctool check` reports zero problems for each workspace.
