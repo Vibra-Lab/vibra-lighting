@@ -52,6 +52,14 @@ vive en `~/p/brand-finder/TODO.md`.
 
 ### A. El show vivo (primero: el mini y la tablet siguen con el show viejo)
 
+- [!] **La tablet apunta a una IP del mini que ya no existe.** El 2026-10-27,
+  tras dos reinicios del mini, `/data/desk.conf` de la tablet (192.168.1.45)
+  sigue con `master=192.168.1.65` y `port=9998`, pero el mini tiene ahora
+  192.168.1.73 y 192.168.1.68 (`ifconfig`), asi que el desk en C no enlaza con
+  la consola de sala aunque QLC+ este abierto. Bloqueado: decide el dueno (fijar
+  la IP del mini por reserva DHCP, o cambiar `master=` en la tablet, o buscar el
+  master al arrancar con `dmxdesk --find`). No tocar las maquinas de sala hasta
+  entonces.
 - [ ] **QLC+ 5.2.2 se cayo solo en el mini con AUTO sonando.** El 2026-09-26
   el QLC+ del operador (pid 24473, `-w --wp 9998`, `Vibra.qxw`, abierto a las
   19:30) murio a las 21:26:58 con SIGSEGV (`KERN_INVALID_ADDRESS at 0x1fc`)
