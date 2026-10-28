@@ -203,7 +203,13 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   2026-10-28): botones, solo, flash, stop, dial y multiplicadores funcionan;
   17 de los 181 controles del mapa (gobos 165-178, master 266, 272, 294)
   estan en paginas ocultas de frames multipagina y QLC+ ignora ahi la
-  entrada externa, asi que por OSC esos quedan deshabilitados.
+  entrada externa, asi que por OSC esos quedan deshabilitados. El generador
+  ya emite las entradas OSC (qlctool `v0.2.6`, `2ed0ba3`, 2026-10-28):
+  `[controllers] osc = "/desk"` en la descripcion da un universo OSC propio
+  (puerto 7701 junto a un universo DMX) y ata cada boton, slider y dial a
+  `/desk/<id>`; los tres Vibra no lo piden y siguen identicos byte a byte.
+  Activarlo en los shows de sala es decision del dueño: abre un puerto de
+  control sin autenticar en la red del local.
 - [ ] **Fork de QLC+ con `/vc.json` ampliado**: atajos de teclado,
   `stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas
   de un color por widget; y PR a upstream. Hallazgos: se construye en
