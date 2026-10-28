@@ -199,8 +199,11 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   OSC generico sobre UDP (`dmxdesk --osc FICHERO`, `7567713` y `739d115`,
   2026-10-28), con la superficie declarada en un fichero; el guion de gestos
   de Vibra manda los mismos controles en el mismo orden que por QLC+.
-  Siguiente: probarlo contra una consola OSC de verdad (apuntado en el
-  `TODO.md` de dmxdesk).
+  Probado contra la entrada OSC de un QLC+ 5.2.2 sin E/S (`9efe979`,
+  2026-10-28): botones, solo, flash, stop, dial y multiplicadores funcionan;
+  17 de los 181 controles del mapa (gobos 165-178, master 266, 272, 294)
+  estan en paginas ocultas de frames multipagina y QLC+ ignora ahi la
+  entrada externa, asi que por OSC esos quedan deshabilitados.
 - [ ] **Fork de QLC+ con `/vc.json` ampliado**: atajos de teclado,
   `stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas
   de un color por widget; y PR a upstream. Hallazgos: se construye en
