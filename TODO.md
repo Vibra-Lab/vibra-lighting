@@ -195,9 +195,12 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
   tras `desk_platform` (`d128041`, 2026-10-27) y la consola tras
   `desk_console`, con QLC+ como primer adaptador (`bdd589d`, 2026-10-28), y
   el desk se construye desde su propio `struct desk_surface`, que el adaptador
-  de QLC+ traduce de `/vc.json` (`151112a`, 2026-10-28). Siguiente: un segundo
-  adaptador que rellene `desk_surface` y `desk_console` sin QLC+; el mas
-  pequeno es OSC generico, que no depende de ningun programa concreto.
+  de QLC+ traduce de `/vc.json` (`151112a`, 2026-10-28). Segundo adaptador:
+  OSC generico sobre UDP (`dmxdesk --osc FICHERO`, `7567713` y `739d115`,
+  2026-10-28), con la superficie declarada en un fichero; el guion de gestos
+  de Vibra manda los mismos controles en el mismo orden que por QLC+.
+  Siguiente: probarlo contra una consola OSC de verdad (apuntado en el
+  `TODO.md` de dmxdesk).
 - [ ] **Fork de QLC+ con `/vc.json` ampliado**: atajos de teclado,
   `stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas
   de un color por widget; y PR a upstream. Hallazgos: se construye en
