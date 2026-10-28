@@ -191,7 +191,11 @@ desde el principio; nucleo en C portable reutilizando `dmxdesk`.
 
 - [ ] **Multi-backend**: modelo de superficie propio y un adaptador por
   programa; QLC+ primero, luego libres y de pago (Onyx, MagicQ, Lightkey,
-  Daslight...) por API, OSC o MIDI.
+  Daslight...) por API, OSC o MIDI. Hecho en dmxdesk: el bucle esta en el core
+  tras `desk_platform` (`d128041`, 2026-10-27) y la consola tras
+  `desk_console`, con QLC+ como primer adaptador (`bdd589d`, 2026-10-28).
+  Siguiente: el modelo de superficie propio, porque el desk aun se construye
+  desde el documento `/vc.json` de QLC+ (apuntado en el `TODO.md` de dmxdesk).
 - [ ] **Fork de QLC+ con `/vc.json` ampliado**: atajos de teclado,
   `stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas
   de un color por widget; y PR a upstream. Hallazgos: se construye en
