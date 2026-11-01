@@ -17,6 +17,19 @@
 
 ## 2026
 
+### 2026-11
+
+- [x] 2026-11-01 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **La tablet apunta a una IP del mini que ya no existe.** El 2026-10-27,
+  tras dos reinicios del mini, `/data/desk.conf` de la tablet (192.168.1.45)
+  sigue con `master=192.168.1.65` y `port=9998`, pero el mini tiene ahora
+  192.168.1.73 y 192.168.1.68 (`ifconfig`), asi que el desk en C no enlaza con
+  la consola de sala aunque QLC+ este abierto. Bloqueado: decide el dueno (fijar
+  la IP del mini por reserva DHCP, o cambiar `master=` en la tablet, o buscar el
+  master al arrancar con `dmxdesk --find`). No tocar las maquinas de sala hasta
+  entonces.
+  - Result: Reservas DHCP en el router de casa (Movistar Smart WiFi 6 Go, 192.168.1.1, credencial 'Router Telefónica' en Personal): mini en0 14:98:77:61:e5:34 -> 192.168.1.87, en1 02:25:07:19:f1:6f -> 192.168.1.88, guardado en flash; tablet /data/desk.conf master=192.168.1.87 (backup desk.conf.bak-20261101).
+  - Evidence: 2026-11-01: ipconfig getifaddr en0/en1 = .87/.88 tras renovar; tablet log 'link ready (linked)' con dmxdesk HEAD c139433 en RAM; QLC+ Vibra launcher escuchando en :9998.
+
 ### 2026-10
 
 - [x] 2026-10-27 — **Reorganizacion: show vivo, licencias, orgs, nombre y cliente tactil (2026-09-24):** **El show** se queda aqui: workspaces, la receta que genera este show
