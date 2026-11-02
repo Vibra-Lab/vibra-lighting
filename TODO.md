@@ -1227,3 +1227,7 @@ La deuda de calidad del toolkit vive en el `TODO.md` de spectalive/qlctool
 desde el 2026-09-26 (ronda G): ratchets de ruff y mypy, baseline estructural
 de codeality y el siguiente fichero a partir (`live_console.py`). Este repo ya
 no tiene codigo de toolkit propio.
+
+## Recovered feedback provenance — 2026-11-02
+
+Apple Notes N0755 records historical beam colour/movement/synchronization/intensity and tablet feedback. These subjects are already covered by the live-show, fixture tuning and hardware acceptance items above. Keep the source as provenance; it does not establish a newly reproduced defect or replace the current in-room checks.
