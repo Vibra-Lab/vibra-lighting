@@ -117,13 +117,13 @@ through the installed package's `qlctool.rules` entry points, and
 `qlctool check` refuses to run without them.
 
 If the SMC-PAD's map changed, regenerate its input profile in the same pass -
-the shows carry the profile's *name*, the profile carries the numbers:
+the shows carry the profile's _name_, the profile carries the numbers:
 
 ```bash
 .venv/bin/qlctool input-profile "QLC+ InputProfiles/M-VAVE-SMC-PAD.qxi"
 ```
 
-QLC+ runs on *copies* of the repo's definitions, profile and gobos, and a
+QLC+ runs on _copies_ of the repo's definitions, profile and gobos, and a
 copy it was never handed is the silent failure here: the show loads, validates
 and runs on last week's channel map. Before validating, and on the show Mac
 after every pull:
@@ -154,7 +154,7 @@ Smoke test, 2026-09-25, Mac mini, against `v0.1.0`:
   `DeluxeEventos2.qxw` fails - that reference patch is two fixtures behind
   the rig (see docs/rig.md).
 - `--validate` needs a QLC+ binary. `qlctool` finds `/Applications/QLC+
-  <version>.app` by itself, newest first, widgets build before QML, skipping a
+<version>.app` by itself, newest first, widgets build before QML, skipping a
   binary this CPU cannot run (the x86_64 `QLC+ 4.13.1.app` on an arm64 Mac
   without Rosetta). `QLCTOOL_QLCPLUS` still overrides it. Without any QLC+
   installed, validation silently cannot run - do not claim it passed.
@@ -194,7 +194,7 @@ are narrative English one-liners plus a body that names the cause, dated
 regressions in tests ("date it and say which night it came from"). Finished,
 verified work is committed and pushed without asking.
 
-<!-- tadu:rule v4 -->
+<!-- tadu:rule v5 -->
 
 ## Continuous TODO, Work Log, and History Coverage
 
@@ -238,6 +238,8 @@ conversations more than once.
   (`--resolution`, or `--duplicate-of ID`). Close reports the tasks that no
   longer wait on it; decide for each whether it moves to pending. Every command
   is a dry run until `--write`.
+- In anything a person reads, such as a summary, a report or a question, name a
+  task by its title, never by its ID; IDs stay in commands and tool calls.
 - Before reviewing past conversations, consult the history index and skip
   unchanged records already marked `complete` or `irrelevant`. Update a record
   only after its findings are reconciled; interrupted work stays `partial`.
