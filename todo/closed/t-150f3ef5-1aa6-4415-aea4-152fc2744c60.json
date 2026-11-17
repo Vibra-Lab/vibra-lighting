@@ -1,0 +1,26 @@
+{
+  "tadu": 2,
+  "id": "t-150f3ef5-1aa6-4415-aea4-152fc2744c60",
+  "title": "The vertical fog never stopped",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "\"Le doy y nunca se para, se supone",
+    "",
+    "que solo debe tirar cuando le de.\" `Humo Vertical YA` is a Flash, and a",
+    "Flash restores nothing on release: the Fog channel is LTP and no room state",
+    "ever wrote it, so the first press fogged until the workspace was reloaded.",
+    "Same latch as `rule_strobe_restore`, on the channel that empties a tank.",
+    "- Fix: `fog_off.py`, wired into both intensity levels, the blackout and the",
+    "  flat work-light scenes - every room state now holds the pump at zero.",
+    "- Check: `checks/rule_smoke_restore.py` (`humo pegado`), which reported the",
+    "  shipped file before the fix and is silent after it."
+  ],
+  "closed": "2026-11-17",
+  "result": "The vertical fog never stopped",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

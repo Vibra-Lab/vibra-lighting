@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-67b6c719-f9a0-4800-8c90-8b993d60b864",
+  "title": "Mirar el render y el `.blend` en el mini",
+  "state": "pending",
+  "category": "visor-3d-blenderdmx-en-el-mac-mini-2026-09-23",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`~/p/vibra-blender/vibra.png`",
+    "",
+    "y `vibra.blend` (abrirlo con Blender con ventana: `open -a Blender",
+    "~/p/vibra-blender/vibra.blend`). Lo que se decide mirando: si las",
+    "primitivas (caja, base/horquilla/cabeza) bastan o hace falta malla por",
+    "aparato, si el humo (`volume_density` 0.08) y el angulo de los haces",
+    "convencen, y si algun aparato mira a donde no debe."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-fe2099b6-31e4-4e97-bbef-4d50a5609256",
+  "title": "2026-09-24 - **El repo tiene licencia**: Apache-2.0 para el codigo",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(`tools/`, `QLC+ Fixtures/`, `QLC+ InputProfiles/`) y CC BY 4.0 para el",
+    "show (`QLC+ Setups/`, `docs/`, `Colores/`); `Manual/` queda fuera (copyright",
+    "de los fabricantes). `NOTICE` atribuye lo vendorizado de QLC+.",
+    "- Evidencia: `c823c80`; textos oficiales de apache.org y",
+    "  creativecommons.org; GitHub detecta `Apache-2.0`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-24 - **El repo tiene licencia**: Apache-2.0 para el codigo",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

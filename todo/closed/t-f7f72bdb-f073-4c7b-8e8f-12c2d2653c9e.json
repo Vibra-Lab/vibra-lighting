@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-f7f72bdb-f073-4c7b-8e8f-12c2d2653c9e",
+  "title": "2026-09-27 - **Run `qlctool check` before every show file leaves this",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "repo.** The rule is in `CLAUDE.md` (\"Before finishing\"), `tests/vibra_compare.py`",
+    "runs every check rule over the three regenerated workspaces, and the",
+    "toolkit's own gate test does the same over its frozen rig copy. Every",
+    "release this week shipped through that gate (v0.1.7, v0.1.8, v0.1.9)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **Run `qlctool check` before every show file leaves this",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

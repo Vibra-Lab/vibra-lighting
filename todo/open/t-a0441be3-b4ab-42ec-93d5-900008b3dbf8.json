@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-a0441be3-b4ab-42ec-93d5-900008b3dbf8",
+  "title": "New generated content needs an eyeball pass (2026-08-27)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "The 10",
+    "",
+    "curated matrix scripts (Task 5/6) and the 4 new movement figures (`Beam",
+    "Diamante`, `Beam Hoja`, `Ola Suave`, `Cascada Beams`, Task 6) have never",
+    "been seen running — check them in the 3D preview and, when possible, on the",
+    "rig. In particular the plasma/noise script durations are chosen windows,",
+    "guessed rather than measured against real music."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-3afd93da-4ba1-4e24-807e-a2075172ba73",
+  "title": "2026-09-26 - **`Colores/Colors.psd` (62 MB) replaced by a 50-line",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "generator.** Owner: \"lo de los colores mira a ver si se puede hacer de otra",
+    "manera, por entonces yo lo hice asi\". The PSD held 49 artboards, each a",
+    "500x500 tile split on the diagonal into two flat colours, plus a drawn",
+    "rainbow; its exports in `QLC+ Setups/Colores/` are the button backgrounds of",
+    "the old `DeluxeEventos*.qxw` (Vibra uses none). Now `tools/colour-tiles/",
+    "tiles.toml` holds the 50 pairs (colours read from the PSD's fills; plus",
+    "`Rosa-Cyan`, a separate export) and `write_tiles.py` writes the PNGs with",
+    "the standard library only; `Arcoiris.png` stays as drawn.",
+    "`tests/test_colour_tiles.py` pins regeneration byte for byte. Against the",
+    "Photoshop exports the worst channel difference is 17/255, on the",
+    "anti-aliased diagonal only; the folder went from 632 KB to 308 KB. The PSD",
+    "is out of the tree but still in history (open in `TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`Colores/Colors.psd` (62 MB) replaced by a 50-line",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

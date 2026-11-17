@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-c749f85a-8394-47be-aaa1-e2ba89095edc",
+  "title": "2026-09-27 - **Fallos que el DMX destapo el 2026-09-26.** Cada causa",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "tiene su regla en `qlctool check` y su arreglo en el generador (qlctool",
+    "v0.1.9, fijado en a8f2430): picks soltados vuelven al suelo del estado",
+    "(`releaseTo` y suelos por familia, regla D8), MACs en la ventana en looks de",
+    "solo beams (D7), CLB2.4 y LED de humo en el primer banco (D9), MiN Wash",
+    "estroban por ForceLTP (D1, D2). La carrera AUTO+pick no se repite con 0.2 s",
+    "de separacion y dmxdesk v0.1.2 espacia sus toggles 200 ms. Re-medido sobre",
+    "el motor: ningun item falla por la causa que lo tumbo. Evidencia: docs/en-sala-dmx-reaudit-2026-09-27.md."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **Fallos que el DMX destapo el 2026-09-26.** Cada causa",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

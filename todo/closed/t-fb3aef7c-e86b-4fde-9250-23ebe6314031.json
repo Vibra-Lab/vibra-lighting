@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-fb3aef7c-e86b-4fde-9250-23ebe6314031",
+  "title": "2026-09-26 - **Momento Locura ya no abre como pared blanca plana:",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "confirmado en el DMX.** 60 muestras a 250 ms: los dimmers de CromoWash,",
+    "CLB, Vortex y Mini Led viajan en chase (34-49 valores distintos entre 0 y",
+    "253) y el color viene de la rueda (rojo, UV y rosa en 15 s), CromoWash",
+    "blanco en 0 de 60 muestras. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md",
+    "§17."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **Momento Locura ya no abre como pared blanca plana:",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

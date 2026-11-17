@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-ac47489f-c01c-430e-b792-556b7b8b064a",
+  "title": "2026-08-27 - **Consola:** \"MIDI controller for the operator\"",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resolucion: superado por el M-VAVE SMC-PAD, que ya esta en el show con",
+    "  perfil generado, dos bancos y feedback de LED por BLE (`tools/smc-pad/`).",
+    "  El item pedia comprar un controlador; lo que queda son sus pruebas de sala,",
+    "  que siguen abiertas en `TODO.md`."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

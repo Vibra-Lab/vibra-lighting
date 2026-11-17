@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-b7c4dd91-4bd4-456f-8484-4eced9a19ba9",
+  "title": "Otras plataformas despues",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": SDL (Raspberry, portatil Linux), iOS,",
+    "",
+    "Android, ESP32."
+  ]
+}

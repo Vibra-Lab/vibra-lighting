@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-782b5e16-d1a8-445f-b6ba-b2d2c802efdb",
+  "title": "Iconos en el resto de la consola",
+  "state": "pending",
+  "category": "repaso-del-due-o-sobre-la-programaci-n-2026-09-22",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "134 de 600 botones llevan glifo:",
+    "",
+    "los estados, los golpes, el humo, las capas y los picks de las cinco",
+    "familias. Los bancos de color (teclas 1-0), la librería de matrices y la",
+    "rueda de los BEAM siguen sin marca. Decidir si hace falta o si el color del",
+    "botón ya lo dice."
+  ]
+}

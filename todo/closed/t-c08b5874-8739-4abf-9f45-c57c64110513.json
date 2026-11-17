@@ -1,0 +1,26 @@
+{
+  "tadu": 2,
+  "id": "t-c08b5874-8739-4abf-9f45-c57c64110513",
+  "title": "A dying QLC+ handed its complaints to the next workspace",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    `test_qlcplus_loads_the_show` failed once under the full suite with",
+    "    \"fixture 13 overlapping with fixture ...\" while passing in isolation",
+    "    (2026-08-25). Cause: QLC+'s `-g` log has one hard-coded path",
+    "    (`~/QLC+.log`) opened in **append** mode, so every validation shares it,",
+    "    and a QLC+ still shutting down from the previous test keeps writing -",
+    "    including the complaint a neighbouring test had deliberately built.",
+    "- Fix: `validate.py` slices the log from the last",
+    "  `QLCFixtureDefCache::load(const QDir &)` (the signature spelled out because",
+    "  `loadMap` is the very next line and wins a prefix match), and remembers",
+    "  processes it could not reap so the next launch waits for them."
+  ],
+  "closed": "2026-11-17",
+  "result": "A dying QLC+ handed its complaints to the next workspace",
+  "evidence": [
+    "`tests/test_validate.py`, three dated regressions; the full suite run three times in a row, green each time."
+  ]
+}

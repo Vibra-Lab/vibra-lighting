@@ -1,0 +1,30 @@
+{
+  "tadu": 2,
+  "id": "t-c8c7c88d-061c-42ea-85cd-9ed3075d3961",
+  "title": "2026-09-26 - **qlctool `v0.1.6` pinned: the pad palette comes from",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "the toolkit, and four toolkit debts closed.** spectalive/qlctool",
+    "`629197f..0fdf82e` plus the release commit, reviewed twice (5 minor and 4",
+    "nit findings: all fixed but one nit, parked in its `TODO.md`): `qlctool pad-palette`",
+    "writes the SMC-PAD LED palette as JSON (format 1, workspace sha256, idle =",
+    "active // 6); `check --description` renders `[names]` overrides; the desk",
+    "map refusal reads in the show's language; a `[names]` override that parts a",
+    "hit button from its hit is refused while the description is read, by the",
+    "desk's own test; every function-reference path has a dangling-id test.",
+    "Toolkit gate: 794 passed after one fix. Here: `requirements.txt` ->",
+    "`v0.1.6`; 31 passed, `vibra_compare.py --validate` and",
+    "`--descriptions --validate` identical with 0 findings for all three and",
+    "loaded by QLC+, `qlctool check` 522 buttons clean on each,",
+    "`qlctool install --check` complete; `pad-palette` on `Vibra.qxw` writes 32",
+    "pads, 22 lit. Workspaces and desk map unchanged, so nothing regenerated."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **qlctool `v0.1.6` pinned: the pad palette comes from",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

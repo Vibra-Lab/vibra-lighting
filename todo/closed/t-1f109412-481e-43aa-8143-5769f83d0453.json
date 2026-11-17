@@ -1,0 +1,26 @@
+{
+  "tadu": 2,
+  "id": "t-1f109412-481e-43aa-8143-5769f83d0453",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** Peak's intensity becomes visible -",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    the Dimmer Chase owns it (Task 7, `~/p/DMX-Fixtures/TODO.md`).",
+    "- Rule decision: did NOT touch `checks/rule_shadowed_intensity.py`",
+    "  (`intensidad tapada`). It deliberately excludes EFX writes",
+    "  (`_dimmer_writes` only counts Scene/Sequence) because an EFX's output",
+    "  isn't one knowable value - confirmed this is why the bug shipped clean",
+    "  through the gate for months. Sharpening it to treat a Dimmer-mode EFX as",
+    "  a writer would also fire on `Momento Locura`'s identical shape, which is",
+    "  explicitly out of scope and still shadowed on purpose - a real false",
+    "  positive on a shipped workspace, not a missed catch. Fixed at the",
+    "  generator level instead, per the task's own fallback guidance."
+  ],
+  "closed": "2026-11-17",
+  "result": "`Nivel Peak`'s Collection no longer carries `Intensidad Total` beside `Dimmer Chase` - that pairing held every dimmer at 255 via HTP, so the chase's dips could never win and it ran all night for nothing (cosmetic since it shipped). Peak now hands its dimmers to the chase alone. A new capability-walk generator, `generate_dimmerless_intensity` (`tools/qlctool/qlctool/generate/dimmerless_intensity.py`), covers the fixtures the chase cannot reach at all (no dimmer role - found by `offsets_for_role(roles.DIMMER)`, never by name) with a static `Intensidad Peak` scene, so nothing goes dark. Verified on the shipped `Vibra-split.qxw`: `Nivel Peak` = {Rapidos Washes, Rapidos Beams, Gobo Animacion, Prisma Animacion, Dimmer Chase, Intensidad Peak}; `Intensidad Peak` lights fixtures 15/16 (MiN Wash shutter, offset 5 = 247, inside its Open range) and 32/36 (a shutter whose Open range is 0). Fiesta and every moment (including `Momento Locura`, which pairs the same chase with `Intensidad Total` on purpose) are untouched.",
+  "evidence": [
+    "`tools/qlctool/tests/test_canonical_show.py:: test_dimmer_chase_owns_peak_and_nothing_is_left_dark` (new, dated 2026-08-27) reproduces the old shape via `driven_channels` and proves analytically that a static 255 (the DMX ceiling) shadowed every channel the chase drove, then confirms the fixed Peak has no such contest and that the no-dimmer fixtures still have an owner; updated the existing `test_auto_is_a_colour_bed_a_haze_and_an_energy_cycle` assertion (RED confirmed via `git stash` on just the generator change, then GREEN after restoring it). All three workspaces regenerated (`qlctool newshow ... --validate`) and pass `qlctool check` clean (\"ningun problema\" x3); full pytest suite (256 tests) green in the foreground."
+  ]
+}

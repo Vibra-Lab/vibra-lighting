@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-ddd46b3f-de71-45bb-a03f-e0dfd3a42ca5",
+  "title": "`Pixeles ON` owned half of a matrix-lit fixture",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "It is what holds one",
+    "",
+    "    open, since a matrix writes RGB and nothing else, and it wrote dimmer,",
+    "    shutter and strobe-off but neither the zoom nor the mode channel. An",
+    "    unwritten zoom is 0 - the narrowest beam these heads have - and an",
+    "    unwritten mode channel leaves the head free to run its own programme under",
+    "    a matrix that believes it is painting it. That last one is the owner's own",
+    "    report from the night of 2026-08-29, \"cambios de colores muy rapidos\".",
+    "- Caught by `zoom sin declarar` and by",
+    "  `test_every_colour_look_takes_the_washes_off_their_own_programme`, both the",
+    "  moment the group existed."
+  ],
+  "closed": "2026-11-17",
+  "result": "`Pixeles ON` owned half of a matrix-lit fixture",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-c922256f-79f7-43d1-8737-783f700dc6f8",
+  "title": "2026-09-22 - **Qué dos colores y dónde: la regla de los profesionales.**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resultado: `complementary_pairs.py` (entre roles, cálido sobre frío:",
+    "  ámbar/azul, amarillo/azul, rojo/cyan, magenta/verde, más rojo/azul del",
+    "  show) alimenta los contrastes `Cabezas X / Resto Y`; `analogous_pairs.py`",
+    "  (vecinos, en ambos sentidos, más las teclas 9/0) alimenta `Rueda Mezcla`",
+    "  por grupo, 16 pasos en vez de 30. Regla `complementarios en un mismo",
+    "  lavado` (dos colores saturados a 150 grados o más alternando dentro de un",
+    "  grupo), test `test_2026_09_22_complementary_colours_split_across_one_wash`.",
+    "  Fuente: HARMAN vía `brain/topics/stage-lighting-design.md` -",
+    "  complementarios en la misma superficie se desaturan hacia blanco.",
+    "- Evidencia: antes, 20 hallazgos por show (`Amarillo / Azul` y `Verde /",
+    "  Magenta` en cinco grupos, dos sentidos)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-22 - **Qué dos colores y dónde: la regla de los profesionales.**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

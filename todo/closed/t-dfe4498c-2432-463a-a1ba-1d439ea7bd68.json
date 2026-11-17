@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-dfe4498c-2432-463a-a1ba-1d439ea7bd68",
+  "title": "The Chauvet MiN Wash's `5 Channel` mode was invented",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "No Tilt on a",
+    "",
+    "    moving head, and an `ActsOn` pointing at \"Reserved\". No manual for this",
+    "    fixture in `Manual/`, none in QLC+'s own library, so there was nothing to",
+    "    correct it against - and a guessed channel order drives the wrong channels",
+    "    in silence. Deleted; the patch only ever used the 13-channel mode."
+  ],
+  "closed": "2026-11-17",
+  "result": "The Chauvet MiN Wash's `5 Channel` mode was invented",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

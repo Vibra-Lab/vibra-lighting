@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-63f51ea0-d193-4df4-b84d-71111569286a",
+  "title": "Check on site how the 50-degree truss PARs sit over the DJ. The measured",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "angle lands them at z=6417 - 1,9 m past the deck - with the beam passing about",
+    "35 cm over his head, against 2,8 m at the 60 degrees the plot carried before.",
+    "Above him, but not by much: worth an eye at the get-in."
+  ]
+}

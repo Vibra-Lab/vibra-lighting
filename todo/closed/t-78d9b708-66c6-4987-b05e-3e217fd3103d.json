@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-78d9b708-66c6-4987-b05e-3e217fd3103d",
+  "title": "2026-09-25 - **Reinstall qlctool in every other checkout after pulling",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Plan A Task 7.** Superseded by \"Reinstall on the show Mac and the Mac mini",
+    "(AGENTS.md, 2026-09-25)\": the checkouts now install the tag instead of an",
+    "editable in-repo package."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

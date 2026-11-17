@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-9c1c9d5f-23e6-4563-a888-94e22dcf63b8",
+  "title": "\"Las 7R no se mueven.\" Cause: `Nivel Ambiente`, the first and longest",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "step of `Ciclo Energia`, started the washes' slow shapes beside the *static*",
+    "`Beams Abanico` scene, so the four beams held one position for the level's",
+    "whole four-minute hold.",
+    "- Fix: a slow beam family (`BEAM_SLOW`, chaser `Movimientos Suaves Beams`)",
+    "  now owns the beams at that level and in `Momento Tranquilo`; the fan stays",
+    "  as one step of the normal beam rotation.",
+    "- Check: `checks/rule_parked_movers.py` (`cabezas paradas en el ciclo`), plus",
+    "  `test_a_level_of_the_cycle_that_parks_half_the_movers`."
+  ],
+  "closed": "2026-11-17",
+  "result": "\"Las 7R no se mueven.\" Cause: `Nivel Ambiente`, the first and longest",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

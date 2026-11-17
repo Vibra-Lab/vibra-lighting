@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-e382b9ff-556a-4510-b293-47546cf26758",
+  "title": "`Blanco Total` inherited gobo, prism, rotation, focus, position",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "from",
+    "",
+    "    the last state. Park values folded into the scene (`park_work_light`);",
+    "    rule `estado que hereda`."
+  ],
+  "closed": "2026-11-17",
+  "result": "`Blanco Total` inherited gobo, prism, rotation, focus, position",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

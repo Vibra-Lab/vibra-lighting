@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-9b75e8ae-97d8-4431-ad70-314dba39c138",
+  "title": "2026-09-22 - **Multicolor en rueda propia, los estados a dos colores.**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resultado: `Rueda Multicolor` (tecla R, marco COLOR, glifo, dial de",
+    "  tempo) con `Rig Multicolor 1/2` y `Rig 4 Colores 1-4` (el asiento blanco",
+    "  del reparto pasa a amarillo); `Rueda Colores` queda en 17 sólidos y 5",
+    "  contrastes. Regla `mas de dos colores en un estado`, test",
+    "  `test_2026_09_22_the_multicolour_deal_back_in_the_state_wheel`.",
+    "- Evidencia: antes, 6 hallazgos por show (los seis pasos salvajes en la",
+    "  rueda de AUTO); `test_the_multicolour_looks_rotate_on_a_wheel_no_state_starts`",
+    "  comprueba que ni AUTO ni los momentos llegan a ella."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-22 - **Multicolor en rueda propia, los estados a dos colores.**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

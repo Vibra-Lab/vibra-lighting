@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-47f3b3da-5aab-415f-a063-c3ce16f7e0b0",
+  "title": "**`MultiColor BEAM` latched the 7R half-colour channel at 255 for the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    night.** Every wheel colour writes it to 0 (`multicolor_off`); rule",
+    "    `capa que deja huella`."
+  ],
+  "closed": "2026-11-17",
+  "result": "**`MultiColor BEAM` latched the 7R half-colour channel at 255 for the",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

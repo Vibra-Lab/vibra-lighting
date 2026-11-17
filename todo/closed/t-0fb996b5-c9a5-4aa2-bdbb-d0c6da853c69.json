@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-0fb996b5-c9a5-4aa2-bdbb-d0c6da853c69",
+  "title": "2026-09-28 - **qlctool `v0.2.0` fijado en `requirements.txt`.** El",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "toolkit se reorganizo entero (un fichero por unidad, nombrado como ella;",
+    "baseline de codeality de 202 hallazgos a 6) sin cambiar comportamiento.",
+    "Aqui solo cambiaron imports de tests: `qlctool.library` ->",
+    "`qlctool.fixture_library`, `qlctool.definition_schema` ->",
+    "`qlctool.definition_errors`, `qlctool.input_binding` ->",
+    "`qlctool.pin_midi_input`, `qlctool.xmlutil` -> `qlctool.find_local` y",
+    "`qlctool.localname`, `qlctool.validate` -> `qlctool.validate_workspace`.",
+    "33 pasan, `vibra_compare --descriptions --validate` identico x3 y cargado",
+    "en QLC+, `check` exit 0 en Vibra, Vibra-beats y Vibra-split."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-28 - **qlctool `v0.2.0` fijado en `requirements.txt`.** El",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

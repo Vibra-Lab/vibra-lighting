@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-d6d90224-ede9-45b3-b41f-9d3f8527efc0",
+  "title": "Vortex PC-64: solo lo decide un banco de pruebas",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Búsqueda del",
+    "",
+    "2026-09-01 sin resultado (la marca no existe en internet; es etiqueta del",
+    "dueño sobre un PAR genérico). Los PAR64 de 5 canales vienen en tres mapas",
+    "incompatibles y uno de ellos (Stairville, 290x260 mm, muy parecido a este de",
+    "292x266) no tiene ni dimmer ni strobe: canal 1 modo, 2-4 RGB, 5 velocidad.",
+    "Un PAR solo, `qlctool probe`, y mirar (a) si el canal 4 a 0 apaga con RGB",
+    "arriba, (b) si el 5 estroba y en qué valor para."
+  ]
+}

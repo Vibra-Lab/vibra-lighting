@@ -1,0 +1,15 @@
+{
+  "tadu": 2,
+  "id": "t-e968c19a-0d17-4af5-83de-ffada5759735",
+  "title": "El Mac del show (`vibra-oficina`) tiene el show del 2026-08-29",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "No",
+    "",
+    "respondia por Bonjour el 2026-09-24 ni el 2026-09-27. Siguiente: cuando este en red,",
+    "sincronizar como en `docs/show-operation.md` y comprobar el hash."
+  ]
+}

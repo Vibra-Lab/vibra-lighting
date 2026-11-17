@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-1229bf56-2b4e-48e9-a197-d311fb1ac164",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** GrandMaster reachable from the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    console - a slider added (Task 3, `~/p/DMX-Fixtures/TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "a GrandMaster-mode Slider widget was added to the console, giving the operator a control over the workspace's existing `<GrandMaster ChannelMode=\"Intensity\" ValueMode=\"Reduce\">`, which no VC widget reached before.",
+  "evidence": [
+    "commit a1527af (`console: the grand master gets a handle`); `qlctool check \"QLC+ Setups/Vibra-split.qxw\"` clean."
+  ]
+}

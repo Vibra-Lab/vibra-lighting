@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-d52621ac-8272-4a90-aedb-60c4b34937fa",
+  "title": "2026-08-28 - **Vibra Eventos (DMX):** the FLASH strobe no longer latches",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    (\"se queda el estrobo para siempre\", owner, on the four pixel panels).",
+    "- Cause: strobe channels are LTP and QLC+ restores nothing on Flash release",
+    "  (`Scene::handleFadersEnd` dismisses the fader; `Universe::processFaders`",
+    "  zeroes intensity channels only). Fixtures whose lit states rewrite their",
+    "  shutter each tick recovered; the WX panels, the seven PC-64 and the two",
+    "  mini heads have strobe-only channels that `shutter_open` deliberately",
+    "  left untouched, so no scene ever wrote them back to 0.",
+    "- Fix: new `strobe_off_pairs` (`qlctool/strobe_off.py`) written beside every",
+    "  `shutter_open_pairs` in the scenes that own a fixture's light",
+    "  (colour, split-colour, pixel base, intensity levels, panel effects); new",
+    "  check rule `estrobo pegado` (`checks/rule_strobe_restore.py`, ERROR),",
+    "  sibling of `acento sin dueño`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-28 - **Vibra Eventos (DMX):** the FLASH strobe no longer latches",
+  "evidence": [
+    "dated test `tests/test_check.py::test_a_flashed_strobe_no_state_switches_off`; the rule found 39 latches on the old show and none after; suite 275 green; `qlctool check` \"ningun problema\" on the three regenerated `--validate`d workspaces."
+  ]
+}

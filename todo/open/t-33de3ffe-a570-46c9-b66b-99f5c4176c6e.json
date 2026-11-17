@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-33de3ffe-a570-46c9-b66b-99f5c4176c6e",
+  "title": "**Las dos MAC WASH 1915Z: confirmar en sala lo que dice el manual de",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "su gemela (2026-08-29, actualizado 2026-09-02).** Llegaron en lugar de las",
+    "CromoWash, parcheadas en 23 CH en DMX 345 y 368, en el sitio de las",
+    "CromoWash del back truss (4 y 7); las CromoWash siguen parcheadas y",
+    "aparcadas como spares en el plano. El manual de Mac Mah sólo da la tabla de",
+    "canales; el de la **Algam MW19x15Z** (misma cabeza, misma matriz, manualslib",
+    "3158887) da lo que faltaba y la definición ya lo lleva:",
+    "1. **Zoom: 0 = abierto, 255 = cerrado.** Lo teníamos al revés: el show mandó",
+    "   255 en todo look hasta el 2026-09-02, o sea las dos lyres a 6 grados toda",
+    "   la noche del 29. Ahora manda 0. **Si en sala salen cerradas**, volver el",
+    "   preset a `SmallToBig` en el `.qxf` y regenerar.",
+    "2. **Estrobo: 0-9 sin estrobo, 10-255 lento a rápido** (el manual). ChamSys",
+    "   lo partía en cuatro bandas y ponía el reset en 100-109; el manual dice",
+    "   reset 250-255. Manda el manual.",
+    "3. **Function mode: 0-29 = control DMX**, ya no es suposición: el manual da",
+    "   la tabla entera (colores fijos, cambios de color y cuatro efectos auto).",
+    "Y confirmar en el 3D que las dos caben donde estaban las CromoWash (son algo",
+    "más grandes: 325x188 mm contra 296x184)."
+  ]
+}

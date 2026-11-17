@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-a46c5762-d1c5-4d93-b1b7-14df055e7ad9",
+  "title": "Medir el foco de los beam en sala (2026-08-30)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Nada escribia el",
+    "",
+    "canal `Focus` de las 7R, o sea que los diecisiete gobos se han proyectado",
+    "siempre con el foco en un extremo de su recorrido — la mitad de por que \"se",
+    "echaba en falta mas variedad\". Ahora todas las escenas de gobo escriben",
+    "`beam_focus = 127` (`qlctool/vibra/tuning.py` in spectalive/qlctool, y",
+    "`[fixture_tuning] beam_focus` en los tres `QLC+ Setups/vibra*.toml`), que es",
+    "el medio del recorrido y una primera pasada, no una medida. En sala: poner un",
+    "gobo, subir/bajar ese canal a mano hasta que el dibujo este nitido a la",
+    "distancia real, y dejar ese numero en los cuatro sitios, en este orden:",
+    "`tuning.py` y los `vibra*.toml` del rig congelado en spectalive/qlctool (su",
+    "test de igualdad `tests/test_load_show_description.py` falla si solo se",
+    "cambia una copia), release y tag, subir el tag en `requirements.txt`, los",
+    "tres `vibra*.toml` de aqui, y re-grabar `tests/vibra_baseline.json` con el",
+    "visto bueno del dueño. Mientras tanto tambien hay",
+    "`Gobo Repartido 1-8` (cada cabeza un gobo distinto) y el prisma girando en",
+    "tres velocidades: mirar si el reparto se lee bien o marea."
+  ]
+}

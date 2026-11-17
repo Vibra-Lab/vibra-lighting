@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-6dabf09e-9ca8-4fd1-a25c-472e7b84d41b",
+  "title": "2026-09-25 - **`v0.1.1` tagged, both GitHub releases published, the pin",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "bumped.** Owner's go (\"avanza con todo sigue haciendo todos releases\").",
+    "spectalive/qlctool `v0.1.1` = `2b72474` (version bump on top of the final",
+    "review's fixes `08ea32d`, `52f62b3`, `a7ccff7`); releases",
+    "https://github.com/spectalive/qlctool/releases/tag/v0.1.0 and `/v0.1.1`.",
+    "`requirements.txt` now pins `v0.1.1`; installed version 0.1.1. Evidence from",
+    "the repository root: 30 passed, `vibra_compare --validate` identical x3 and",
+    "QLC+ loaded, `qlctool check` 522 clean x3, `install --check` exit 0."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **`v0.1.1` tagged, both GitHub releases published, the pin",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

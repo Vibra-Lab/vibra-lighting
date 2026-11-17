@@ -1,0 +1,29 @@
+{
+  "tadu": 2,
+  "id": "t-d6251ecd-a68d-4a32-b170-64af4f7bb5b5",
+  "title": "Humo, las dos cosas nuevas, verlas en sala (2026-08-30)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(1) La",
+    "",
+    "columna vertical ya no se pinta de blanco: `Humo Vertical YA` escribe solo la",
+    "bomba y el master del LED, y el color lo pone la sala — \"salia humo bien pero",
+    "la luz solo salia la blanca, no hacia las transiciones de colores\". Con AUTO",
+    "corriendo la columna deberia salir del color de la rueda; con `Todo Negro`",
+    "saldra a oscuras, que es lo correcto pero conviene verlo. (2) El humo de",
+    "ambiente tiene su ritmo en la pagina 1, abajo: `cada 1 / 2 / 4 / 8 min`, marco",
+    "solo (uno a la vez), y `J` sigue siendo el de 1 min que arranca AUTO. Elegir",
+    "el que pida la sala. La columna **nunca** se dispara sola y la regla",
+    "`columna automatica` lo impide.",
+    "",
+    "**2026-09-26:** lado DMX comprobado (la columna sale del color de la rueda",
+    "con AUTO y se apaga con Todo Negro; cada opcion de ritmo - 2/4/8 min -",
+    "dispara la bomba al momento al pulsarla, con 2 s de humo y luego el reposo",
+    "elegido; la columna nunca se disparo sola en 60 s de AUTO ni en 15 s de",
+    "Locura); queda elegir en sala que ritmo pide la sala. Detalle:",
+    "docs/en-sala-dmx-audit-2026-09-26.md §13."
+  ]
+}

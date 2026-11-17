@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-fdad64b1-d269-4365-b48f-1e35607409ce",
+  "title": "Confirmar en sala los bancos y los picks mantenidos",
+  "state": "pending",
+  "category": "auditoria-cruzada-de-los-programas-2026-09-02-claude-codex",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Desde",
+    "",
+    "2026-09-02 los bancos de color (teclas 1-0), las mezclas, los gobos, el",
+    "prisma, el color de los beams y `Escenario` son Flash con `Override` (y",
+    "`ForceLTP` los de color): van mientras se mantiene la tecla y el estado",
+    "vuelve al soltar. El motor lo garantiza (`Scene::writeDMX` con",
+    "`forceLTP=true` salta el HTP; el fader Flashing va detras de todos), pero",
+    "nadie lo ha visto con el rig delante. Siguiente paso: con `AUTO` en cyan,",
+    "mantener `1` y comprobar que los cabezas salen rojos, no blancos, y que al",
+    "soltar vuelven a cyan sin salto.",
+    "",
+    "**2026-09-26:** lado DMX comprobado (bancos, mezclas y gobos mantienen: los",
+    "cabezas salen rojos, no blancos, al mantener la tecla `1`, y vuelven a cyan",
+    "sin salto al soltar); texto desfasado: los gobos, el prisma y `Escenario`",
+    "ya no son Flash, son Toggle en marcos solo en este workspace, y las PAR",
+    "CLB2.4 y los LED de humo quedan fuera de los bancos de color (no cambian",
+    "mientras se mantiene una tecla). Detalle: docs/en-sala-dmx-audit-2026-09-26.md §6."
+  ]
+}

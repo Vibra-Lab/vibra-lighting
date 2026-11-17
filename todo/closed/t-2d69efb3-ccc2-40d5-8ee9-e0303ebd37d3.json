@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-2d69efb3-ccc2-40d5-8ee9-e0303ebd37d3",
+  "title": "2026-08-29 - **SMC-PAD:** el color de los pads por BLE GATT, desbloqueado",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "y en produccion.",
+    "- Resultado: el item seguia `[!]` \"blocked on one physical step\" (poner el pad",
+    "  en modo Bluetooth para que anuncie). Eso ocurrio: `qlc_led_bridge.swift`",
+    "  mantiene la sesion GATT, publica el puerto MIDI virtual y pinta cada pad, y",
+    "  se instala con `tools/smc-pad/install-bridge.sh` como agente de launchd.",
+    "- Evidencia: `tools/smc-pad/README.md` seccion \"The QLC+ bridge (working)\",",
+    "  confirmado extremo a extremo (el puente registra `MIDI in ... -> pad addr`);",
+    "  el pulido que queda esta en el item `[~]` del pad, que sigue abierto."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-29 - **SMC-PAD:** el color de los pads por BLE GATT, desbloqueado",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

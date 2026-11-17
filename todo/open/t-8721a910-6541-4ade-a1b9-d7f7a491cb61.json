@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-8721a910-6541-4ade-a1b9-d7f7a491cb61",
+  "title": "Set the audio-trigger thresholds on site. **Updated 2026-08-27**: the",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "bass band (\"Graves\") is now bound to `Flash 100%`, one of the GOLPES hits",
+    "(a Scene, Flash mode, Override, outside any solo frame) — not the",
+    "`Blanco Total` room-state scene, which shares AUTO's solo frame and would",
+    "have stopped AUTO with nothing to restart it. The bound band's threshold is",
+    "still QLC+'s default and needs tuning over real music; QLC+ also needs an",
+    "audio input picked under Configuration before the widget does anything."
+  ]
+}

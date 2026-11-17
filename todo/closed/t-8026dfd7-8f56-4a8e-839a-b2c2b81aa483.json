@@ -1,0 +1,29 @@
+{
+  "tadu": 2,
+  "id": "t-8026dfd7-8f56-4a8e-839a-b2c2b81aa483",
+  "title": "The beams' aim was 180 degrees out",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "The first fix moved them from",
+    "",
+    "tilt 127 to 88 and the owner reported \"ahora los 7R apuntan a la pared\". So",
+    "on a 7R the room is *above* mid-travel, not below - which the hand-built",
+    "show had already said, aiming them at 189-204. `BEAM_TILT_AIM` is 170 now,",
+    "and `fan_position.TILT` follows it instead of its old 105 guess.",
+    "- The washes are the other way round on their own scale: 128 is the wall",
+    "  (\"los washes apuntan para atrás a la pared, que no me interesa iluminar\"),",
+    "  ~46 is the room (the hand-built `Escenario` on CromoWash #1/#2, tilt 49/43).",
+    "  `WASH_TILT_AIM` is 88, and the wash figures lost height (55/50 -> 30/32)",
+    "  so a shape centred in that band no longer climbs back onto the wall.",
+    "- Both numbers, and which way each scale runs, are in",
+    "  `generate/movement_aim.py`. Guessing the direction cost a pass."
+  ],
+  "closed": "2026-11-17",
+  "result": "The beams' aim was 180 degrees out",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

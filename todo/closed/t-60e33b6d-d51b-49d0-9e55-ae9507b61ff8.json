@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-60e33b6d-d51b-49d0-9e55-ae9507b61ff8",
+  "title": "White looks never used the White emitters",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(Mini Led ch7, MAC WASH",
+    "",
+    "    ch12/16/20; Codex's finding). `color_scene_values` writes",
+    "    `white_level` = min(r,g,b); rule `blanco sin emisor blanco`. Closes the",
+    "    2026-09-01 \"canales de blanco\" backlog item."
+  ],
+  "closed": "2026-11-17",
+  "result": "White looks never used the White emitters",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

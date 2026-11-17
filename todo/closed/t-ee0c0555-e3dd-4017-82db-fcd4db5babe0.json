@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-ee0c0555-e3dd-4017-82db-fcd4db5babe0",
+  "title": "2026-09-26 - **`Colors.psd` purged from all history.** Owner: \"Si,",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "purgar ya\". The 64.7 MB blob `6029d23c` sat under `Colors/` and then",
+    "`Colores/` from 2024-08-31 until it was replaced by",
+    "`tools/colour-tiles/` earlier today; a path filter missed the older path, so",
+    "it was stripped by blob id (`git filter-repo --strip-blobs-with-ids`). No",
+    "`.psd` object remains; 320 SHAs changed, the final tree is identical",
+    "(`58ff88fd`), main is `6f9f555`, the pack went from 45.1 to 42.8 MiB (the",
+    "PSD's flat layers compressed well). Mini, its show worktree and the MacBook",
+    "reset; backup and old->new map in `~/Backups/*-2026-09-26-psd*` (mini).",
+    "Every SHA quoted in this log before today's rewrites predates them."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`Colors.psd` purged from all history.** Owner: \"Si,",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

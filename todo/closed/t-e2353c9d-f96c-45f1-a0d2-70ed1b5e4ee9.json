@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-e2353c9d-f96c-45f1-a0d2-70ed1b5e4ee9",
+  "title": "2026-09-26 - **The Mac mini runs the show of `main`.** Owner: \"de",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "momento que funcione todo en este ordenador\". The launcher (`~/Applications/",
+    "QLC+ Vibra.app` -> `tools/qlc-launcher/launch.py`) loads the worktree",
+    "`~/p/DMX-Fixtures-qlctool` (branch `qlctool`), which sat at `80261d0`;",
+    "fast-forwarded to `main` (`5420ae2`, the v0.1.5 show, `Vibra.qxw` sha256",
+    "`12a75704...`). Undo: `git -C ~/p/DMX-Fixtures-qlctool reset --hard",
+    "80261d0`. Verified with `launch.py --test-no-output`: QLC+ 5.2.2 started,",
+    "HTTP check passed on port 9998, stopped itself. The tablet's baked-in map",
+    "no longer matches until firmware v90 (open in `TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **The Mac mini runs the show of `main`.** Owner: \"de",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

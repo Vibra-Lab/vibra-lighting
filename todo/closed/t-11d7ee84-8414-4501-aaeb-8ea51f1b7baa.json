@@ -1,0 +1,36 @@
+{
+  "tadu": 2,
+  "id": "t-11d7ee84-8414-4501-aaeb-8ea51f1b7baa",
+  "title": "\"Está todo el rato haciendo un circulo pequeño en el suelo.\" Cause: every",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "movement EFX the generator has ever written carried QLC+'s own axis default,",
+    "`<Axis Name=\"Y\"><Offset>127` - the raw middle of the tilt channel - because",
+    "`EFXAxis.offset` defaults there and no caller had overridden it. Mid-travel",
+    "is not an aim; on this rig it is the floor. The hand-built show was no better",
+    "aimed (offset 130) and got away with it by drawing every figure 100 wide.",
+    "The beams' ambient envelope, 26x18 that afternoon, was small enough to keep",
+    "the whole figure inside that spot.",
+    "- Axis evidence, all measured: tilt 0 = ceiling (`docs/rig.md`, a CromoWash",
+    "  stuck at coarse zero), 127 = floor (owner watching the cycle), ~196 = the",
+    "  stage (the hand-built `Escenario` aiming the four 7R). Up is a *smaller*",
+    "  number.",
+    "- Fix: `generate/movement_aim.py:BEAM_TILT_AIM = 88`, threaded through",
+    "  `generate_movement_efx(tilt_offset=...)` into the EFX Y axis; every beam",
+    "  envelope carries it. `BEAM_SLOW` resized 26x18 -> 45x30. `Beam Circulo`",
+    "  now sweeps tilt 50..126 instead of 89..165.",
+    "- Check: `checks/rule_unaimed_movement.py` (`movimiento sin apuntar`), plus",
+    "  `test_a_beam_figure_centred_on_mid_travel`. Scoped to the beam family: a",
+    "  wash's wide cone survives mid-travel, a 2-degree needle does not.",
+    "- Open: 88 is a first aim in raw DMX, like the fan's. `TODO.md` carries the",
+    "  on-site confirmation."
+  ],
+  "closed": "2026-11-17",
+  "result": "\"Está todo el rato haciendo un circulo pequeño en el suelo.\" Cause: every",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

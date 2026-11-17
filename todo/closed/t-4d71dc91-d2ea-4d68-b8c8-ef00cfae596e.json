@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-4d71dc91-d2ea-4d68-b8c8-ef00cfae596e",
+  "title": "2026-08-27 - **Auditoria QLC+:** `PixelesLed` sin matrices no era un",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "defecto.",
+    "- Resultado: el generador salta la matriz RGB de los grupos que se animan",
+    "  solos (`generate/canonical_show.py`, `_all_self_animating()`); los paneles",
+    "  corren sus 42 efectos internos y en modo Auto ignorarian el RGB."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-27 - **Auditoria QLC+:** `PixelesLed` sin matrices no era un",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-ddfff062-0c60-41b1-880d-c0fb04c2d594",
+  "title": "STROBO / STROBO SUAVE could not reach black under a lit state",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(the",
+    "",
+    "    black step was all-HTP zeros). Now held shutter scenes at 0.97 / 0.785;",
+    "    rule `estrobo sin negro`."
+  ],
+  "closed": "2026-11-17",
+  "result": "STROBO / STROBO SUAVE could not reach black under a lit state",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

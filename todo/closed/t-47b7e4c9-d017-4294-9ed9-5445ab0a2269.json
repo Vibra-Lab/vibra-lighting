@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-47b7e4c9-d017-4294-9ed9-5445ab0a2269",
+  "title": "The two MAC WASH had no group, and their definition had no heads",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    Grouping them is what gives them a colour bank and a matrix. Their",
+    "    23-channel mode is three concentric RGBW rings and declared no `<Head>`:",
+    "    QLC+ then builds one head holding every channel and keeps the *last*",
+    "    channel of each colour (`QLCFixtureHead::cacheChannels`), so a matrix",
+    "    would have painted the outer ring and left the other two on whatever was",
+    "    written last.",
+    "- Fix: three `<Head>` blocks in the `.qxf`, one per ring. RGBW only - pan and",
+    "  tilt fall back to the mode's channels and the dimmer is resolved separately.",
+    "- Check: `checks/rule_undeclared_heads.py` (`cabezas sin declarar`), counting",
+    "  the heads that hold a red, a green and a blue rather than the elements.",
+    "- The group is `Lyres`, 3x2: ring across, fixture down."
+  ],
+  "closed": "2026-11-17",
+  "result": "The two MAC WASH had no group, and their definition had no heads",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-283845c1-88a3-499d-9bbd-9887dc72ab9c",
+  "title": "Position palettes with fanning",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(QLC+5): Linear/Sine/Square/Saw fan",
+    "",
+    "over X/Y/Z — the calibrated way to build `Beams Abanico` instead of guessed",
+    "pan values. **Updated 2026-08-27**: Task 1 confirmed `<Palette>` load on the",
+    "installed 5.2.2 binary (not just master's `doc.cpp:1270-1288`) — that gate",
+    "is closed. Remaining gate: VC buttons cannot fire a palette directly",
+    "(palette → Scene → button still needed), and the fan itself needs",
+    "calibrated aiming on the rig."
+  ]
+}

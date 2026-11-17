@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-1068e55c-1b1d-4ffb-87a8-48fefcdf7a96",
+  "title": "Apple git sigue sin CommandLineTools en el Mac del show",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(2026-08-29):",
+    "",
+    "`/usr/bin/git` muere con `xcrun: error: invalid active developer path`. NO",
+    "bloquea nada — el git de Homebrew funciona (`export",
+    "PATH=/usr/local/bin:$PATH` en sesiones no interactivas, trampa ya documentada",
+    "en brain/access-map), y así se sincronizó hoy. Arreglo de fondo opcional:",
+    "`xcode-select --install` con sesión gráfica delante."
+  ]
+}

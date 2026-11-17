@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-d9599784-216f-4497-a80a-761aceb8649e",
+  "title": "2026-09-26 - **Every Vibra variant lights the pad like the shipped",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "palette.** Only `Vibra.pads.json` ships, while the show Mac runs",
+    "`Vibra-split.qxw`. `tests/test_pad_palette.py` now writes the palette of",
+    "`Vibra-split.qxw` and `Vibra-beats.qxw` and compares note, control, lit,",
+    "active and idle for all 32 pads with the shipped file; the widget ids differ",
+    "between variants (beats' `prism_animation` is widget 169, not 173) and the",
+    "bridge never reads them. 4 passed."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **Every Vibra variant lights the pad like the shipped",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

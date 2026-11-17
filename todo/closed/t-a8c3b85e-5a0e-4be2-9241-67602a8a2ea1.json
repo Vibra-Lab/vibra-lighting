@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-a8c3b85e-5a0e-4be2-9241-67602a8a2ea1",
+  "title": "2026-09-26 - **\"Quitar y poner un color no apaga las beam\": confirmado",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "en el DMX.** Con AUTO corriendo, soltar un pick de color deja el RGB del",
+    "rig a 0, pero la rueda de las 7R (LTP) se queda en el ultimo color y las",
+    "beam siguen encendidas por el nivel de energia; solo `W` (AUTO colores)",
+    "devuelve la rueda. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md §5."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **\"Quitar y poner un color no apaga las beam\": confirmado",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

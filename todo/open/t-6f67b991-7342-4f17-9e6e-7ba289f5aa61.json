@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-6f67b991-7342-4f17-9e6e-7ba289f5aa61",
+  "title": "**Mini Led Moving Head: confirmar en sala los canales 9-16 (adoptados",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "el 2026-09-02).** Tres fuentes que coinciden en los ocho primeros canales",
+    "(manual Betopper/Big Dipper LM108, manual SHEHDS 12x12W, personalidad",
+    "ChamSys LM108) dan 9-16 como `velocidad pan/tilt, macro de color, velocidad",
+    "macro, programa, velocidad programa, pan fine, tilt fine, reset (150-255)`,",
+    "y la definición ya lo declara así (detalle en `docs/rig.md`). El show",
+    "escribe a 0 el programa (con cada color) y los fine (con cada aim); nada",
+    "más. En sala: `qlctool probe` sobre 18 o 19, subir el canal 10 por encima",
+    "de 10 (debería pisar el color), el 16 a 150 (debería resetear), y ver si el",
+    "8 a 0 es shutter abierto. Si algo no cuadra, volver esos canales a",
+    "`NoFunction` y regenerar."
+  ]
+}

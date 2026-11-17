@@ -1,0 +1,32 @@
+{
+  "tadu": 2,
+  "id": "t-001fad5c-b901-4ae0-8eae-b4e3b6885f13",
+  "title": "2026-09-25 - **The club's console names no gobo, prism, bar or panel it",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "lacks, and page 4 counts the effects the rig built.** Closes the two Plan C",
+    "final-review items (tempo help promising gobos and prism; page 4 talking",
+    "about Vibra's bars and panels). In spectalive/qlctool: `b6849db` makes the",
+    "tempo help line, the matrices frame caption and the library help lines",
+    "capability-driven (`tempo_help_line.py`, `matrices_frame_caption.py`,",
+    "`library_help_lines.py`, `tests/test_caption_variants.py`); `3a39070`",
+    "renders the built-in effect count from what `generate_builtin_effects`",
+    "built (`{count}`, Vibra still 42) and passes the pixel-group flag",
+    "explicitly, with a mixed-rig test (`tests/test_mixed_rig_captions.py`).",
+    "Reviewed twice, approved at `9c7085e`. Evidence: 680 passed,",
+    "`vibra_compare --validate` identical x3 and QLC+ loaded, `check` 522 and",
+    "199 buttons clean, CI runs 36131008406 and 36132373485 green on 3.11 and",
+    "3.13. Still open in the toolkit's TODO: the \"bars and panels\" wording of",
+    "the matrices caption on any rig with pixel groups (changing it moves",
+    "Vibra's bytes; owner's call), and a `check` rule for a caption that",
+    "promises a function the show did not build."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **The club's console names no gobo, prism, bar or panel it",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

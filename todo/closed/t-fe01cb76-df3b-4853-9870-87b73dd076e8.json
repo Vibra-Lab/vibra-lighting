@@ -1,0 +1,15 @@
+{
+  "tadu": 2,
+  "id": "t-fe01cb76-df3b-4853-9870-87b73dd076e8",
+  "title": "2026-09-27 - **Decidir en sala la matriz de dos colores sobre Cabezas.**",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Obsoleto por la regla D6: Cabezas ya no lleva matrices porque ninguna celda",
+    "montada podia mostrarlas, y `newshow` las rechaza. Evidencia: docs/en-sala-dmx-reaudit-2026-09-27.md §12."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

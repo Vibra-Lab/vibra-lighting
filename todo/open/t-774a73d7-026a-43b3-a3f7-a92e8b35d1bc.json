@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-774a73d7-026a-43b3-a3f7-a92e8b35d1bc",
+  "title": "El frost (\"Atomization\", canal 12) de las 7R no se usa nunca",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Siempre",
+    "",
+    "a 0. Con frost el beam pasa a wash suave para el modo \"tranquilo\" o \"charla\".",
+    "Probar en sala qué hace el canal (la definición solo tiene un rango 0-255) y",
+    "decidir."
+  ]
+}

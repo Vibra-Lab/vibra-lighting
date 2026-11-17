@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-46470dd6-2a55-4aa7-93ba-4d5ac695fcd8",
+  "title": "Ver en el rig si las barras ya siguen el show (2026-08-26)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "\"Las",
+    "",
+    "barras led van con los colores a su bola, no siguen el show\" (owner, con la",
+    "preview: barras en magenta, sala en cyan). Causa: dos relojes de color -",
+    "`Rueda Colores` rotando escenas sobre el rig y `Ciclo Matrices BarrasLed`",
+    "rotando su propia paleta sobre las barras - y QLC+ no puede esclavizar un",
+    "chaser a otro. Arreglo: cada paso de la rueda es ahora una Collection que",
+    "arranca la escena y una matriz de barras *del mismo color* (algoritmo",
+    "rotando Fill/Even-Odd/Waves/Solid, una pasada completa cabe en el paso); el",
+    "ciclo independiente sale de AUTO y de los momentos pero sigue en la consola.",
+    "Regla nueva `relojes de color` + test fechado. Confirmar en sala que barras y",
+    "sala cambian de color a la vez. Refinamiento posible: QLC+ 5 si persiste",
+    "`BlendMode=\"Mask\"` como atributo de `<Function>` (function.cpp:918, mascara",
+    "multiplicativa en universe.cpp) - permitiria una sola matriz continua sobre",
+    "el color de la rueda, pero depende del orden de escritura del tick y el",
+    "checker HTP no lo modela; solo si algun dia hace falta animacion continua."
+  ]
+}

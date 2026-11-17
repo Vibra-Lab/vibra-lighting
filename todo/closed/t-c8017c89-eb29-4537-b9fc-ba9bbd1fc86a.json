@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-c8017c89-eb29-4537-b9fc-ba9bbd1fc86a",
+  "title": "\"Las 7R no se abren del todo, están como una media luna.\" Cause:",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`Rig Multicolor 1` and `Rig Multicolor 2` - two of the twenty steps of the",
+    "colour clock, hence \"a veces\" - sent the BEAM 230W 7R's colour wheel to 186,",
+    "inside its `RotationClockwiseFastToSlow` range and near the slow end. A",
+    "rotation range is not a colour: the wheel creeps between detents and a",
+    "2-degree beam shows half of one colour and half of the next.",
+    "- Fix: `generate/multicolor_scene.py` deals the wheel fixtures a real detent",
+    "  from the palette, the way `Rig 4 Colores` already did (new",
+    "  `generate/dealt_wheel_color.py` walks the deal forward to a colour the",
+    "  wheel actually carries). Rotation now survives only on the two explicit",
+    "  `Color Beam - Rainbow ...` buttons.",
+    "- Check: `checks/rule_wheel_rotation.py` (`rueda de color girando`), plus",
+    "  `test_a_rig_colour_that_spins_the_beams_wheel_instead_of_naming_one`."
+  ],
+  "closed": "2026-11-17",
+  "result": "\"Las 7R no se abren del todo, están como una media luna.\" Cause:",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

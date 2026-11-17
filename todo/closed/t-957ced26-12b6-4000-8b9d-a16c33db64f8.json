@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-957ced26-12b6-4000-8b9d-a16c33db64f8",
+  "title": "`tools/qlctool/README.md`'s `newshow` example did not run",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "It",
+    "",
+    "    regenerated from `DeluxeEventos2.qxw`, two fixtures behind the plot",
+    "    (\"the plot places fixtures that are not patched: [27, 28]\"). Now",
+    "    regenerates `Vibra.qxw` from itself; the corrected command was run."
+  ],
+  "closed": "2026-11-17",
+  "result": "`tools/qlctool/README.md`'s `newshow` example did not run",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-013c981f-6515-41b8-8899-6bc70823cbed",
+  "title": "Lo que ningun visor pinta",
+  "state": "pending",
+  "category": "visor-3d-blenderdmx-en-el-mac-mini-2026-09-23",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": los paneles WX-60WPS en modo Auto (ch7",
+    "",
+    "efecto, RGB a 0) generan el color en el hardware. Sigue siendo \"en sala\"."
+  ]
+}

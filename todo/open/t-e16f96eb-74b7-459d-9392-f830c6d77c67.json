@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-e16f96eb-74b7-459d-9392-f830c6d77c67",
+  "title": "Try the new operator page on the show Mac before the next gig",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "The",
+    "",
+    "console is now four pages (`show` / `JUGAR` / `control` / `librería`) built by",
+    "`qlctool newshow`; page 1 is seven mutually exclusive room states plus the",
+    "hits, and the energy levels are no longer buttons. Two things only a real",
+    "screen can settle: whether the 28pt/15pt captions read across a dark room at",
+    "1440x900, and whether `PgDn`/`PgUp` change page in operate mode without",
+    "stealing focus. Files: `QLC+ Setups/Vibra-split.qxw` (current patch),",
+    "`Vibra.qxw`, `Vibra-beats.qxw`."
+  ]
+}

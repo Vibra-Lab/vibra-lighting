@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-9a8dcaa0-07ec-4035-b49a-2c9e512f90e4",
+  "title": "Separar `dmxdesk` en `core/` y `platform/linux-fb/`",
+  "state": "done",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Ya vive en",
+    "",
+    "spectalive/dmxdesk con su historia (v0.1.0, 2026-09-26; `taq102` lo",
+    "empaqueta fijado a esa version, ver `TODO_LOG.md`), pero sigue plano en",
+    "`src/`. Falta partirlo: `core/` (sesion, `/vc.json`, layout, pintado,",
+    "fuentes, busqueda del master) y `platform/linux-fb/` (DRM, tactil, power,",
+    "Wi-Fi, brillo). Siguiente: hacerlo en dmxdesk cuando empiece el",
+    "multi-backend."
+  ],
+  "closed": "2026-10-27",
+  "result": "spectalive/dmxdesk now has core/ (session, /vc.json, map, layout, painting, fonts, settings, master search) and platform/linux-fb/ (DRM, touch, power key, backlight, battery, Wi-Fi, main); the core reaches the platform only through type-only headers.",
+  "evidence": [
+    "dmxdesk f3c7089: tools/test-dmx-desk-host.sh 88 PASS including core_without_platform (negative control fails); Qt ctest 7/7; Buildroot cross-build links and its stripped binary is byte-identical to the pre-split one."
+  ]
+}

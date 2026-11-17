@@ -1,0 +1,39 @@
+{
+  "tadu": 2,
+  "id": "t-51eceb53-019c-4d15-862f-f3569cee35b7",
+  "title": "2026-08-28 - **Vibra Eventos (DMX):** five show-design upgrades, Codex",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    design review first (\"proceed with amendments\", all applied).",
+    "- Panels join the rig's colours: the wheel writes their RGB on every step,",
+    "  `Ciclo Paneles Mixto` (Loop, 8 min effects / 4 min manual) owns the mode",
+    "  channel - one colour clock, one mode owner. `rule_internal_program`",
+    "  extended: colour without mode-off is excused only when every lighting",
+    "  state owns the mode channel (ownership, not amnesty; dated test proves",
+    "  it still bites without the owner).",
+    "- `Rig Multicolor 1/2` wheel steps: every fixture its own palette colour,",
+    "  beams on the colour wheel's rainbow scroll, bars under a Plasma Rainbow",
+    "  matrix - all inside `Rueda Colores`, so no second clock.",
+    "- Movement: `Ola Vertical` per family (tilt wave - QLC+ Line is x=y, so",
+    "  Width 0, Serial), `Barrido Unison` (StartOffset 0, mirror kept so the",
+    "  sides meet), `Beams Cruce` (reversed-fan X) - all as chaser steps, never",
+    "  concurrent members.",
+    "- `Nivel Fiesta Dinamico` in the energy wave: dimmers owned by `Dimmer",
+    "  Programas` (chase 2 and ping-pong serialized in one chaser - HTP makes",
+    "  concurrent \"ownership\" a lie); `Intensidad Peak` now writes strobe-offs",
+    "  for the whole rig, closing the flash-latch window during chase levels.",
+    "- Gobo/prism as the pros: prism scenes drive the rotation channel (spin 25",
+    "  in, 0 out), `Prisma - None` parked in every non-peak level/moment (ends",
+    "  the latent prism latch), `Gobo Shake` bursts (Pattern Jitter 64) as gobo",
+    "  wheel steps with every plain gobo scene parking the jitter. New roles",
+    "  `prism_rotation`, `gobo_shake`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-28 - **Vibra Eventos (DMX):** five show-design upgrades, Codex",
+  "evidence": [
+    "suite 277 green (incl. 2 new dated tests in test_check.py and 4 updated contracts in test_canonical_show.py); three shows regenerated, `--validate`d, `qlctool check` \"ningun problema\" on all three; docs (show-operation.md, checks.md) and TODO.md updated (on-site tuning + per-level rule extension pending)."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "tadu": 2,
+  "id": "t-abea89ca-670b-4ef6-a9ad-f82061729b52",
+  "title": "2026-09-26 - **`dmxdesk` in its own repository; `taq102` builds it from",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "there.** Plan ruling D-R5. `git filter-repo` with history (93 commits) ->",
+    "https://github.com/spectalive/dmxdesk (`9a1b80f`, tag `v0.1.0`, GPL-2.0 as",
+    "taq102; no AI tool and no secret in the history, checked), cloned to",
+    "`~/p/dmxdesk`. spectalive/taq102 `47b8d10`: the Buildroot package downloads",
+    "the `v0.1.0` release against a hash file, `tools/get-dmxdesk.sh` checks out",
+    "the same tag for the desk scripts, and the 32 sources the desk shares with",
+    "the appliance's programs stay in `src/` as copies listed in",
+    "`src/dmxdesk-shared.txt`. Tests: dmxdesk 39/39 on macOS from a fresh clone;",
+    "taq102 host 19/19 and boot 9/9; the package built in the VM up to the build",
+    "step; the desk binary from `tools/build-dmxdesk.sh` has a code section",
+    "identical to v89's; the nine other programs still cross-compile. Nothing",
+    "was flashed. The desk map now lives in dmxdesk's `show/`, so the tablet's v90",
+    "item in `TODO.md` goes through a dmxdesk tag. Open: six dmxdesk tests fail",
+    "on Linux (test-side leaks, `-Werror` warnings, one timing assert), in its",
+    "`TODO.md`; the `core/` and `platform/` split stays in `TODO.md` here."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`dmxdesk` in its own repository; `taq102` builds it from",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

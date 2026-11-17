@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-59268f33-4e2f-41ce-a3fe-53ad5264f9d7",
+  "title": "2026-09-22 - **Blanco fuera de toda rotación.**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resultado: `wheel_palette.py` (la paleta menos `Blanco`) alimenta la rueda",
+    "  general, la simple, la pastel, las ruedas por grupo, las mezclas y los",
+    "  ciclos de matrices; el blanco queda en `Blanco Total`, los flashes, la luz",
+    "  de charla y el pick 8 de cada banco. Las dos matrices curadas en blanco",
+    "  (Plasma Rainbow, que no lee el color, y 3D Starfield) pasan a cyan y",
+    "  celeste. Regla `blanco en la rueda`, test",
+    "  `test_2026_09_22_white_back_on_the_wheel`.",
+    "- Evidencia: antes, 83 hallazgos por show; tras regenerar,",
+    "  `qlctool check` \"522 botones revisados, ningun problema\" en los tres."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-22 - **Blanco fuera de toda rotación.**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

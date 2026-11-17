@@ -1,0 +1,32 @@
+{
+  "tadu": 2,
+  "id": "t-493b6512-830e-4735-9657-4443d0fc2bf0",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** EFX variety - rotation and serial",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    cascades (Task 6, `~/p/DMX-Fixtures/TODO.md`).",
+    "- Engine-semantics check: read `~/p/qlcplus/engine/src/efx.cpp` and",
+    "  `efxfixture.cpp` before committing to Serial+Line for `Ola Suave`. Serial",
+    "  only delays a fixture's start via a modulo-wrapped elapsed timer",
+    "  (efxfixture.cpp:462-496) - no fixture gets stuck. Line's own direction",
+    "  handling (efx.cpp:337-347) phase-shifts a reversed (mirrored) fixture by",
+    "  PI instead of flipping the iterator like other algorithms, but since",
+    "  Line's path is `x=y=cos(iterator)`, `cos(t+PI) = -cos(t)`: the mirrored",
+    "  fixture lands exactly opposite the leader at every instant, the same",
+    "  result the 2*PI-iterator flip gives other shapes. No deviation needed;",
+    "  the literal spec (Line + Serial) works correctly.",
+    "- Console: the \"Figura que dibujan las cabezas\" solo frame's per-button",
+    "  width is now computed from the shape count",
+    "  (`tools/qlctool/qlctool/generate/live_console.py`) instead of a fixed 88px",
+    "  step, so 9 buttons fit the existing 628px frame with no resize and no",
+    "  `rule_console` `_parent_bounds` containment violation."
+  ],
+  "closed": "2026-11-17",
+  "result": "two new Serial-propagation figures - `Ola Suave` (washes, Line, 28000ms Suave duration class) and `Cascada Beams` (beams, Circle, Rotation 45) - plus `Beam Diamante` (Rotation 90) and `Beam Hoja` (Rotation 45), new beam-family figures since the beam envelope had no Diamond/Leaf to rotate before this task (it was scoped to Circle/Eight/ Line in the prior optics-family split). All three shipped workspaces regenerated (`qlctool newshow ... --validate`) and pass `qlctool check` clean; full pytest suite (261 tests) green.",
+  "evidence": [
+    "`tools/qlctool/tests/test_movement_families.py` (new, TDD: written red against the un-changed generator, confirmed failing, then made to pass); `qlctool check \"QLC+ Setups/Vibra-split.qxw\"` reports \"ningun problema\"."
+  ]
+}

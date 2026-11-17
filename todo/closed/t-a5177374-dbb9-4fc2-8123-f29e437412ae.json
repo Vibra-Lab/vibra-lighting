@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-a5177374-dbb9-4fc2-8123-f29e437412ae",
+  "title": "El show",
+  "state": "done",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "se queda aqui: workspaces, la receta que genera este show",
+    "",
+    "(los generadores propios de Vibra) sobre el toolkit como dependencia, rig y",
+    "operacion."
+  ],
+  "closed": "2026-10-27",
+  "result": "This repository keeps the workspaces, the show's recipe as the three show descriptions over the pinned toolkit (requirements.txt, qlctool v0.2.5), the rig (fixtures, input profiles, stage plots) and the operation docs.",
+  "evidence": [
+    "2026-10-27: pytest -q 36 passed; tests/vibra_compare.py --validate and --descriptions --validate both identical with 0 findings and QLC+ loading all three; qlctool check QLC+ Setups/Vibra-split.qxw: 501 buttons, no problems."
+  ]
+}

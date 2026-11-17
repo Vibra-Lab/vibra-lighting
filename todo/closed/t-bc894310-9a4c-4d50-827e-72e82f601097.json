@@ -1,0 +1,33 @@
+{
+  "tadu": 2,
+  "id": "t-bc894310-9a4c-4d50-827e-72e82f601097",
+  "title": "The fixture groups were in cabling order",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "A matrix paints the cells a",
+    "",
+    "    group declares and half of QLC+'s scripts mean a direction, so cell 0 has",
+    "    to be at one side of the room. Nothing enforced it: a group is built in",
+    "    DMX address order, so `Cabezas` walked its four rigged beams 1916, 9694,",
+    "    4405, 7205 mm across the stage and the split's `PAR` jumped twice. Every",
+    "    sweep over those groups went left, far right, back to the middle - and it",
+    "    is invisible in the XML and in the 3D view, which draws each fixture where",
+    "    it really stands.",
+    "- Fix: `repatch/group_sort.py` and `qlctool patch --group-sort GROUP`, laying",
+    "  a group out by the `<Monitor>` positions the plot writes. Ties break on the",
+    "  cell the head already had, so a bar's eight segments keep the bar's order.",
+    "- Check: `checks/rule_grid_order.py` (`rejilla fuera de orden`), which",
+    "  reported both shipped patches before the fix. It also reports a not-rigged",
+    "  spare sitting among the rigged cells: eight of `Cabezas`' twelve members are",
+    "  spares in flight cases, and a cell the matrix paints with nothing in it is a",
+    "  hole in every sweep."
+  ],
+  "closed": "2026-11-17",
+  "result": "The fixture groups were in cabling order",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

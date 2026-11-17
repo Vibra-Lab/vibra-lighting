@@ -1,0 +1,36 @@
+{
+  "tadu": 2,
+  "id": "t-5f5620d4-8a95-4683-908c-e2c509c6659c",
+  "title": "2026-09-02 - **Vibra Eventos (DMX): the MAC WASH 1915Z zoom ran backwards,",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    found in another program's fixture library.** The manual prints",
+    "    `Zoom 000-255` and nothing else; the definition guessed narrow-to-wide,",
+    "    so every look sent 255 and both washes ran at 6 degrees on the night of",
+    "    2026-08-29. The owner's idea was to look in other DMX programs' fixture",
+    "    libraries: ChamSys MagicQ's Fixture Finder personality for the MacMah",
+    "    MacWash1915Z (ids 46510/46511) says *Wide to Narrow 0-255*, and gives the",
+    "    strobe (0 open, 1-127 strobe, 128-159 sudden, 160-191 pulse, 192-255",
+    "    random - `Strobo ON` had been landing in the random band) and the reset",
+    "    (100-109). Same source settled the Mini Led Moving Head's eight",
+    "    \"No function\" channels (LM108 personality, agreeing with two OEM",
+    "    manuals). Definitions corrected, three shows regenerated and validated,",
+    "    the `cabezas paradas` rule taught that a Collection of nothing but EFX",
+    "    is a split movement and not a block. OFL, Freestyler, DMXControl,",
+    "    Avolites and Daslight were searched too and had none of it; Codex did",
+    "    the search (`gpt-5.6-terra`, the default model was at capacity).",
+    "    Later the same day, installing Lightkey and fingerprinting its 7,704",
+    "    profiles by channel order found the Algam MW19x15Z - Mac Mah's parent",
+    "    brand, the same head - whose manual settles it: zoom 0 = wide, strobe",
+    "    0-9 off / 10-255, macro 0-29 = DMX, reset 250-255. ChamSys was right on",
+    "    the zoom and wrong on strobe and reset; Lightkey the reverse."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-02 - **Vibra Eventos (DMX): the MAC WASH 1915Z zoom ran backwards,",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

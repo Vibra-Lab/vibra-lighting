@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-aaa815c7-f70d-4195-9bc2-d030cd697cbd",
+  "title": "**Los nombres de los colores de la rueda de las 7R, confirmar en sala",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(2026-09-02).** El perfil `Beam 230 SC-295-16CH` de Daslight es nuestra",
+    "definición rango por rango (estrobo, pasos de color y gobo, prisma, reset,",
+    "lámpara), pero nombra los catorce colores como la rueda Sharpy que copian",
+    "los clones: blanco, rojo, naranja, aguamarina, verde, verde claro, lavanda,",
+    "rosa, amarillo, magenta, cyan, CTO 2, CTO 1, CTB, azul oscuro. La nuestra",
+    "dice rojo, naranja, amarillo, verde, azul, rosa, ice, rosa claro, blanco",
+    "claro, azul claro, blanco cálido, UV, gris, amarillo claro. Como",
+    "`color_wheel_match` elige el color del beam **por el nombre**, si la tabla",
+    "tiene razón `Azul` manda 40-47 (verde claro) y `Amarillo` 24-31",
+    "(aguamarina). En sala: `qlctool probe` sobre el canal 8 de una 7R, apuntar",
+    "el color real de cada posición de 8 en 8, y corregir los nombres en",
+    "`BEAM-LIGHT-230W-7R.qxf` (los rangos no se tocan). Regenerar después: las",
+    "escenas de rueda cambian de valor si cambian los nombres."
+  ]
+}

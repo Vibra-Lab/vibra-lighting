@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-b75fd40b-7c8e-4834-9df9-c8ec462168a4",
+  "title": "El pad, la proxima vez: USB o Bluetooth, no los dos (2026-08-30)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "La",
+    "",
+    "noche del 29 \"no pude usar el pad porque ni reseteandolo reconocia las",
+    "teclas\", con el cable y el BT puestos a la vez. Causa, ya medida y escrita en",
+    "el README de spectalive/smc-pad: **con USB conectado el pad manda su MIDI por USB y",
+    "el lado BLE se queda mudo**, y el workspace escucha el puerto `ble device`.",
+    "Resetear el pad no arregla eso. Comprobar en sala: quitar el USB (que es",
+    "ademas lo que quiere el puente de LEDs, que sostiene el BLE), o dejar el USB",
+    "y en Entradas/Salidas apuntar el universo 1 al puerto USB y **guardar el",
+    "fichero** — `newshow` respeta el puerto que el fichero ya trae.",
+    "`swift midiports.swift` (spectalive/smc-pad) lista los puertos con el nombre que usa",
+    "QLC+ (propiedad `Model`), que es lo unico que permite saber cual es cual."
+  ]
+}

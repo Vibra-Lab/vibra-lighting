@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-f1c0fc91-fcdd-41bc-aa59-274d26f2b921",
+  "title": "2026-09-27 - **`STROBO` / `STROBO SUAVE` mantenidos: estroban.** MiN",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Wash 236/217 y columnas LED de humo 247/200 (reglas D2, D3). Evidencia:",
+    "docs/en-sala-dmx-reaudit-2026-09-27.md §7."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **`STROBO` / `STROBO SUAVE` mantenidos: estroban.** MiN",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

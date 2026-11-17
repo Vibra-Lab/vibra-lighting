@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-1ca29279-7a80-434b-a34a-84b2d5f05dd2",
+  "title": "2026-09-27 - **`tieneslavibra` is a plain repository under `Vibra-Lab`;",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "the BusiRocket fork is deleted.** Owner: \"borrarlo y subirlo como repo",
+    "nuestro, olvidemosnos de forks\". `Vibra-Lab/tieneslavibra` created private,",
+    "`main` and tags pushed (`81a92d85`, 786 commits), Actions disabled because",
+    "its deploy target (cPanel on nova) was reinstalled on 2026-09-26; the fork",
+    "deleted with `gh repo delete`; clones on the mini and the MacBook re-pointed.",
+    "Full copy of the fork first: `~/Backups/tieneslavibra-busirocket-fork-2026-09-27.bundle`",
+    "(`git bundle verify` ok). Its four `DEPLOY_SSH_*` secrets and the deploy key",
+    "were not recreated (brain `projects/tieneslavibra.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **`tieneslavibra` is a plain repository under `Vibra-Lab`;",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

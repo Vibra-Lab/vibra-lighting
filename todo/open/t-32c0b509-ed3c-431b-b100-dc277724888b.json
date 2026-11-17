@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-32c0b509-ed3c-431b-b100-dc277724888b",
+  "title": "Beat-locked matrices",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": RGBMatrix in Beats tempo defers a step change",
+    "",
+    "when within 1/16 beat to stay locked (`rgbmatrix.cpp` beat resync), and 5.2",
+    "enabled audio BPM detection (BeatTracker, 50-240 BPM with confidence). Folds",
+    "into the existing `Vibra-beats.qxw` trial above: beats on musical layers",
+    "only, energy clock stays on time — `beat_tempo.py` already draws that line."
+  ]
+}

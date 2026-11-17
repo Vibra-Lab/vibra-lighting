@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-5e7da03c-b44e-4235-aa80-ba540655428b",
+  "title": "**Velocidad de pan/tilt (canal 5) sin escribir en las cuatro cabezas con",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "ese canal.** CromoWash, MAC WASH y 7R declaran `FastSlow` (0 = rápido) y la",
+    "MiN Wash, ya corregida contra su manual, también: a 0 siguen el EFX sin",
+    "retardo, que es lo que queremos. No hay nada que cambiar mientras nadie lo",
+    "escriba; si un día se quiere movimiento \"suave\" es este canal y no el tempo",
+    "del EFX."
+  ]
+}

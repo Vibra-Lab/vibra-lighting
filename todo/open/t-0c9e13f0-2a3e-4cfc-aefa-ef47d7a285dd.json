@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-0c9e13f0-2a3e-4cfc-aefa-ef47d7a285dd",
+  "title": "Verify the remaining undocumented fixtures on site",
+  "state": "in_progress",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Online search",
+    "",
+    "(2026-08-24) settled the Chauvet MiN Wash, and on 2026-09-01 its manual was",
+    "recovered into `Manual/` and the definition corrected against it; the same",
+    "pass verified the LED Bar 240/8 against its manual and filed the AF-150's.",
+    "What paper cannot settle: Generic BEAM 230W 7R (owner-verified on the",
+    "hardware, no manual matches), Vortex PC-64 LED S (no such brand online;",
+    "three incompatible OEM layouts), HYULIGHTS WX-60WPS-48PARTITION and the",
+    "LED Beam Mini (a strong OEM candidate for channels 9-16 - see the 2026-09-01",
+    "section above). The check is a five-minute job on site: `qlctool probe",
+    "<show> <fixture-id> --base \"7=255\" --buttons` builds one scene per channel",
+    "plus a walk chaser - press play and write down what each channel does. Do it",
+    "in the same session as the physical-rig confirmation."
+  ]
+}

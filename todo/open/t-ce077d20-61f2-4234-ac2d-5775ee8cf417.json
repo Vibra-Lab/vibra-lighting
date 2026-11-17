@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-ce077d20-61f2-4234-ac2d-5775ee8cf417",
+  "title": "**Confirmar que los golpes de color salen del mismo color en toda la",
+  "state": "pending",
+  "category": "repaso-del-due-o-sobre-la-programaci-n-2026-09-22",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "sala.** El dueño vio \"los rgb salen como mezclados con blanco\". La mitad era",
+    "el emisor White sumándose al RGB (cerrado, `blanco pagado dos veces`) y la",
+    "otra mitad puede ser la tabla de nombres de la rueda de las 7R, que sigue sin",
+    "confirmar - ver el item del 2026-09-02 sobre `color_wheel_match`. Con la",
+    "rueda mal nombrada, un golpe rojo manda a los beams un color vecino.",
+    "",
+    "**2026-09-26:** lado DMX comprobado (los diez golpes salen del mismo RGB en",
+    "las nueve familias, el blanco usa el emisor White, y cada golpe estroba",
+    "tambien: 7R a 234, MiN Wash a 236); queda mirarlo en sala si la rueda de",
+    "las 7R (item de nombres de la rueda) manda el color correcto. Detalle:",
+    "docs/en-sala-dmx-audit-2026-09-26.md §3."
+  ]
+}

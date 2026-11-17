@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-c9f559b0-c1ce-432e-969f-e3c3964273ca",
+  "title": "`Vel. Paneles` label and docs said HTP; the channel is Speed (LTP)",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    Text fixed; the slider overrides outright once moved."
+  ],
+  "closed": "2026-11-17",
+  "result": "`Vel. Paneles` label and docs said HTP; the channel is Speed (LTP)",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

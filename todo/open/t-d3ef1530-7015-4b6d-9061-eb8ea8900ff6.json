@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-d3ef1530-7015-4b6d-9061-eb8ea8900ff6",
+  "title": "Try the two generated shows on the laptop and say which one holds up:",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`QLC+ Setups/Vibra.qxw` (real time) and `QLC+ Setups/Vibra-beats.qxw` (chases",
+    "on QLC+'s Beats tempo with the audio input as beat generator, 2026-08-25).",
+    "The beat one needs an **audio input picked under QLC+ Configuration** or",
+    "nothing advances - that is the whole risk of it, and the reason it is a",
+    "separate file. What to watch: does the detected BPM track real music through",
+    "the venue's PA, and does anything stall between tracks."
+  ]
+}

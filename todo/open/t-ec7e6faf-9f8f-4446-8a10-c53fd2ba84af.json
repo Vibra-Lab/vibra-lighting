@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-ec7e6faf-9f8f-4446-8a10-c53fd2ba84af",
+  "title": "Las dos MAC WASH: mirar el menu RunMode en la lyre (2026-08-30)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "La",
+    "",
+    "noche del 29 \"se quedaban mirando para abajo y hacian cosas raras como una",
+    "especie de cambios de colores muy rapidos\", con el workspace ya recargado y",
+    "con la ventana medida (tilt 221) puesta. Ninguna funcion del show hace eso:",
+    "el color va en una rueda de ocho tiempos y el movimiento estaba apuntado, o",
+    "sea que la lyre no estaba obedeciendo DMX. El manual (`Manual/Mac Mah MAC",
+    "WASH 1915Z`, seccion V, MENU) da `RunMode: DMX / AUTO / SOUND` — en SOUND",
+    "cambia de color con la musica, que es exactamente lo que se vio. **En sala,",
+    "en el display de cada cabeza:** `RunMode = DMX`, `Channel = 23CH`,",
+    "`DMX Addr = 345` y `368`. Del lado del fichero ya esta hecho lo que se podia",
+    "hacer: cada look que da color escribe ahora el canal `Function Mode` a 0",
+    "(`mode_park.py`) y la regla `modo sin dueño` no deja que ningun fixture se",
+    "quede con ese canal sin escribir. Si con el menu en DMX sigue pasando, lo",
+    "siguiente es la cadena: las dos van al final del universo (345-390) detras de",
+    "las cuatro maquinas de humo, con el FT232R sin buffer y sin terminador."
+  ]
+}

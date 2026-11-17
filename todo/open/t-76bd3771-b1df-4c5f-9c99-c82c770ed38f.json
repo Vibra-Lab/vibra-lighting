@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-76bd3771-b1df-4c5f-9c99-c82c770ed38f",
+  "title": "Comprobar en sala los 4 grupos nuevos (2026-08-26)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Los 4 paneles",
+    "",
+    "WX-60WPS salieron de `BarrasLed` a un grupo propio `PixelesLed` (4x1), porque",
+    "compartir la rejilla 8x3 con las dos barras los dejaba a oscuras media",
+    "animacion — ocupaban solo las columnas 4-7 de la fila de abajo. De paso, todas",
+    "las rejillas ahora encajan exactamente: `BarrasLed` 8x2, `Cabezas` 12x1 (antes",
+    "declaraba 8x1 sobre 12 heads, 4 inalcanzables), `PAR` 15x1. La consola pasa de",
+    "288 a 361 botones (un banco de color y 30 mezclas mas para el grupo nuevo;",
+    "matrices no — el generador excluye a proposito los grupos self-animating,",
+    "`canonical_show.py:197-217`, verificado 2026-08-27). Verificar que el barrido cruza los 4 paneles y que la pagina 2",
+    "sigue cabiendo en la pantalla del portatil."
+  ]
+}

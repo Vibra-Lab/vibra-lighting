@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-07f7f46d-42ca-4da2-bc81-78a54966d747",
+  "title": "2026-09-24 - **El MacBook Pro al dia en `~/p/DMX-Fixtures`**: arbol",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "limpio, 23 commits por detras, `git pull --ff-only` a `2bbe416`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-24 - **El MacBook Pro al dia en `~/p/DMX-Fixtures`**: arbol",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-ae8fd102-396c-4e94-b33a-d58a9c50abc4",
+  "title": "2026-09-26 - **Confirm JUGAR on site: confirmado en el DMX.** Con AUTO",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "corriendo, el pick Rig Rojo pone todo el rig, incluidas las 7R y las",
+    "barras, en rojo; F1 (CHARLA) suelta el pick; `W` devuelve la rueda.",
+    "Variante medida: pulsar Q otra vez con AUTO encendido apaga AUTO y deja el",
+    "pick corriendo. Evidencia: docs/en-sala-dmx-audit-2026-09-26.md §11."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **Confirm JUGAR on site: confirmado en el DMX.** Con AUTO",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

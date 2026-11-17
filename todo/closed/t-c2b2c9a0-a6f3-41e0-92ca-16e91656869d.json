@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-c2b2c9a0-a6f3-41e0-92ca-16e91656869d",
+  "title": "2026-09-25 - **spectalive/qlctool CI is green.** The mypy failure",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(97 errors in 31 files, run 36122117743) was cleared by a strict ratchet",
+    "in `mypy.ini` and the baseline (`de4b76f..fae5f1e`); the remaining",
+    "pytest `over-budget` failure (the suite takes 286-477 s on the 4-core",
+    "runners, against the local 120 s budget) closed with codeality-py 0.2.4's",
+    "`CODEALITY_PY_TEST_BUDGET_SECONDS`, set to 600 on the gate step of",
+    "`quality.yml` (`bfde7e9`); the local budget stays 120 s. Evidence: run",
+    "36131008406 green (pytest 476.8 s on 3.11, 359.9 s on 3.13). Open in the",
+    "toolkit's TODO: 3.11 uses 79% of that budget, so the show builds in",
+    "`tests/test_check.py` need to get cheaper."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **spectalive/qlctool CI is green.** The mypy failure",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

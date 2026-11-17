@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-7945f7d5-91da-4184-bd88-d087a57c4fa6",
+  "title": "2026-08-28 - **Vibra Eventos (DMX):** `Humo Vertical` restored \"como el",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    antiguo\" (owner's words)."
+  ],
+  "closed": "2026-11-17",
+  "result": "a `Humo Vertical` chaser (key N, page 2, latched on purpose) - the panels hold Effect 1 for 60 s then Effect 3 for 600 s, looping: the hand-built console's misnamed HUMO AUTO chaser (DeluxeEventos2 ID 367) carried verbatim, multicolour cycles and all - the owner chose the real old behaviour over the remembered white. `generate/vertical_smoke_light.py`.",
+  "evidence": [
+    "dated test `tests/test_internal_program.py::test_the_vertical_smoke_light_is_the_old_chaser_verbatim`; suite 274 green; `qlctool check` \"ningun problema\" (406 buttons) on the three regenerated `--validate`d workspaces."
+  ]
+}

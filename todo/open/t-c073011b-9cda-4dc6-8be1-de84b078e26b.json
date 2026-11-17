@@ -1,0 +1,33 @@
+{
+  "tadu": 2,
+  "id": "t-c073011b-9cda-4dc6-8be1-de84b078e26b",
+  "title": "Ver en sala lo que cambio la rejilla (2026-08-31)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Tres cosas nuevas,",
+    "",
+    "todas correctas sobre el papel y ninguna vista todavia:",
+    "1. **Las dos MAC WASH ya tienen grupo propio, `Lyres`, 3x2** — una celda por",
+    "   anillo (son tres anillos RGBW concentricos). Traen banco de color propio y",
+    "   matrices propias. Mirar que los anillos pinten los tres, no solo el de",
+    "   fuera, y que el patron sobre 3x2 se lea como algo y no como parpadeo.",
+    "2. **Las celdas de todos los grupos van ahora en orden de escenario**, no de",
+    "   patch. `Cabezas` iba 1916, 9694, 4405, 7205 mm: un barrido salia a la",
+    "   derecha, saltaba a la izquierda y volvia. Ahora barre de verdad. Mirar un",
+    "   Fill o un Stripes sobre `Cabezas` y sobre `PAR` y confirmar que cruza la",
+    "   sala en una direccion.",
+    "3. **La consola crecio de 430 a 503 botones** con el banco nuevo, y la columna",
+    "   de bancos de la pagina manual se encoge para que quepan. Los marcos pasan",
+    "   de 122 px de alto a 102. Confirmar que se sigue leyendo a 13\". (Al",
+    "   2026-09-22 son 605 botones en cuatro paginas, y el marco CABEZAS baja a",
+    "   15 columnas para meter sus 26 picks en dos filas: mirar eso tambien.)",
+    "",
+    "**2026-09-27, v0.1.9: resuelto por la regla D6.** Cabezas ya no lleva",
+    "matrices (ninguna celda montada podia mostrarlas); PAR y Lyres siguen",
+    "correctas. Queda solo lo de sala: mirar los tres anillos de las Lyres, un",
+    "barrido sobre PAR, y que la consola se lea a 13\". Detalle: docs/en-sala-dmx-reaudit-2026-09-27.md §12."
+  ]
+}

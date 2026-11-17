@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-a4caa7ce-c02e-48c9-b5a8-ebab60fcb543",
+  "title": "2026-09-13 - **Entorno:** el puntero al clon de QLC+ no estaba roto",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resultado: `~/p/qlcplus` existe en esta maquina; el item lo daba por",
+    "  ausente desde el 2026-09-13.",
+    "- Evidencia: `ls -d ~/p/qlcplus` devuelve la ruta."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-13 - **Entorno:** el puntero al clon de QLC+ no estaba roto",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

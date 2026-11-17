@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-fdc16570-a650-4f60-9130-5f38c4ccd5a7",
+  "title": "Put the two CLB2.4 grids in a fixture group. They are in none, so they get",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "no colour bank and no matrix - only the rig-wide `Rueda Colores` scenes reach",
+    "them (which is why AUTO no longer leaves them dark, 2026-08-25). `qlctool",
+    "patch <file> --group-add` is the edit; the `PAR` group's grid needs a free",
+    "cell (`--group-size` first). **Only `Vibra.qxw` still has this** (checked",
+    "2026-08-31): the split patches each CLB2.4 four times, one fixture per head,",
+    "and all eight are in `PAR`. So it dies with `Vibra.qxw` if the split wins.",
+    "**2026-09-27, v0.1.9 (regla D9):** los fixtures sin grupo entran en las",
+    "escenas del primer banco, asi que las CLB2.4 ya siguen el banco 1 en",
+    "`Vibra.qxw` (medido en el DMX, docs/en-sala-dmx-reaudit-2026-09-27.md §6).",
+    "Queda solo la matriz, que exige el grupo."
+  ]
+}

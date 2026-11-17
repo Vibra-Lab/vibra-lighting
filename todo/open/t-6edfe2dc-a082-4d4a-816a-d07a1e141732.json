@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-6edfe2dc-a082-4d4a-816a-d07a1e141732",
+  "title": "Casi ningun slider en la consola",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(dos al 2026-09-22: `Master",
+    "",
+    "General` y el GrandMaster; el texto original decia cero). Three concrete",
+    "uses: (a) Submaster",
+    "slider scaling Peak's frame — `Dimmer Chase` being HTP-shadowed by",
+    "`Intensidad Total` there is fixed a different way now (TODO_LOG.md,",
+    "2026-08-27: the chase owns Peak's dimmers outright), so this would be a",
+    "live-adjust nicety, not a correctness fix; (b) Adjust-mode sliders driving",
+    "live function attributes — EFX Width/Height/",
+    "Rotation and RGBMatrix Color 1-5 / Pattern / script properties are all",
+    "registered live attributes (`rgbmatrix.cpp` registerScriptPropertyAttributes).",
+    "The GrandMaster slider (c) shipped separately — Task 3, TODO_LOG.md",
+    "2026-08-27."
+  ]
+}

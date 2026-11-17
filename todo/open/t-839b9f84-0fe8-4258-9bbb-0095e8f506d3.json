@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-839b9f84-0fe8-4258-9bbb-0095e8f506d3",
+  "title": "El zoom de las MAC WASH solo se usa abierto",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Es el único fixture del",
+    "",
+    "rig con el ancho del haz en un canal (6-50 grados) y el show manda el extremo",
+    "abierto en todos los looks (`zoom_wide_pairs`; desde 2026-09-02 es 0, no",
+    "255, ver el item de las MAC WASH). Cerrado da un haz tipo beam que en humo",
+    "se ve; un pulso de zoom al ritmo es un efecto que no cuesta nada. Decisión",
+    "del dueño, y después generador + regla (la regla `zoom sin declarar` hoy",
+    "exige justamente lo contrario, habría que darle una excepción con dueño)."
+  ]
+}

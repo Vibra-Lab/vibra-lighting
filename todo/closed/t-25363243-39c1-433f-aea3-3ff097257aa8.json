@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-25363243-39c1-433f-aea3-3ff097257aa8",
+  "title": "`HUMO VERT` column in the room's colour is the owner's decision of",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    2026-08-30, not a defect; the montage note was stale."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

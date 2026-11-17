@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-951ce671-6cda-48aa-9b86-eabe36ed719d",
+  "title": "2026-08-29 - **SMC-PAD:** el mapa del pad ya sale de un solo sitio",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- Resultado: `generate/smc_pad_device.py` genera el perfil",
+    "  (`qlctool input-profile`) y parchea el workspace (`input_binding.py`); la",
+    "  capa manual vive en el banco 2 y la regla",
+    "  `binding a un control que el pad no manda` lo vigila.",
+    "- Evidencia: medido con `tools/smc-pad/midicap.swift` (PAD13 = 48, PAD1 = 36,",
+    "  PAD16 = 51); al 2026-09-22 el show trae 24 `<Input>` y 83 teclas."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-29 - **SMC-PAD:** el mapa del pad ya sale de un solo sitio",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

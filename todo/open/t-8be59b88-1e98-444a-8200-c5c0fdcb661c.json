@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-8be59b88-1e98-444a-8200-c5c0fdcb661c",
+  "title": "Check the mirrored movement from the floor. House-right movers (CromoWash",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "#2, beams 21 and 23) now run the EFX backwards so the pairs open and close",
+    "together instead of the rig sweeping in parallel. If it reads wrong it is the",
+    "plot's sides, not the effect: `house_right_fixture_ids` compares against the",
+    "middle of the stage grid. **Added 2026-08-27**: the two new Serial-figure",
+    "movements, `Ola Suave` and `Cascada Beams` (Task 6), are a deliberate",
+    "exception — Serial propagation gives mirrored pairs different",
+    "`serialNumber`s, so the pairs cascade rather than move in wall-clock",
+    "lockstep; judge on site whether the traveling wave reads well. Also eyeball",
+    "the `Cascada Beams` caption (13 characters on a 63px button) — unverifiable",
+    "from the XML alone.",
+    "2026-10-21: the AUTO wash and beam figure clocks now share one ordered",
+    "rotation; isolated QLC+ DMX snapshots were rendered in 3D (see",
+    "`docs/lighting-review-2026-10-21.md`). Next: watch the paired figures and",
+    "the cascade on the real floor at Ambiente, Fiesta and Peak."
+  ]
+}

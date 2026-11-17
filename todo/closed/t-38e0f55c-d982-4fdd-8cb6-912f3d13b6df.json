@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-38e0f55c-d982-4fdd-8cb6-912f3d13b6df",
+  "title": "2026-08-24 - **Vibra Eventos (DMX):** Pointed the brain's show-Mac access",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "section at the SSH alias instead of the drifting DHCP address."
+  ],
+  "closed": "2026-11-17",
+  "result": "`business/access-map.md` \"Vibra show MacBook (Oficina)\" now leads with `ssh vibra-oficina` (alias added to `~/.ssh/config` 2026-08-24, resolves `MacBook-Pro-de-Oficina.local`), keeps the IP only as context, and gained two traps found while using the machine: `/usr/bin/git`, `strings` and friends die there with `xcrun: error: invalid active developer path` (no Command Line Tools) so a non-interactive `ssh vibra-oficina git ...` needs `export PATH=/usr/local/bin:$PATH` for Homebrew git 2.37.3; and QLC+ 5.2.2 reads its custom fixture definitions from `~/Library/Application Support/QLC+/Fixtures`.",
+  "evidence": [
+    "brain commit \"access-map: vibra-oficina alias leads, brew git and QLC+ paths on the show Mac\"."
+  ]
+}

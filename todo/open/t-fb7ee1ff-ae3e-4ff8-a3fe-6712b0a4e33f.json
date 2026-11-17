@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-fb7ee1ff-ae3e-4ff8-a3fe-6712b0a4e33f",
+  "title": "Ideas de UX de otras apps",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(investigadas 2026-09-24): zonas fijas de",
+    "",
+    "movimiento / color / flash con velocidad y tap siempre a mano (Light Rider);",
+    "estado real en cada control, no el ultimo toque (Luminair, iHog); emparejar",
+    "por QR o mDNS (G3Link). La web de QLC+ no pinta el Speed Dial: soportar",
+    "todos los widgets ya diferencia."
+  ]
+}

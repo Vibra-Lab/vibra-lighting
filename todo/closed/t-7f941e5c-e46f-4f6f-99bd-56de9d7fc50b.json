@@ -1,0 +1,30 @@
+{
+  "tadu": 2,
+  "id": "t-7f941e5c-e46f-4f6f-99bd-56de9d7fc50b",
+  "title": "2026-09-25 - **The toolkit found its fixtures only inside this repo**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(spec step 6): `library.REPO_ROOT` was `parents[3]` of the package, so a",
+    "copy anywhere else loaded no definition and `capabilities_of` skipped every",
+    "fixture without a word. Now `qlctool/fixture_dirs.py` resolves ruling B3",
+    "(`--fixtures` > `[rig] fixtures` > `QLCTOOL_FIXTURES` > the nearest",
+    "`qlctool.toml`), the repo root carries `qlctool.toml` naming its three",
+    "folders, `install_plan` takes a `ToolkitConfig`, and `warn_unresolved`",
+    "prints the fixtures with no definition and the folders searched.",
+    "`tests/test_no_repo_layout.py` refuses any repo folder name or",
+    "`parents[>=3]` in the package. Evidence: `pytest tests/ -q` -> `601",
+    "passed`; `test_a_rig_outside_the_repo_regenerates_vibra` rebuilds",
+    "`Vibra.qxw` from a tmp copy to the baseline sha256; `vibra_compare.py",
+    "--validate` -> three `identical, 0 finding(s), QLC+ loaded it`; the three",
+    "`qlctool check` -> `522 botones revisados, ningun problema`; `qlctool",
+    "install --check` -> `QLC+ has every one of the configured 30 file(s)`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **The toolkit found its fixtures only inside this repo**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-2097e45f-ded0-46df-978c-d141f6d25d89",
+  "title": "XY Pad presets and floor control",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": the pad ships bare; QLC+5 supports",
+    "",
+    "Position/EFX/Scene/FixtureGroup presets and aiming at a 3D floor point",
+    "(`vcxypad.cpp`) — useful for the fan aiming and the crowd-sweep bounds in",
+    "the deferred highlight item."
+  ]
+}

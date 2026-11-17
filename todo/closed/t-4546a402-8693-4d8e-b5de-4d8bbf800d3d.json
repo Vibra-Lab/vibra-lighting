@@ -1,0 +1,34 @@
+{
+  "tadu": 2,
+  "id": "t-4546a402-8693-4d8e-b5de-4d8bbf800d3d",
+  "title": "The media luna was never the colour wheel",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "\"El canal 7 de cada 7R",
+    "",
+    "está a la mitad en vez de abierto del todo\" (owner, reading the DMX).",
+    "Channel 7 is the 7R's dimmer, and on a 7R that is a mechanical blade across",
+    "the aperture, not a fader: at 110 - what `Intensidad Ambiente` wrote to every",
+    "dimmer in the rig, held for the quiet level's four minutes - it covers half",
+    "the lens. The colour-wheel rotation I fixed earlier that day was a real",
+    "fault, but it was not this one.",
+    "- Fix: the `.qxf` now declares the dimmer in three ranges (closed / partial",
+    "  blade / open), `stepped_dimmer.py` reads \"a dimmer described in steps is",
+    "  not a fader\" off that, `energy_intensity` gives such a dimmer full instead",
+    "  of the level value, `dimmer_chases` leaves those fixtures out (an EFX",
+    "  sweeping a blade is a chase of half-moons) and `dimmerless_intensity`",
+    "  owns them at full in the peak level instead.",
+    "- Check: `checks/rule_stepped_dimmer.py` (`dimmer a medias`), two dated",
+    "  regressions - the fraction and the sweeping EFX.",
+    "- Verified in the regenerated file: the 7R dimmer now carries only 0 and 255",
+    "  across all 566 functions, and no Dimmer-mode EFX touches them."
+  ],
+  "closed": "2026-11-17",
+  "result": "The media luna was never the colour wheel",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

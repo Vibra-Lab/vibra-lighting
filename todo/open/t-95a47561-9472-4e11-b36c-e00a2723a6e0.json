@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-95a47561-9472-4e11-b36c-e00a2723a6e0",
+  "title": "Invertir la UI",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": la receta del show genera la consola virtual con la",
+    "",
+    "forma de la tablet, y el cliente pinta `/vc.json` de forma generica.",
+    "Entonces desaparecen `qlctool deskmap`, `Vibra.desk.json` y el mapa dentro",
+    "del firmware, y un show nuevo ya no pide reflashear."
+  ]
+}

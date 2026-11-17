@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-fc5622a9-670f-45d5-a7af-c71d04c61327",
+  "title": "Review `QLC+ Setups/Vibra.qxw`",
+  "state": "in_progress",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- the canonical show built by the",
+    "",
+    "toolkit. Rebuilt 2026-08-25 after the owner reported that pressing AUTO",
+    "stopped the show and that the console was an unusable 2662px list. Both were",
+    "real and are fixed (see `TODO_LOG.md`). Al 2026-09-22 son 1629 funciones y",
+    "605 botones en 1440x900, y QLC+ 5.2.2 lo carga limpio. Copias en",
+    "`~/Demos-qlctool/` en las dos maquinas. La rama ya esta mezclada",
+    "(2026-09-22). Queda: que el dueño lo corra en el portatil del show y diga si",
+    "AUTO aguanta y si la disposicion funciona, y despues archivar los dos",
+    "workspaces DeluxeEventos - hoy siguen en `QLC+ Setups/` y",
+    "`DeluxeEventos2.qxw` es el material de prueba de `tests/test_play_generators.py`",
+    "y `tests/test_old_show_recovery.py`; desde 2026-09-25 esos tests viven en",
+    "spectalive/qlctool y leen su copia congelada del rig, asi que archivarlo",
+    "aqui ya no los toca."
+  ]
+}

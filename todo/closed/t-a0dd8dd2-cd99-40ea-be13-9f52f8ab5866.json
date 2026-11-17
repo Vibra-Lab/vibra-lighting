@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-a0dd8dd2-cd99-40ea-be13-9f52f8ab5866",
+  "title": "2026-09-27 - **qlctool `v0.1.11` fijado en `requirements.txt`.** Tres",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "items de teclado de la revision de la ronda G (2026-09-26) cerrados en el",
+    "toolkit: regla `duplicate_fixture_id` (dos fixtures parcheados con el mismo",
+    "ID, error), tests propios de `wheel_only_fixture_ids`, y E402 y ARG001",
+    "fuera del ratchet de ruff. Gate del toolkit verde (997 pasan, mypy 0,",
+    "baseline 0 nuevos). Aqui: 33 pasan, `vibra_compare --descriptions",
+    "--validate` identico x3 y cargado por QLC+, `check` limpio en Vibra-split;",
+    "ningun byte de los tres workspaces cambia."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **qlctool `v0.1.11` fijado en `requirements.txt`.** Tres",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

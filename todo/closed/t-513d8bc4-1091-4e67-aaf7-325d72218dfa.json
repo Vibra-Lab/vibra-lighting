@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-513d8bc4-1091-4e67-aaf7-325d72218dfa",
+  "title": "Expanded colours and synchronized AUTO movement in the shipped show",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "closed": "2026-10-21",
+  "result": "Pinned qlctool v0.2.3, regenerated and QLC+ validated all three workspaces, the tablet map and pad palette; recorded before and after 3D captures in `docs/lighting-review-2026-10-21.md`.",
+  "evidence": [
+    "`tests/vibra_compare.py --descriptions --validate` reports three identical workspaces with zero findings; `qlctool check` reports zero problems for each workspace."
+  ]
+}

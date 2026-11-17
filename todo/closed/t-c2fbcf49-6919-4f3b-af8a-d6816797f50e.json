@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-c2fbcf49-6919-4f3b-af8a-d6816797f50e",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** RGB script repertoire curated past",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    Fill/Even-Odd/Waves/Strobe (Tasks 5/6, `~/p/DMX-Fixtures/TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "10 curated matrix scripts across the three grid shapes (BarrasLed 8x2, Cabezas 12x1, PAR 15x1), each with deliberate `<Property>` parameters and multi-colour via indexed Color where it reads. Matrices per group went from 90 to 100 in the shipped shows.",
+  "evidence": [
+    "commits 3d7b80d, 213ca2f (`rig: the matrix library learns nine new tricks` / `console: a widget can spill past its own frame, not just the canvas`); `tools/qlctool/tests/test_rgbmatrix_generation.py`, `test_matrix_step_count.py`; `qlctool check` clean on all three, full pytest suite green."
+  ]
+}

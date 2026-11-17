@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-125eb919-ec26-41b2-87e2-e9ff9f4b9991",
+  "title": "2026-09-26 - **Music and events repos moved to `Vibra-Lab`.** Owner:",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "\"haz lo del resto de repos\". Transferred with `gh api -X POST",
+    "repos/<owner>/<repo>/transfer -f new_owner=Vibra-Lab`: `vibra-contratos`",
+    "(from BusiRocket), `contratos` (archived VIBRA contract generator),",
+    "`Attendize` (public ticketing fork), `DJCenterDeluxe` and `djplayerdeluxe`",
+    "(all from CristianDeluxe); each answers at `Vibra-Lab/<name>`, and the local",
+    "clones in `~/p` (`contratos`, `attendize`, `DJCenterDeluxe`,",
+    "`djplayerdeluxe`) point there. Left out on purpose: `BusiRocket/dj-rocket-ui`",
+    "(the DJ-Rocket product, which has its own `DJ-Rocket` org) and `Contratica`",
+    "(own org). `tieneslavibra` could not move (open in `TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **Music and events repos moved to `Vibra-Lab`.** Owner:",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

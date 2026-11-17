@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-ac735663-39b9-43be-a2ad-cbbf053aa24e",
+  "title": "2026-09-27 - **Barrido de la tablet, ahora v91 con el show v0.1.9.**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Toques inyectados en `/dev/input/event0` sobre cada control de 7 paginas",
+    "(SPEED fuera) contra un QLC+ 5.2.2 sin E/S en :9997: 154 de 154 OK. La",
+    "tablet registra ya cada toggle enviado o descartado (dmxdesk v0.1.2), que",
+    "era lo que faltaba para rastrear el fallo de 25 en CABEZAS de la segunda",
+    "pasada del 2026-09-26; no se repitio. La primera pasada de hoy se corto a",
+    "los 4 controles porque ese QLC+ de prueba se cayo (ver el item del crash en",
+    "TODO.md). Aceptacion aparte de `releaseTo`: 22 de 22 (taq102 TODO_LOG)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **Barrido de la tablet, ahora v91 con el show v0.1.9.**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

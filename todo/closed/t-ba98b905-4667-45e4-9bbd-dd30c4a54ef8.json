@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-ba98b905-4667-45e4-9bbd-dd30c4a54ef8",
+  "title": "2026-09-24 - **`Vibra.desk.json` reconstruido desde el `Vibra.qxw`",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "actual, con un test que lo vigila.**",
+    "- Resultado: tras `29ddaf3` el mapa seguia con el sha256 del workspace de",
+    "  `80261d0` (`3eb53764...`); 36 de 144 widget ids y 141 function ids ya no",
+    "  existian y `rig-blanco` era `multicolor`. `tests/test_shipped_deskmap.py`",
+    "  reconstruye cada `*.desk.json` desde el workspace que nombra y exige",
+    "  igualdad; fallaba antes de regenerar y pasa despues.",
+    "- Evidencia: `a0a04b6`; suite 477 passed, 10 skipped; `qlctool check`",
+    "  exit 0 en `Vibra.qxw` y `Vibra-split.qxw`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-24 - **`Vibra.desk.json` reconstruido desde el `Vibra.qxw`",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

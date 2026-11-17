@@ -1,0 +1,14 @@
+{
+  "tadu": 2,
+  "id": "t-2062db60-08c8-4ed7-851e-d97756482ea6",
+  "title": "VC Clock in Schedule mode",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": start AUTO at opening time, per weekday.",
+    "",
+    "One widget, zero risk."
+  ]
+}

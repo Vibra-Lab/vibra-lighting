@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-363e814d-cd41-48d9-8158-6d0109cf50ae",
+  "title": "Fork de QLC+ con `/vc.json` ampliado",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": atajos de teclado,",
+    "",
+    "`stopAllFadeOutTime`, `functionsList` y multiplicadores del Speed Dial, mas",
+    "de un color por widget; y PR a upstream. Hallazgos: se construye en",
+    "`WebAccessQml::getVCJson` (`webaccess/src/webaccess-qml.cpp:1356`); `type`",
+    "llega traducido (\"Botón\"), hay que usar `typeId` (1 Button ... 11 Clock);",
+    "el websocket maneja los 11 tipos salvo Label."
+  ]
+}

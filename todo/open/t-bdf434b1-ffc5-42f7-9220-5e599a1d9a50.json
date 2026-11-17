@@ -1,0 +1,16 @@
+{
+  "tadu": 2,
+  "id": "t-bdf434b1-ffc5-42f7-9220-5e599a1d9a50",
+  "title": "RGBMatrix ControlMode Dimmer/Shutter + BlendMode",
+  "state": "pending",
+  "category": "qlc-feature-audit-2026-08-27",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": a matrix can paint",
+    "",
+    "dimmers instead of RGB — any of the 39 scripts becomes an intensity chase",
+    "over the grid, an alternative to the shadowed `Dimmer Chase` EFX. BlendMode",
+    "Mask is already noted in the barras item above; Additive also exists."
+  ]
+}

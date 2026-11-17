@@ -1,0 +1,33 @@
+{
+  "tadu": 2,
+  "id": "t-4b036497-81cc-4d51-9e97-5d2026a93b0e",
+  "title": "Multi-backend",
+  "state": "pending",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": modelo de superficie propio y un adaptador por",
+    "",
+    "programa; QLC+ primero, luego libres y de pago (Onyx, MagicQ, Lightkey,",
+    "Daslight...) por API, OSC o MIDI. Hecho en dmxdesk: el bucle esta en el core",
+    "tras `desk_platform` (`d128041`, 2026-10-27) y la consola tras",
+    "`desk_console`, con QLC+ como primer adaptador (`bdd589d`, 2026-10-28), y",
+    "el desk se construye desde su propio `struct desk_surface`, que el adaptador",
+    "de QLC+ traduce de `/vc.json` (`151112a`, 2026-10-28). Segundo adaptador:",
+    "OSC generico sobre UDP (`dmxdesk --osc FICHERO`, `7567713` y `739d115`,",
+    "2026-10-28), con la superficie declarada en un fichero; el guion de gestos",
+    "de Vibra manda los mismos controles en el mismo orden que por QLC+.",
+    "Probado contra la entrada OSC de un QLC+ 5.2.2 sin E/S (`9efe979`,",
+    "2026-10-28): botones, solo, flash, stop, dial y multiplicadores funcionan;",
+    "17 de los 181 controles del mapa (gobos 165-178, master 266, 272, 294)",
+    "estan en paginas ocultas de frames multipagina y QLC+ ignora ahi la",
+    "entrada externa, asi que por OSC esos quedan deshabilitados. El generador",
+    "ya emite las entradas OSC (qlctool `v0.2.6`, `2ed0ba3`, 2026-10-28):",
+    "`[controllers] osc = \"/desk\"` en la descripcion da un universo OSC propio",
+    "(puerto 7701 junto a un universo DMX) y ata cada boton, slider y dial a",
+    "`/desk/<id>`; los tres Vibra no lo piden y siguen identicos byte a byte.",
+    "Activarlo en los shows de sala es decision del dueño: abre un puerto de",
+    "control sin autenticar en la red del local."
+  ]
+}

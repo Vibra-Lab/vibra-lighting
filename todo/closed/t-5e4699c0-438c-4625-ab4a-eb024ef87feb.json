@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-5e4699c0-438c-4625-ab4a-eb024ef87feb",
+  "title": "2026-09-26 - **The mini's 2025 stash, read and dropped.**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`stash@{0}: Tower Auto-Stash 2025-08-28` held a QLC+ autosave of",
+    "`DeluxeEventos.qxw` from a machine without the DMX dongle (its output patch",
+    "lost the device: `UID=\"None\"`), attribute reorders, and executable bits on",
+    "the colour tiles regenerated earlier today. Nothing worth keeping, and",
+    "applying it would unpatch the output. Saved as",
+    "`~/Backups/vibra-lighting-stash-2025-08-28-tower-autostash.patch` (mini),",
+    "then dropped."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **The mini's 2025 stash, read and dropped.**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

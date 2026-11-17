@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-a01d34bc-a858-4de7-9ec3-0e6a6f7a0bb8",
+  "title": "2026-09-27 - **qlctool `v0.1.12` fijado en `requirements.txt`.** Cierra los",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "ultimos items de teclado de la revision de la ronda G: regla",
+    "`unreachable_function` (aviso: funcion construida que ningun widget de la",
+    "consola ni paso de chaser/coleccion/secuencia/show alcanza; sobre el sweep",
+    "destapo dos bugs del generador en rigs solo-beams y solo-pixeles, arreglados",
+    "en la causa), regla `help_names_frame` (error: linea de ayuda de la pagina 4",
+    "que nombra mezclas o matrices sin marco en su pagina), y el fixture solo:",
+    "minimo de un grupo con un fixture, ping-pong solo con dos que atenuan,",
+    "gemelos «Simultaneo» solo con dos cabezas, y `tap_dial` lee las duraciones",
+    "reales. Aqui: 33 pasan, `vibra_compare --descriptions --validate` identico",
+    "x3 y cargado, `check` limpio en Vibra y Vibra-split; ningun byte cambia.",
+    "MacBook reinstalado en v0.1.12 (33 pasan)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **qlctool `v0.1.12` fijado en `requirements.txt`.** Cierra los",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

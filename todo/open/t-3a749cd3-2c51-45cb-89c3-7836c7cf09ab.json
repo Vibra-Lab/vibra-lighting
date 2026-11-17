@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-3a749cd3-2c51-45cb-89c3-7836c7cf09ab",
+  "title": "Re-check the rig after the dark-fixture fixes (2026-08-26)",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "The",
+    "",
+    "owner found both on the real rig: `BLANCO TOTAL` left the four BEAM 230W 7R",
+    "black (no RGB, so every colour generator skipped them) and the HYULIGHTS",
+    "panels were colour-without-intensity in FIESTA (a matrix writes RGB only; the",
+    "rig-wide wheel used to open their master dimmer by accident). Fixed by",
+    "`wheel_color_values` on the base looks and a new `Pixeles ON` scene, verified",
+    "in the generated DMX (beam ch6=248/ch7=255/ch8=4; panels ch1=255). Confirm on",
+    "site, and check the LED bars too - they are pure RGB and should never have",
+    "been affected."
+  ]
+}

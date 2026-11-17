@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-12523eff-6162-47dd-a3c3-f1694c71c1ff",
+  "title": "`estrobo pegado` and `acento sin dueño` merged a state's steps",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "From",
+    "",
+    "    the 2026-08-28 Codex review: both rules unioned everything a room state",
+    "    reaches at any step, so the level that parks a strobe or a prism parked it",
+    "    on behalf of every level that does not.",
+    "- Fix: `checks/unowned_instant.py` answers \"is there an instant where the",
+    "  fixture is lit and this channel unwritten\" with two booleans per node -",
+    "  `any` over a chaser's steps, `all` over a collection's members - so no",
+    "  instant is ever enumerated. It over-approximates (it assumes concurrent",
+    "  chasers can be caught in any combination of their steps) and says so; the",
+    "  union it replaces erred the other way, silently."
+  ],
+  "closed": "2026-11-17",
+  "result": "`estrobo pegado` and `acento sin dueño` merged a state's steps",
+  "evidence": [
+    "dated regression in `test_check.py` that keeps the panels' strobe-off in exactly one step of `Ciclo Paneles`, asserts the old merged reach still covered every lit state, and asserts the rule now bites. Proved to fail against the old union logic before being kept."
+  ]
+}

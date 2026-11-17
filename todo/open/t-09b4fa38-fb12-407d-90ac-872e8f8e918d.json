@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-09b4fa38-fb12-407d-90ac-872e8f8e918d",
+  "title": "Los blancos usan ahora el emisor White",
+  "state": "pending",
+  "category": "auditoria-cruzada-de-los-programas-2026-09-02-claude-codex",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(Mini Led ch7, MAC WASH",
+    "",
+    "ch12/16/20). Desde el 2026-09-22 el reparto lo hace `rgbw_split`, no",
+    "`white_level`: la parte acromatica sale del emisor blanco y se **resta** de",
+    "R, G y B, salvo cuando la peticion ya es acromatica (r = g = b: luz de",
+    "trabajo, flashes), que va a los cuatro emisores. Queda decidir en sala si el",
+    "blanco resulta mas frio o mas brillante que el RGB de antes.",
+    "",
+    "**2026-09-27, v0.1.9: arreglado en el DMX.** CHARLA sale (255,214,170) en",
+    "los fixtures sin White y (85,44,0)+W170 en Mini Led y MAC. Queda solo",
+    "decidir en sala si el blanco resulta mas frio o mas brillante. Detalle:",
+    "docs/en-sala-dmx-reaudit-2026-09-27.md §9."
+  ]
+}

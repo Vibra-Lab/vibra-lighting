@@ -1,0 +1,27 @@
+{
+  "tadu": 2,
+  "id": "t-d5158f7d-861c-4b6f-8859-ec119a3583ed",
+  "title": "The beams' aim, third and last pass",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Guessing the direction failed",
+    "",
+    "twice (floor, then wall). The owner ended it by putting BEAM 230W 7R #1 on",
+    "the desk and sending the corners of where the people are: **pan 62-103, tilt",
+    "207-234**. That is now `qlctool/audience_window.py`, read by both the",
+    "generator and the check. Aims come off its centre, figures are sized by its",
+    "half-width; `Beam Circulo` draws pan 62-102, tilt 207-233, and the fan and",
+    "cross open across the same window.",
+    "- Check: `checks/rule_beam_window.py` (`figura fuera del publico`), with a",
+    "  dated regression. Only head #1 is measured - the other three sit elsewhere",
+    "  on the truss and share this window until somebody reads them."
+  ],
+  "closed": "2026-11-17",
+  "result": "The beams' aim, third and last pass",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

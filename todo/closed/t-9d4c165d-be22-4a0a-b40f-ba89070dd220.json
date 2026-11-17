@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-9d4c165d-be22-4a0a-b40f-ba89070dd220",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** Web-interface-for-on-site-sessions",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    audit item folded into the ops runbook (Task 8,",
+    "    `~/p/DMX-Fixtures/TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "`docs/show-operation.md` now documents `qlcplus -w` (port 9999, phone-on-the-rig operation) and `-k -f -o show.qxw` kiosk startup for the show Mac. The caveats (kiosk mode has no on-screen exit; `-p`/`-c` are v4-only) were independently confirmed against the installed 5.2.2 binary in Task 1's verification pass, not just asserted.",
+  "evidence": [
+    "commit fa9ebdb (`docs: how the show starts itself and fits in a pocket`); `docs/qlc5-verification.md` (Task 1, commits 30b142b..4394dae)."
+  ]
+}

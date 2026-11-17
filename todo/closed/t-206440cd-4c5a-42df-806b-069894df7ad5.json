@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-206440cd-4c5a-42df-806b-069894df7ad5",
+  "title": "2026-09-26 - **`HUMO VERT` saca la columna del color de la sala:",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "confirmado en el DMX.** Con `U` mantenido, las cuatro columnas de humo LED",
+    "siguen la rueda de AUTO o el color fijo que corra (`Todo Negro` la deja",
+    "apagada, Rig Cyan la deja cyan); nunca sale blanca. Evidencia:",
+    "docs/en-sala-dmx-audit-2026-09-26.md §10."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`HUMO VERT` saca la columna del color de la sala:",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

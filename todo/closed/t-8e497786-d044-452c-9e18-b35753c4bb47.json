@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-8e497786-d044-452c-9e18-b35753c4bb47",
+  "title": "`Rueda Colores` faded the 7R colour wheel 800 ms through every detent",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    `<ExcludeFade>` pinned on every wheel channel (`exclude_fade`); rule",
+    "    `rueda fundida`."
+  ],
+  "closed": "2026-11-17",
+  "result": "`Rueda Colores` faded the 7R colour wheel 800 ms through every detent",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

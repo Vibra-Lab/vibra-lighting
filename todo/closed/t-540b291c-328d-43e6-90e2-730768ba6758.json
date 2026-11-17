@@ -1,0 +1,25 @@
+{
+  "tadu": 2,
+  "id": "t-540b291c-328d-43e6-90e2-730768ba6758",
+  "title": "2026-09-26 - **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`blenderdmx`, `daslight`, `lightkey` y los docs de formato, checks y toolkit,",
+    "mas un servidor MCP para que un agente diseñe, compruebe y maneje shows en",
+    "vivo. Hecho 2026-09-25: `qlctool` y sus cinco docs, con historia, en",
+    "https://github.com/spectalive/qlctool (`v0.1.0`). Hecho 2026-09-26:",
+    "`blenderdmx` en https://github.com/spectalive/qlc-blenderdmx y `daslight` +",
+    "`lightkey` en https://github.com/spectalive/fixture-sources (`v0.1.0` los",
+    "dos, con historia). El servidor MCP, `qlctool mcp`, salio en `v0.1.7`",
+    "(2026-09-26, `docs/mcp.md` en spectalive/qlctool).",
+    "Cerrado con `qlctool mcp` en v0.1.7."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **Toolkit de QLC+ + control por IA** (idea del dueño): `qlctool`,",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

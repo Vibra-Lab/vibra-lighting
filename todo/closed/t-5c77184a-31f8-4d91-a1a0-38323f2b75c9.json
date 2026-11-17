@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-5c77184a-31f8-4d91-a1a0-38323f2b75c9",
+  "title": "2026-09-26 - **`<ExcludeFade>` en la rueda de las 7R: confirmado en el",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "DMX.** 1297 lecturas cada 35 ms durante 45 s de AUTO: la rueda salta de un",
+    "valor de slot a otro sin ningun intermedio en los 14 cambios de color,",
+    "mientras el resto del rig estaba a mitad de fundido en los mismos",
+    "instantes. QLC+ 5.2.2 respeta el tag. Evidencia:",
+    "docs/en-sala-dmx-audit-2026-09-26.md §8."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`<ExcludeFade>` en la rueda de las 7R: confirmado en el",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

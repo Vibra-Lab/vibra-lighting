@@ -1,0 +1,31 @@
+{
+  "tadu": 2,
+  "id": "t-a03f8a92-7e07-4b0e-89bb-72e353bce137",
+  "title": "Ver en sala los cuatro modos de color automáticos",
+  "state": "pending",
+  "category": "repaso-del-due-o-sobre-la-programaci-n-2026-09-22",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`Colores",
+    "",
+    "completos` (W, los 17 de la paleta sin blanco más cinco contrastes de dos",
+    "colores), `Colores simples` (C, seis primarios), `Pastel tenue` (L, los 17",
+    "mezclados un 55% hacia el blanco) y `Multicolor` (R, los seis pasos salvajes,",
+    "\"solo por si acaso\", que ningún estado arranca). Desde la noche del",
+    "2026-09-22 ninguna rueda pisa el blanco (\"en directo se ve todo iluminado\")",
+    "y las que arranca un estado no ponen más de dos colores a la vez; los",
+    "contrastes son complementarios entre roles (ámbar/azul, amarillo/azul,",
+    "rojo/cyan, magenta/verde, rojo/azul) y las mezclas dentro de un grupo,",
+    "vecinos (rojo/amarillo, magenta/azul...). Los cuatro están en el marco COLOR",
+    "de JUGAR, que es solo: elegir uno para los otros. Siguiente paso: mirar si",
+    "el pastel se distingue del blanco en la sala encendida - si no, subir",
+    "`SHARE` en `qlctool/pastel.py` - y si los cinco contrastes se leen como dos",
+    "colores y no como \"feria\".",
+    "",
+    "**2026-09-27, v0.1.9: arreglado en el DMX.** Pastel sale mezclado en los",
+    "fixtures sin emisor White, (255,140,140), y el Mini Led (115,0,0)+W140.",
+    "Queda solo lo de sala: si el pastel se distingue del blanco y si los cinco",
+    "contrastes se leen como dos colores. Detalle: docs/en-sala-dmx-reaudit-2026-09-27.md §1."
+  ]
+}

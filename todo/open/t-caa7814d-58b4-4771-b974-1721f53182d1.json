@@ -1,0 +1,31 @@
+{
+  "tadu": 2,
+  "id": "t-caa7814d-58b4-4771-b974-1721f53182d1",
+  "title": "Cuando salga la version nueva de QLC+, pasar el show a `--bpm-tap`",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Ya esta implementado y probado (`qlctool newshow --bpm-tap`, test fechado):",
+    "todas las capas que siguen la musica en tempo **Beats** sobre generador",
+    "Internal, y el tap de la pagina 1 gobernando el **BPM global** (ControlBPM)",
+    "en vez de escribir duraciones — asi ninguna capa necesita multiplicador,",
+    "cada una dice sus beats y un solo reloj las mueve. No se usa todavia porque",
+    "el **5.2.2 del Mac del show no tiene ControlBPM** («Unknown speed dial tag»",
+    "en su propio log) y cargaria el fichero sin hacer nada. Al actualizar:",
+    "comprobar en el log que ya no sale ese aviso, regenerar los tres workspaces",
+    "con `--bpm-tap` y verificar en sala. El movimiento se queda en el reloj",
+    "incluso entonces: un chaser en Beats le corrompe el EFX en cualquier version.",
+    "(2) **Strobo/Strobo Suave mataban el show**: sus chasers pisaban",
+    "`Blanco Total`/`Todo Negro`, botones del solo frame de estados — un boton",
+    "Toggle \"oye\" arrancar su funcion la arranque quien la arranque",
+    "(VCButton::slotFunctionRunning) y el solo frame paraba AUTO. Ahora pisan",
+    "gemelas propias (`Strobo Blanco`/`Strobo Negro`); regla nueva `estado",
+    "pulsado por otra funcion` + test. (3) **COLOR BEAM (`C`) ya no existe**: animaba",
+    "la rueda de color de los 4 BEAM 230W y no tocaba las PAR, pero parecia un",
+    "on/off y se comportaba como un pick (\"el boton color beam parece un on of",
+    "pero realmente cambia como la rueda\", dueño, 2026-09-22). Los beams toman el",
+    "color del rig y la tecla `C` es ahora el modo de colores simples."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-02b5f917-5399-49ca-bb47-0924c8029f70",
+  "title": "`DeluxeEventos2.qxw`'s \"Velocidad Cabezas\" slider did nothing",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "- a",
+    "",
+    "    Level slider with no `<Channel>` under it and a `<Playback>` pointing at",
+    "    no function, and QLC+ has no speed-slider mode at all. Deleted; the",
+    "    workspace still loads clean in headless QLC+."
+  ],
+  "closed": "2026-11-17",
+  "result": "`DeluxeEventos2.qxw`'s \"Velocidad Cabezas\" slider did nothing",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

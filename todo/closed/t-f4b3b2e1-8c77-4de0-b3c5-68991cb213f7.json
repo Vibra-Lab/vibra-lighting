@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-f4b3b2e1-8c77-4de0-b3c5-68991cb213f7",
+  "title": "2026-08-28 - **Vibra Eventos (DMX):** the panels' 42 built-in effects",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    are catalogued and the cycle pruned - the blocked item is closed."
+  ],
+  "closed": "2026-11-17",
+  "result": "the owner ran all 42 at home over the FT232R and sent the catalogue material (Effects 1-3 by text - full-panel colour cycles -, 4-21 as one video frame each; 22-42 without footage yet, not blocking). Verdict \"estaban todos menos uno que va como con un contador de numeros\": Effect 40 is the counter, and the hand-built chaser's own 41 steps confirm it structurally (covers 1-42 minus exactly 40). `Ciclo Paneles` now cycles 41 of 42 (`EXCLUDED_FROM_CYCLE` in `generate/builtin_effects.py`); the scene stays on the library page. Catalogue: `~/p/DMX-Fixtures/docs/panel-effects.md`.",
+  "evidence": [
+    "dated test `tests/test_internal_program.py::test_the_number_counter_stays_out_of_the_cycle`; suite 273 green; `qlctool check` \"ningun problema\" on the three regenerated `--validate`d workspaces."
+  ]
+}

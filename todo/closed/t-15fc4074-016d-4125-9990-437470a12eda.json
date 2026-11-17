@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-15fc4074-016d-4125-9990-437470a12eda",
+  "title": "**Vertical fog machines' LEDs dark under Peak / Fiesta Dinamico /",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    Locura** (`Intensidad Peak` never opened their dimmer; `rule_intensity`",
+    "    excluded every smoke fixture). Peak base opens them; rule `color sin",
+    "    dimmer en algun instante` (per instant, via `unowned_instant`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "**Vertical fog machines' LEDs dark under Peak / Fiesta Dinamico /",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

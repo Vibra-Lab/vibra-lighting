@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-2a0f9789-56e5-43b9-bedc-3ecc2303fd79",
+  "title": "\"Re-lay the split's PAR group as 8x2\"",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "was stale: it is a flat 15x1 and",
+    "",
+    "    has been for some time. What was actually wrong with it was the order, now",
+    "    fixed above."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

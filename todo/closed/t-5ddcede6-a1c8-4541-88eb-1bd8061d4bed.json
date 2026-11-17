@@ -1,0 +1,20 @@
+{
+  "tadu": 2,
+  "id": "t-5ddcede6-a1c8-4541-88eb-1bd8061d4bed",
+  "title": "2026-09-25 - **Spec step 7: a second example rig.** Plan C Tasks 2-4:",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "the small club (`examples/small-club/` in the toolkit), a different patch -",
+    "three of Vibra's models in other numbers, addresses and groups, with no haze",
+    "machine and no controllers - described in English, generated, checked and",
+    "validated by a test, `club.qxw` held byte-identical (`08f1d95`, `9b85a0b`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **Spec step 7: a second example rig.** Plan C Tasks 2-4:",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

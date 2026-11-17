@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-d9709162-bf7d-4315-b419-e36d31a422ae",
+  "title": "The fifth group pushed the console off the screen",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "The manual page's",
+    "",
+    "    left column is one frame per group at a hard-coded 128px pitch, so the",
+    "    dimmer frame, four chases and both strobe buttons went below a 900px",
+    "    screen - unreachable, while the generator's summary still claimed it",
+    "    fitted. `vc/bank_pitch.py` derives the pitch from the room available;",
+    "    `consola` measures the result."
+  ],
+  "closed": "2026-11-17",
+  "result": "The fifth group pushed the console off the screen",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

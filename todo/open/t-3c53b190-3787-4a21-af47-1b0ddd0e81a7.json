@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-3c53b190-3787-4a21-af47-1b0ddd0e81a7",
+  "title": "Judge the energy levels against a real night. `Ciclo Energia` walks",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Ambiente 4 min -> Fiesta 8 -> Peak 40 s -> Fiesta 8 (`ambient_ms`,",
+    "`party_ms`, `peak_ms` measured 2026-09-22), with the colour bed and the",
+    "haze running underneath so a level change never blacks the room out. The",
+    "numbers are a first guess: if the quiet level feels dead or the peak feels",
+    "rationed, they are `ambient_ms`, `party_ms` and `peak_ms` in",
+    "`qlctool/vibra/timing.py` in spectalive/qlctool and `[timing] levels` (`ambient_s`,",
+    "`party_s`, `peak_s`) in the three `QLC+ Setups/vibra*.toml`. Change all four",
+    "in order: `timing.py` and the frozen rig's tomls in spectalive/qlctool (its",
+    "equality test `tests/test_load_show_description.py` fails if only one copy",
+    "is edited), release and tag, bump the tag in `requirements.txt`, the three",
+    "tomls here, and re-record `tests/vibra_baseline.json` with the owner's",
+    "consent."
+  ]
+}

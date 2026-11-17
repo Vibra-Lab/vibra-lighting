@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-5e5e4b44-4216-4dbd-8223-513b2659a492",
+  "title": "Fixtures",
+  "state": "in_progress",
+  "category": "reorganizacion-show-vivo-licencias-orgs-nombre-y-cliente-tactil-2026-09-24",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ": `QLC+ Fixtures/` e `InputProfiles/` se quedan aqui; las",
+    "",
+    "verificadas se mandaron el 2026-09-26 (ver `TODO_LOG.md`): qlcplus #2166 y",
+    "#2167 los fusiono el mantenedor ese mismo dia (comprobado 2026-09-27),",
+    "igual que el perfil del SMC-PAD (#2168); OFL #6164 y #6165 siguen abiertos",
+    "sin ningun comentario ni revision el 2026-10-19, y siguen igual el 2026-10-27 (`gh pr view`: 0 revisiones, 0 comentarios, sin cambios desde el 2026-10-19; checks verdes, #6164 solo va por detras de master, y las dos definiciones locales no han cambiado desde el envio). Siguiente: atender la revision de OFL",
+    "cuando llegue. Las retenidas se mandan cuando se confirmen en sala."
+  ]
+}

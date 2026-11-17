@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-1ed41e65-bcdb-4d31-aeac-eed8ad615fe8",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** Blackout button added beside",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    StopAll (Task 2, `~/p/DMX-Fixtures/TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "\"SI ALGO VA MAL\" now carries a second panic button using the existing-but-unused `Blackout` VC button action (`vc/button.py:23`), distinct from StopAll (stops functions vs. forces every DMX output to zero).",
+  "evidence": [
+    "commit edaee93 (`console: a second panic - blackout, not stop`); `qlctool check` clean on all three shipped workspaces."
+  ]
+}

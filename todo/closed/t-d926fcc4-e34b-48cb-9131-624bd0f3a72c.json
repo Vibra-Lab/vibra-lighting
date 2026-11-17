@@ -1,0 +1,26 @@
+{
+  "tadu": 2,
+  "id": "t-d926fcc4-e34b-48cb-9131-624bd0f3a72c",
+  "title": "2026-09-01 - **Vibra Eventos (DMX): the real SMC-PAD manual PDF is in the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    repo.** `Manual/M-VAVE SMC-PAD - user manual EN-ZH (FCC 2ARCP-SMC-PAD, V04",
+    "    2024-01).pdf`, the manufacturer's own document as filed with the FCC",
+    "    (fccid.io, grantee So Intelligent Technology, internal model SK12). Every",
+    "    manual site is behind Cloudflare and answers 403 to `curl`, so it was",
+    "    fetched from inside the real Chrome. Compared against the transcription",
+    "    in `Manual/`: the English pages match verbatim; the PDF adds only the",
+    "    transpose limit (+-16 semitones, Chinese page), the BT LED states and the",
+    "    per-platform pairing notes. It carries **no** note or CC numbers, so",
+    "    everything the transcription's \"lo que el manual no dice\" section",
+    "    measured stays measured-only and uncontradicted."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-01 - **Vibra Eventos (DMX): the real SMC-PAD manual PDF is in the",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

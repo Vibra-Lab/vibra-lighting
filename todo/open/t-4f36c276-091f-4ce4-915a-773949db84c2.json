@@ -1,0 +1,15 @@
+{
+  "tadu": 2,
+  "id": "t-4f36c276-091f-4ce4-915a-773949db84c2",
+  "title": "Confirm the strobe values on the fixtures whose shutter channel has **no",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "labelled range** - the PC-64, the CLB2.4, the Mini Led Moving Head and the",
+    "WX-60WPS. `qlctool` deliberately leaves them out of `Strobo ON`, because a",
+    "guessed value closes a shutter instead of flashing it. The channel probe",
+    "settles it in the same on-site session as the rest of the rig."
+  ]
+}

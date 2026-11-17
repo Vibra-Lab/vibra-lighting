@@ -1,0 +1,33 @@
+{
+  "tadu": 2,
+  "id": "t-75e85234-1d2f-477b-8398-2f8bcb68d2a0",
+  "title": "2026-09-25 - **`--validate` no encuentra QLC+ en el mini** (cerrado,",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Task 1 del Plan B del refactor de la descripcion del show): `DEFAULT_BINARIES`",
+    "solo conocia `QLC+.app` y `QLC+ 4.app`, no las carpetas versionadas que",
+    "instala el instalador (`QLC+ 4.13.1.app`, `QLC+ 5.2.2.app`), asi que diez",
+    "tests se saltaban en una maquina con QLC+ instalado. Nuevo",
+    "`qlctool/qlcplus_bundles.py` escanea `/Applications/QLC+ *.app` por patron,",
+    "mas nuevo primero; `qlctool/mach_o_architectures.py` lee la cabecera Mach-O",
+    "(delgada o universal) del binario; `qlctool/runs_here.py` decide si esta",
+    "CPU lo ejecuta (Rosetta incluida); `qlctool/qlcplus_candidates.py` combina",
+    "ambos con `DEFAULT_BINARIES` y descarta lo que no puede correr - el",
+    "`QLC+ 4.13.1.app` x86_64 se descarta en este Mac arm64 sin Rosetta.",
+    "`validate.qlcplus_binary()` pasa por ahi; `QLCTOOL_QLCPLUS` sigue ganando.",
+    "Evidencia: `env -u QLCTOOL_QLCPLUS .venv/bin/python -m pytest tests/ -q`",
+    "-> `588 passed` (era `571 passed, 10 skipped`), sin variable de entorno;",
+    "`qlcplus_binary()` -> `/Applications/QLC+ 5.2.2.app/Contents/MacOS/qlcplus-qml`;",
+    "`env -u QLCTOOL_QLCPLUS .venv/bin/qlctool install --check` -> `QLC+ has",
+    "every one of the repo's 30 file(s)`, exit 0; los tres `qlctool check` y",
+    "`vibra_compare.py --validate` en verde, los tres `.qxw` byte-identicos."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **`--validate` no encuentra QLC+ en el mini** (cerrado,",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-32f4243f-514d-484a-a9f3-65c4618a3909",
+  "title": "2026-09-25 - **Politica Registrar retirada del token v2 de Cloudflare**",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "(nunca funciono; la ruta es el MCP): 6 -> 5 politicas, token sigue `active`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **Politica Registrar retirada del token v2 de Cloudflare**",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

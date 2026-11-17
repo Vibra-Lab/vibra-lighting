@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-7fd5a38b-6044-4d48-b5cc-b2d8f309a84b",
+  "title": "Colour layers added to the state instead of replacing it",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "AUTO on",
+    "",
+    "    `Rig Cyan` plus key `1` was 255,255,255 on 27 fixtures. Banks, mixes,",
+    "    gobo/prism/colour-beam picks and `Escenario` are Flash buttons now",
+    "    (Override; ForceLTP on the colour ones), colour-only, held. `Centro`",
+    "    button dropped. Rules `capa que se suma al estado`, `capa pisada por el",
+    "    ciclo`."
+  ],
+  "closed": "2026-11-17",
+  "result": "Colour layers added to the state instead of replacing it",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

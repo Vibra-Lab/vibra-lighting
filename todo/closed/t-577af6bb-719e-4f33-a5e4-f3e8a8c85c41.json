@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-577af6bb-719e-4f33-a5e4-f3e8a8c85c41",
+  "title": "`flash sin estrobo` now judges only Flash scenes that raise light; the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    held colour and wheel accents are exempt by shape."
+  ],
+  "closed": "2026-11-17",
+  "result": "`flash sin estrobo` now judges only Flash scenes that raise light; the",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

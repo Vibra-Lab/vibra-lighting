@@ -1,0 +1,24 @@
+{
+  "tadu": 2,
+  "id": "t-384d7de3-e608-42a1-88a4-771425c60a56",
+  "title": "`qlctool patch` could not move a head already in a group",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Which is why",
+    "",
+    "    the split's `PAR` group is a 7x3 with the CLB2.4 heads bolted to the side.",
+    "    New `repatch/group_head_move.py` and `--group-move \"GROUP=FIXTURE[:HEAD]@X,Y\"`;",
+    "    the head number matters because `BarrasLed` is sixteen heads of two",
+    "    fixtures. Refuses an occupied cell, an off-grid cell, and a head that is",
+    "    not in the group. Five tests; re-laying the group itself stays in `TODO.md`",
+    "    because it changes what every matrix paints."
+  ],
+  "closed": "2026-11-17",
+  "result": "`qlctool patch` could not move a head already in a group",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

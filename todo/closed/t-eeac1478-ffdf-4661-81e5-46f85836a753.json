@@ -1,0 +1,23 @@
+{
+  "tadu": 2,
+  "id": "t-eeac1478-ffdf-4661-81e5-46f85836a753",
+  "title": "`docs/smc-pad-led.md` still said the LED colour encoding was unsolved",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    ",",
+    "",
+    "    months after the bridge shipped. Rewritten to lead with what runs today",
+    "    and keep the dead ends as dead ends. The same stale tail was in",
+    "    `tools/smc-pad/README.md` (two sections contradicting the \"SOLVED\" above",
+    "    them, an `ON_COLOR`/`OFF_COLOR` pair that no longer exists, and a",
+    "    \"unplug USB\" instruction the device had already disproved) - removed."
+  ],
+  "closed": "2026-11-17",
+  "result": "`docs/smc-pad-led.md` still said the LED colour encoding was unsolved",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

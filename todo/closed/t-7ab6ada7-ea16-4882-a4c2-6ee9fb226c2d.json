@@ -1,0 +1,28 @@
+{
+  "tadu": 2,
+  "id": "t-7ab6ada7-ea16-4882-a4c2-6ee9fb226c2d",
+  "title": "2026-09-26 - **`v0.1.7` released and pinned: `qlctool mcp`, and a",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`validate` that touches nothing but itself.** In spectalive/qlctool",
+    "(`e555cfd..bc18a61`, 851 tests, tag CI 36246831408 green): the MCP server",
+    "(`559cd3b`, `e555cfd`); `validate` loads an I/O-free copy (patches removed,",
+    "audio beat set to internal, network server off), starts QLC+ as its own",
+    "child and stops only that pid (`80f9289`); refuses when QLC+'s saved",
+    "settings carry default I/O patches, overridable with",
+    "`QLCTOOL_ALLOW_SAVED_IO=1`, and reads QLC+'s output unbuffered (`c21726f`).",
+    "Before, it loaded the real patch and SIGTERMed any QLC+ that appeared in its",
+    "window. Here: 33 passed; `vibra_compare --validate` and",
+    "`--descriptions --validate` identical x3 and loaded; `check` 522 buttons x3,",
+    "no problems; `install --check` 30 files. Reviews:",
+    "`.superpowers/sdd/review-round-d6.md` and two scoped re-reviews, approved."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **`v0.1.7` released and pinned: `qlctool mcp`, and a",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "tadu": 2,
+  "id": "t-aa82ef9b-a486-4349-a7ff-b1a0adea64e3",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** the flashes strobe again - the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    owner's live regression report, fixed same session."
+  ],
+  "closed": "2026-11-17",
+  "result": "the owner, testing at home over the show's FT232R interface (Open DMX clone, Open TX @ 30Hz - settings verified correct against `~/p/qlcplus/plugins/dmxusb/src/`): \"esto no hace estrobo y antes lo hacia\". Audit of `DeluxeEventos2.qxw` confirmed it: the hand-built `Flash 100%`/`Flash 50%` drove every strobe channel (240/250/255 fast, 70-220 slow - \"50%\" was half the *speed*, same brightness) and the generated flashes parked shutters \"Open\". Restored: all three flashes strobe (`Flash Color` on `.` is the old `Flash 100% Colores` - strobe over the running colour, RGB untouched, new `generate/flash_color.py`); `Strobo ON/OFF` now also drive bare unlabelled strobe-speed channels (Vortex ch5, panels ch5 - it was skipping 9 of 25 fixtures); panel internal-effect speed 200 (old show ran 160-255, not the blind 128); the bass audio bar moved off the now-strobing flash onto `Golpe Graves`, a plain white twin (a strobe fired by the PA is a strobe nobody chose). Three new checker rules with dated regression tests: `flash sin estrobo`, `estrobo en manos del audio`, `estrobo incompleto`; `intensidad` now accepts a labelled strobing shutter as lit. Old-show gaps that are real but not restored (Escenario, Cabezas Reposo/Lento, Dimmer Chase 2, Secuencia, prisma/multicolor subsets, panel-speed slider) recorded in the repo TODO; the old `HUMO AUTO` chaser turned out to fire panel effects, not smoke. (Correction, owner 2026-08-27: not broken - it was the light for the *vertical* smoke, panels on a white effect so the column reads. Recreating that look is tracked in the repo TODO.)",
+  "evidence": [
+    "`tools/qlctool` suite 260 green; `qlctool check` \"ningun problema\" on the three regenerated, `--validate`d workspaces; `tests/test_check.py::test_a_flash_that_lights_the_room_without_strobing_it` et al., dated 2026-08-27."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-49c3937f-fc68-4fbc-9ad2-915a658f2635",
+  "title": "2026-09-25 - **Bluesky `@spectalive.com`**: cuenta creada en el navegador",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "de Orca con `me@cristiandeluxe.dev` (verificado; hCaptcha lo resolvio el",
+    "dueño), handle propio probado por el TXT `_atproto.spectalive.com` =",
+    "`did=did:plc:kgphqczajrhzs7mpetwuf76v` (zona BusiRocket, via el MCP de",
+    "Cloudflare); plc.directory devuelve `at://spectalive.com`. Credenciales en el",
+    "access-map del brain."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **Bluesky `@spectalive.com`**: cuenta creada en el navegador",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

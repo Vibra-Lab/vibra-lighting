@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-fd9e5c7a-f3c8-4f6d-8e29-590d3fdb838a",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** AudioTriggers widget bound - the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    bass band drives a Flash hit instead of shipping inert (Task 4,",
+    "    `~/p/DMX-Fixtures/TODO.md`)."
+  ],
+  "closed": "2026-11-17",
+  "result": "the bass band (\"Graves\") of the AudioTriggers widget is now bound to `Flash 100%`, one of the GOLPES hits (a Scene, Flash mode, Override, momentary, outside any solo frame) - not the `Blanco Total` room-state scene, which shares AUTO's solo frame and would have stopped AUTO with nothing to restart it (a ruling made mid-task when the original plan's premise turned out stale). Checker rule `disparador de audio vacio` extended with behavior (c): an audio-bound widget must not sit in a solo frame alongside other monitored functions.",
+  "evidence": [
+    "commits abfeedc..a4ed141 (`show: the bass gets a hand back, and an empty ear is now a finding` / `show: the bass hits a Flash, not a room state, and the check sees why`); `tools/qlctool/tests/test_check.py`; `qlctool check` on all three shipped workspaces reports \"ningun problema\" (re-verified 2026-08-27 after the Task 9 regen)."
+  ]
+}

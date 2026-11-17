@@ -1,0 +1,30 @@
+{
+  "tadu": 2,
+  "id": "t-b452c20e-aaac-46d1-b931-22085a7af024",
+  "title": "2026-09-26 - **The panel photo's GPS removed from all history, here",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "and in spectalive/smc-pad.** The review of the smc-pad split found GPS",
+    "coordinates in `docs/smc-pad-panel.jpg`'s EXIF (public since `fd397da`);",
+    "owner: strip and rewrite both. The blob was replaced everywhere by the same",
+    "JPEG with every tag removed except orientation and the colour profile",
+    "(`exiftool -all= -tagsfromfile @ -Orientation -ICC_Profile`); a scan of",
+    "all 118 image blobs in this history found no other GPS. Here: 189 SHAs",
+    "after 2026-08-29 changed, the final tree is identical (`1940e20e`), main",
+    "now `3e9370f`; every SHA quoted in this log after that date is from before",
+    "the rewrite, and `~/Backups/vibra-lighting-commit-map-2026-09-26-gps.txt`",
+    "(mini) maps it. smc-pad: 22 commits rewritten, `v0.1.0` re-pointed. The",
+    "decompiled M-VAVE code in smc-pad stays, excluded from its licence by a",
+    "NOTICE (owner). The review's other finding here: `docs/show-operation.md`",
+    "still said the pad's Bluetooth goes silent under USB, which the device",
+    "disproved on 2026-08-29; corrected."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-26 - **The panel photo's GPS removed from all history, here",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

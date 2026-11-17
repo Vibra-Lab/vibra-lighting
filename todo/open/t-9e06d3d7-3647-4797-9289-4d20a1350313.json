@@ -1,0 +1,21 @@
+{
+  "tadu": 2,
+  "id": "t-9e06d3d7-3647-4797-9289-4d20a1350313",
+  "title": "Highlight vocabulary, part 2 - deferred from 2026-08-27 on purpose",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "Each needs channel work that is unverifiable off-site or a Script: beam",
+    "chase one-head-at-a-time (needs shutter-close values; four fixtures still",
+    "have unlabelled shutter ranges, see the probe item), snap positions on beat",
+    "(closed-shutter travel steps), crowd sweep (calibrated tilt-down bounds),",
+    "blackout-then-burst pre-drop (QLC+ Script with `Engine.setBlackout` +",
+    "guaranteed cleanup - engine/src/scriptv4.cpp), gobo/prisma flash accents",
+    "(need `Prism Off`/`Gobo Open` neutral owners running in every state), and",
+    "the two-timescale scheduler (macro minutes / micro 16-32 bars inside each",
+    "level). `Dimmer Chase` owning Peak's intensity is done - see TODO_LOG.md,",
+    "2026-08-27."
+  ]
+}

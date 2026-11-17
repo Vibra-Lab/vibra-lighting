@@ -1,0 +1,43 @@
+{
+  "tadu": 2,
+  "id": "t-755681db-dd09-47a4-a0cf-7fbd690d039f",
+  "title": "2026-08-26 - **Vibra Eventos (DMX):** The LED bars now change colour with",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "the show instead of \"a su bola\", and the dark panels in the 3D preview turned",
+    "out to be the simulator, not the file.",
+    "- Owner, over the 3D preview: bars magenta while the rig was cyan, and the",
+    "  WX-60WPS panels showing nothing under AUTO. Two separate causes.",
+    "- Bars: two colour clocks - `Rueda Colores` rotating scenes over the rig and",
+    "  `Ciclo Matrices BarrasLed` rotating its own six-colour palette over the",
+    "  bars - and QLC+ cannot slave one chaser's steps to another's. Fixed by",
+    "  making each wheel step a Collection that starts the rig scene *and* a bars",
+    "  matrix of the same colour (algorithm rotating Fill/Even-Odd/Waves/Solid,",
+    "  paced so a full pass fits the 2500 ms step); the standalone cycle left",
+    "  AUTO and the moments but stays on the console. New rule `relojes de color`",
+    "  (`rule_colour_clocks.py`) recognises the shape - a room state starting two",
+    "  chasers whose steps state different colours - and fired on AUTO plus three",
+    "  moments in all three shipped shows before the fix, on none after. Dated",
+    "  regression test `test_two_colour_clocks_ticking_in_one_room_state`.",
+    "- Panels: the file was right all along (`Paneles - Effect N` writes ch1=255,",
+    "  ch6=128 = Auto Mode 86-171, ch7=effect, ch8=128, checked against the",
+    "  definition), but in Auto Mode the fixture makes its colours in hardware",
+    "  with RGB at 0, and QLC+'s 3D renders RGB channels - nothing to show.",
+    "  Only the venue can judge the 42 effects; noted on the blocked TODO item.",
+    "- A wrong turn worth keeping: a WebFetch summary of `rgbmatrix.cpp` said",
+    "  QLC+ 5 does not persist blend modes; the local clone at `~/p/qlcplus`",
+    "  shows `BlendMode` is a `<Function>` attribute (`function.cpp:918`) with",
+    "  MaskBlend implemented multiplicatively (`universe.cpp`). Not used - mask",
+    "  depends on tick write order and the checker's HTP model cannot see it -",
+    "  but recorded on the TODO item, and the clone is now in the repo CLAUDE.md",
+    "  as the place to read QLC+ behaviour from."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-26 - **Vibra Eventos (DMX):** The LED bars now change colour with",
+  "evidence": [
+    "`qlctool check` clean on the three regenerated workspaces (`Vibra.qxw`, `Vibra-beats.qxw`, `Vibra-split.qxw`, each `--validate`d in headless QLC+ 5.2.2), 224 tests passing in `tools/qlctool`."
+  ]
+}

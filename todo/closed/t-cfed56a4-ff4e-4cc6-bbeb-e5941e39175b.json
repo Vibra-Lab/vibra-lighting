@@ -1,0 +1,32 @@
+{
+  "tadu": 2,
+  "id": "t-cfed56a4-ff4e-4cc6-bbeb-e5941e39175b",
+  "title": "2026-08-27 - **Vibra Eventos (DMX):** the useful hand-built inventory is",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "    restored - the owner confirmed those functions were used (\"esas",
+    "    funciones eran útiles\").",
+    "- Result, across three pushed commits on `qlctool` (c36fa3d, d4dbe03, and",
+    "  the beam-subsets one): `Escenario` (heads aimed at the stage, pan/tilt",
+    "  carried verbatim as measured data keyed by DMX address,",
+    "  `generate/stage_aim.py`) plus a `Centro` button in the movement solo",
+    "  frame; `Vel. Paneles` (Level slider over the panels' speed channel,",
+    "  `vc/level_slider.py`); `Dimmer Chase 2` (key B, every EFX fixture",
+    "  reversed) and `Dimmer Secuencia` (key M, the old 20s-breath/10s-programme",
+    "  rotation, holds verbatim from chaser ID 102); per-beam Prisma subsets",
+    "  (`1/2/3/4/1y3/2y4` in the prism frame) and `MultiColor BEAM` scenes (the",
+    "  half-colour channel, found as \"the Colour channel that is not the",
+    "  wheel\"). `Cabezas Reposo`/`Lento` deliberately not duplicated -",
+    "  `Cabezas Centro` and `Ola Suave` + speed dial cover them. Dimmer and",
+    "  subsets blocks implemented by Codex CLI against written specs",
+    "  (scratchpad prompts), reviewed line by line before commit."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-08-27 - **Vibra Eventos (DMX):** the useful hand-built inventory is",
+  "evidence": [
+    "266 tests green, `qlctool check` \"ningun problema\" on the three regenerated `--validate`d workspaces (405 buttons); `tests/test_beam_subsets.py`, `tests/test_stage_aim.py`, dimmer tests dated 2026-08-27."
+  ]
+}

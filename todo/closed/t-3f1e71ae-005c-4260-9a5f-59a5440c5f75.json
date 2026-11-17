@@ -1,0 +1,30 @@
+{
+  "tadu": 2,
+  "id": "t-3f1e71ae-005c-4260-9a5f-59a5440c5f75",
+  "title": "2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`docs/superpowers/plans/2026-09-24-show-description-plan-a.md`, commits",
+    "`76b9e25..9c9985d`). The show's own choices live in a `ShowDescription`;",
+    "names resolve by English identifier or any shipped spelling",
+    "(`qlctool/locales/{en,es}.toml`); the SMC-PAD and the tablet desk are",
+    "optional controller profiles whose checks come through the `qlctool.rules`",
+    "entry points; `qlctool newshow --description FILE` reads a TOML description,",
+    "refuses a malformed one while reading it (file and section named), and never",
+    "overwrites the patch unless `--out` or `[rig] output` says so. Vibra ships as",
+    "`QLC+ Setups/vibra.toml`, `vibra-beats.toml`, `vibra-split.toml`. Evidence:",
+    "571 passed, 10 skipped; `vibra_compare --validate` byte-identical for all",
+    "three workspaces with and without the descriptions; `qlctool check` clean x3;",
+    "final whole-branch review with fixes, re-review clean. Open follow-ups stay in",
+    "`TODO.md`: generator names through the catalogue, Plan B controller coupling,",
+    "reinstall in other checkouts."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-24 - **Plan A of the show description landed** (spec steps 1-5,",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tadu": 2,
+  "id": "t-77b68261-f086-44ac-ae1f-75283c3fb227",
+  "title": "2026-09-24 - **Renombrar la org `DeluxeProducciones`** (item de",
+  "state": "cancelled",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "2026-08-24). Sustituido por el plan de la seccion \"Reorganizacion\" de",
+    "`TODO.md`: lo de la empresa va a `Vibra-Lab`, el software a una org propia,",
+    "y se pide `vibra` a GitHub. Se conservan alli las trampas que traia: re-apuntar",
+    "remotes a mano (las redirecciones crean clones duplicados) y actualizar las",
+    "paginas del brain."
+  ],
+  "closed": "2026-11-17",
+  "resolution": "legacy item migrated to format 2 without a recorded resolution"
+}

@@ -1,0 +1,26 @@
+{
+  "tadu": 2,
+  "id": "t-6e644ba2-22a9-4862-b92d-6d5c069e983f",
+  "title": "2026-09-25 - **A `[names]` frame override silently dropped desk",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "bursts.** The final whole-branch review (`d1c31fb..45dd495`) found",
+    "`desk_bursts.py` resolving frames through `default_names()`: English Vibra",
+    "with a renamed `hits` head built 20 of 34 Desk functions and",
+    "`check_workspace` reported nothing. Fixed in `52c3f56` (vocabulary threaded",
+    "into `desk_burst_sources`; `reject_frame_head_renames` refuses a head rename",
+    "while the description is read; dated regression test). Evidence: 648 passed,",
+    "`vibra_compare --validate` identical x3, English plain/beats/split/no-pad",
+    "builds pass `check`, `test_pseudo_locale` now fails if no desk burst is",
+    "built (`8fa6c73`). Rulings recorded in",
+    "`~/p/wiki/brain/projects/vibra-dmx.md` (\"Plan B decisions\")."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-25 - **A `[names]` frame override silently dropped desk",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

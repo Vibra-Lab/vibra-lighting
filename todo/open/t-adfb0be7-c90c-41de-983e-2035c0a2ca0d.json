@@ -1,0 +1,19 @@
+{
+  "tadu": 2,
+  "id": "t-adfb0be7-c90c-41de-983e-2035c0a2ca0d",
+  "title": "Decide on `QLC+ Setups/Vibra-split.qxw` (2026-08-25): the same rig with",
+  "state": "pending",
+  "category": "revision-de-manuales-y-aprovechamiento-del-rig-2026-09-01",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "each CLB2.4 patched four times, one fixture per PAR head, so all eight can be",
+    "aimed and coloured separately in the 3D view - which QLC+ cannot do for the",
+    "four heads of one fixture (`Fixture3DItem.qml` keeps a single `lightColor`).",
+    "Owner, 2026-10-19, asked whether to keep it: \"supongo\" - a tentative yes,",
+    "not yet seen beside `Vibra.qxw` in the 3D view or on the rig. Before it",
+    "replaces `Vibra.qxw` (launcher, tablet), the",
+    "plot to keep is `vibra-stage-plot-split.json` and the heads want fanning",
+    "apart rather than all at `-35`; then the owner confirms it on site."
+  ]
+}

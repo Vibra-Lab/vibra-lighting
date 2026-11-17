@@ -1,0 +1,22 @@
+{
+  "tadu": 2,
+  "id": "t-ae0785ae-14ee-493f-b5d1-2d8596e46ec9",
+  "title": "2026-09-27 - **Parche de `SO_REUSEPORT` subido a BlenderDMX.** Rama",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "`artnet-reuseport` en el fork `spectalive/blender-dmx` (`abfb673`: el",
+    "commit `de60af6` del mini sin su trailer de sesion, mismo arbol), PR",
+    "https://github.com/open-stage/blender-dmx/pull/366 contra `main` de",
+    "`open-stage/blender-dmx`, abierto el 2026-09-27 con la prueba en macOS",
+    "(Blender 5.2.2 y QLC+ 5.2.2 a la vez en 6454). Falta la revision del",
+    "mantenedor; el checkout `~/p/blender-dmx` del mini queda en esa rama."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **Parche de `SO_REUSEPORT` subido a BlenderDMX.** Rama",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}

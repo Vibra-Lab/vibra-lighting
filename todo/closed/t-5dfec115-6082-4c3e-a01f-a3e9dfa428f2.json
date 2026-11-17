@@ -1,0 +1,29 @@
+{
+  "tadu": 2,
+  "id": "t-5dfec115-6082-4c3e-a01f-a3e9dfa428f2",
+  "title": "2026-09-27 - **The checkout is named after the repository, and the",
+  "state": "done",
+  "category": "general",
+  "type": "untriaged",
+  "priority": "untriaged",
+  "notes": [
+    "launcher's worktree is gone.** Owner: \"renombra repos locales y añadelos a",
+    "orca + sincronizar con macbook pro\". `~/p/DMX-Fixtures` -> `~/p/vibra-lighting`",
+    "on the mini and the MacBook (no symlink kept); the Dock launcher reinstalled",
+    "on `~/p/vibra-lighting/QLC+ Setups/Vibra.qxw` (`launch.py --test-no-output`:",
+    "HTTP check passed, exit 0) and the show relaunched through it after the",
+    "mini's reboot (QLC+ answers 200 on :9998); the `DMX-Fixtures-qlctool`",
+    "worktree and branch `qlctool` removed (same commit as `main`); `.venv`",
+    "rebuilt on both Macs (`install --check` 0). Orca registers `vibra-lighting`,",
+    "`qlctool`, `dmxdesk`, `smc-pad`, `qlc-launcher`, `fixture-sources`,",
+    "`qlc-blenderdmx`, `qlcplus`; the two stale entries removed. The MacBook",
+    "now has every spectalive repository cloned and the `spectalive` remote on",
+    "`qlcplus` and `blender-dmx`; the stray blender-dmx commit is pushed as",
+    "`spectalive/blender-dmx` branch `artnet-reuseport`."
+  ],
+  "closed": "2026-11-17",
+  "result": "2026-09-27 - **The checkout is named after the repository, and the",
+  "evidence": [
+    "legacy item migrated to format 2 without a recorded evidence"
+  ]
+}
